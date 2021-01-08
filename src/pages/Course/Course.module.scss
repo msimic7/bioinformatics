@@ -2,6 +2,10 @@
   height: calc(100vh - 112px);
   width: 100%;
   display: flex;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .tableOfContents {
@@ -36,21 +40,27 @@
 .lessonInit {
   font-weight: 600;
   font-size: 18px;
-  color: rgb(2, 241, 241);
   cursor: pointer;
 
-  &:hover {
-    color: rgb(55, 255, 255);
+  & a {
+    color: rgb(5, 223, 223);
+  }
+
+  & a:hover {
+    color: aqua;
   }
 }
 
 .sublesson {
   margin-left: 16px;
   font-size: 14px;
-  color: rgb(5, 223, 223);
   cursor: pointer;
 
-  &:hover {
+  & a {
+    color: rgb(5, 223, 223);
+  }
+
+  & a:hover {
     color: aqua;
   }
 }

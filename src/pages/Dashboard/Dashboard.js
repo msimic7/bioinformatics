@@ -6,7 +6,7 @@ import history from '../../services/history';
 const Dashboard = () => {
   const handleGetStarted = (e) => {
     e.preventDefault();
-    history.push('/course');
+    history.push('/course/lesson10');
   };
 
   return (
