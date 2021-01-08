@@ -1,0 +1,67 @@
+.root {
+  height: calc(100vh - 112px);
+  width: 100%;
+  display: flex;
+}
+
+.tableOfContents {
+  height: calc(100vh - 112px);
+  width: 20%;
+  border-right: rgb(22, 27, 34) solid 2px;
+  padding: 24px 8px 16px 8px;
+}
+
+.currentLesson {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 24px 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.lesson {
+  margin-bottom: 8px;
+}
+
+.lessonInit {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(2, 241, 241);
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(55, 255, 255);
+  }
+}
+
+.sublesson {
+  margin-left: 16px;
+  font-size: 14px;
+  color: rgb(5, 223, 223);
+  cursor: pointer;
+
+  &:hover {
+    color: aqua;
+  }
+}
+
+.subsublesson {
+  margin-left: 32px;
+  font-size: 12px;
+  color: rgb(5, 223, 223);
+  cursor: pointer;
+
+  &:hover {
+    color: aqua;
+  }
+}
