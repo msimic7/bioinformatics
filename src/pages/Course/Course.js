@@ -1,21 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Layout from '../Layout';
 import classes from './Course.module.scss';
-import Lesson10 from './Lessons/Lesson10/Lesson10';
 
-const Course = () => (
+const Course = ({ Lesson }) => (
   <Layout>
     <div className={classes.root}>
       <div className={classes.tableOfContents}>
         <div className={classes.title}>Sadrzaj</div>
         <div className={classes.lesson}>
-          <div className={classes.lessonInit}># Uvod</div>
-          <div className={classes.sublesson}># Uopsteno o DNK strukturi i replikaciji</div>
-          <div className={classes.sublesson}># Značaj i istorija DNK sekvencioniranja</div>
-          <div className={classes.sublesson}># Genom kao string, očitavanje kao podstring</div>
-          <div className={classes.sublesson}># Kako mašine rade DNK sekvencioniranje</div>
-          <div className={classes.sublesson}># FASTQ format i rad sa njima</div>
-          <div className={classes.sublesson}># Kako analiziramo prikupljene podatke</div>
+          <div className={classes.lessonInit}>
+            <Link to="/course/lesson10"># Uvod</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson10"># Uopsteno o DNK strukturi i replikaciji</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson11"># Značaj i istorija DNK sekvencioniranja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson12"># Genom kao string, očitavanje kao podstring</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson13"># Kako mašine rade DNK sekvencioniranje</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson14"># FASTQ format i rad sa njima</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson15"># Kako analiziramo prikupljene podatke</Link>
+          </div>
         </div>
         <div className={classes.lesson}>
           <div className={classes.lessonInit}># Problem poravnanja očitavanja</div>
@@ -38,10 +53,14 @@ const Course = () => (
         </div>
       </div>
       <div className={classes.currentLesson}>
-        <Lesson10 />
+        <Lesson />
       </div>
     </div>
   </Layout>
 );
+
+Course.propTypes = {
+  Lesson: PropTypes.func.isRequired,
+};
 
 export default Course;

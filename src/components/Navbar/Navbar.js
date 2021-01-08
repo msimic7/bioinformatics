@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className={classes.root}>
       <div className={classes.logo} onClick={(e) => handleClickLogo(e)} aria-hidden="true">
-        <img alt="logo" src="./logo.png" />
+        <img alt="logo" src="/logo.png" />
       </div>
       <div className={classes.nav}>
         <Link to="/course">Course</Link>
