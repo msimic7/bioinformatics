@@ -8,6 +8,18 @@
   & img {
     margin: 24px 0;
   }
+  & p {
+    margin-bottom: 8px;
+  }
+}
+
+.inlineTxtWithPic {
+  display: flex;
+  align-items: center;
+
+  & img {
+    margin: 0;
+  }
 }
 
 .indent1x {
