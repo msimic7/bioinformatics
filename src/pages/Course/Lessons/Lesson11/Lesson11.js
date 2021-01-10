@@ -10,28 +10,30 @@ const Lesson11 = () => (
       pionirska tehnika, koju nazivamo još i Sangerovo sekvencioniranje ili prva generacija
       sekvencioniranja, bila je spora i skupa (oko 3 biliona dolara po jednom ljudskom genomu).
     </p>
-    <img alt="" src="/assets/lesson11/pic1.svg" className={classes.indent1x} />
-    <div className={`${classes.picWithTxt} ${classes.indent1x}`}>
-      <img alt="" src="/assets/lesson11/pic2.svg" />
-      <div className={classes.picTxt}>
-        <p>
-          Ovako nešto ne sprečava biologe, koji 1990. godine poćinju Projekat ljudskog genoma, koji
-          je bio vođen od strane Francisa Kolinsa, i koji predstavlja najveću saradnja za
-          istraživački projekat iz biologije. Cij projekta je bio da se u narednih 15 godina
-          sekvencionira ljudski genom i dostavi javnosti do 2005. godine.
-        </p>
-        <p>
-          Godine 1997. Kreg Venter osniva privatnu kompaniju pod nazivom “Solara Genomics” koja je
-          imala za cilj da sekvencionira ljudski genom pre nego što to urade kolege koji su vodili
-          Projekat ljudskog genoma. Samim tim, trka za sekvenconiranje genoma počinje što dovodi do
-          toga da 5 godina pre predviđenog datuma, 2000. godine, ljudski genom biva sekvencioniran.
-        </p>
-      </div>
+    <div className={classes.imgCenter}>
+      <img alt="" src="/assets/lesson11/pic1.svg" className={classes.indent1x} />
+    </div>
+    <p className={classes.indent1x}>
+      Ovako nešto ne sprečava biologe, koji 1990. godine poćinju Projekat ljudskog genoma, koji je
+      bio vođen od strane Francisa Kolinsa, i koji predstavlja najveću saradnja za istraživački
+      projekat iz biologije. Cij projekta je bio da se u narednih 15 godina sekvencionira ljudski
+      genom i dostavi javnosti do 2005. godine.
+    </p>
+    <p className={classes.indent1x}>
+      Godine 1997. Kreg Venter osniva privatnu kompaniju pod nazivom “Solara Genomics” koja je imala
+      za cilj da sekvencionira ljudski genom pre nego što to urade kolege koji su vodili Projekat
+      ljudskog genoma. Samim tim, trka za sekvenconiranje genoma počinje što dovodi do toga da 5
+      godina pre predviđenog datuma, 2000. godine, ljudski genom biva sekvencioniran.
+    </p>
+    <div className={classes.imgCenter}>
+      <img alt="" src="/assets/lesson11/pic2.svg" className={classes.indent1x} />
     </div>
     <p className={classes.indent1x}>
       Nedugo nakon toga, biolozi počinju sekvencioniranje genoma drugih vrsta:
     </p>
-    <img alt="" src="/assets/lesson11/pic3.svg" className={classes.indent1x} />
+    <div className={classes.imgCenter}>
+      <img alt="" src="/assets/lesson11/pic3.svg" className={classes.indent1x} />
+    </div>
     <p className={classes.indent1x}>
       Međutim, biolozi su hteli da sekvencioniraju na hiljade genoma, ali kako je tadašnja
       tehnologija bila spora i skupa, to nije bilo moguće. Kao razlog toga veliki broj kompanija
@@ -56,7 +58,9 @@ const Lesson11 = () => (
       Pad cene sekvencione tehnologije, koje je prikazana grafikom ispod, dovodi do toga da će
       sekvenioniranje genoma postati učestalo kao i rendgen.
     </p>
-    <img alt="" src="/assets/lesson11/pic4.svg" className={classes.indent1x} />
+    <div className={classes.imgCenter}>
+      <img alt="" src="/assets/lesson11/pic4.svg" className={classes.indent1x} />
+    </div>
     <p className={classes.indent1x}>
       Kako bi ova genomska revolucija uspela, potrebno je razviti algoritamske tehnike za
       sekvencioniranje genoma. Neki od tih algoritama biće prikazani u ovom kursu.
