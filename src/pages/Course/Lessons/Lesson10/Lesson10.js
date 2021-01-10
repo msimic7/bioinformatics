@@ -204,6 +204,7 @@ const Lesson10 = () => (
       novoformirani DNK lanac i baš zbog toga proces replikacije je semikonzervativan (poluočuvan).
     </p>
     <img alt="" src="/assets/pic35.svg" className={classes.indent2x} />
+    <h1>GEN KAO DEO HROMOZOMSKE DNK</h1>
     <p className={`${classes.indent1x}`}>
       Hromozomi su telašca koji se mogu uočiti u jedru ćelija za vreme njihove deobe.
     </p>

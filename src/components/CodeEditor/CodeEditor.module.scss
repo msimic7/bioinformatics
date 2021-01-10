@@ -1,0 +1,35 @@
+.root {
+  color: #0d1117;
+  min-width: 50%;
+  width: fit-content;
+  margin: 24px 0;
+  padding: 8px;
+  white-space: pre-wrap;
+
+  & pre {
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 0 16px 24px 16px;
+    color: #0d1117;
+  }
+
+  & .options {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    margin-bottom: 24px;
+  }
+
+  & .codeActions {
+    margin: 0 8px;
+    cursor: pointer;
+
+    & i {
+      font-size: 24px;
+    }
+
+    & i:hover {
+      color: rgb(137, 141, 146);
+    }
+  }
+}
