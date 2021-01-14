@@ -177,14 +177,12 @@ const Lesson12 = () => (
       TTTTTGGCCTCTGTCGTTTCCTTTCTCTGTTTTTGTCCGTGGAATGAACAATGGAAGTCAACAAAAAGCA
       GCTGGCTGACATTTTCGGTGCGAGTATCCGTACCATTCAGAACTGGCAGGAACAGGGAATGCCCGTTCTG
       ...`}
-      result=""
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Preuzimamo dati fajls koji sadrži genom ove bakterije:</p>
+    <p className={classes.indent2x}>Preuzimamo dati fajl koji sadrži genom ove bakterije:</p>
     <CodeEditor
       code={`
       !wget http://d28rh4a8wq0iu5.cloudfront.net/ads1/data/lambda_virus.fa`}
-      result=""
       customClass={classes.indent2x}
     />
     <p className={classes.indent2x}>Čitamo genom iz fajla:</p>
@@ -198,7 +196,6 @@ const Lesson12 = () => (
               genom += line.rstrip()
         return genom
       genom = procitajGenom('lambda_virus.fa')`}
-      result=""
       customClass={classes.indent2x}
     />
     <p className={classes.indent2x}>

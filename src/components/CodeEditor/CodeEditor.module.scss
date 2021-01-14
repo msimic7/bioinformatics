@@ -1,23 +1,42 @@
 .root {
-  color: #0d1117;
+  background: #282f38;
   min-width: 50%;
   width: fit-content;
   margin: 24px 0;
-  padding: 8px;
+  padding: 8px 16px 16px 16px;
   white-space: pre-wrap;
+  border-radius: 5px;
 
   & pre {
     background: #f2f2f2;
     border-radius: 4px;
     padding: 0 16px 24px 16px;
     color: #0d1117;
+    font-size: 14px;
+  }
+
+  & .code {
+    margin-bottom: 16px;
+    background: #dbdbdb;
+  }
+
+  & .console {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      margin-bottom: 8px;
+    }
   }
 
   & .options {
     display: flex;
-    justify-content: flex-end;
-    padding: 16px 0;
-    margin-bottom: 24px;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  & .actions {
+    display: flex;
   }
 
   & .codeActions {
@@ -25,7 +44,7 @@
     cursor: pointer;
 
     & i {
-      font-size: 24px;
+      font-size: 16px;
     }
 
     & i:hover {
