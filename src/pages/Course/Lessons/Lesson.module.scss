@@ -2,15 +2,13 @@
   width: 100%;
 
   & h1,
-  h2 {
+  h2,
+  img {
     margin: 24px 0;
   }
 
-  & img {
-    margin: 24px 0;
-  }
   & p {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 }
 
