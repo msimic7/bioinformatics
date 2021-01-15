@@ -14,8 +14,8 @@ const Navbar = () => {
         <img alt="logo" src="/logo.png" />
       </div>
       <div className={classes.nav}>
-        <Link to="/course">Course</Link>
-        <Link to="/about">About</Link>
+        <Link to="/course">Kurs</Link>
+        <Link to="/about">O nama</Link>
       </div>
     </div>
   );

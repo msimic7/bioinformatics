@@ -13,6 +13,7 @@
   width: 20%;
   border-right: rgb(22, 27, 34) solid 2px;
   padding: 24px 8px 16px 8px;
+  overflow-y: auto;
 }
 
 .currentLesson {
@@ -68,10 +69,27 @@
 .subsublesson {
   margin-left: 32px;
   font-size: 12px;
-  color: rgb(5, 223, 223);
   cursor: pointer;
 
-  &:hover {
+  & a {
+    color: rgb(5, 223, 223);
+  }
+
+  & a:hover {
+    color: aqua;
+  }
+}
+
+.subsubsublesson {
+  margin-left: 48px;
+  font-size: 12px;
+  cursor: pointer;
+
+  & a {
+    color: rgb(5, 223, 223);
+  }
+
+  & a:hover {
     color: aqua;
   }
 }

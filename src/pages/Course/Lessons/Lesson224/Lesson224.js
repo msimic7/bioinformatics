@@ -18,7 +18,7 @@ const Lesson224 = () => (
       jedne niske od druge jer tražimo najmanje rastojanje među njima. Pri računanju edit
       rastojanja, svim razlikama (substitucije, umetanje i birsanje) smo dodeljivali istu vrednost
       (kaznu), odnosno 1. Tačnije, nismo pravili razliku ako dolazi do substitucije između dve baze
-      i ako dolazi do umetanja/brisanja određene baze.{' '}
+      i ako dolazi do umetanja/brisanja određene baze.
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>

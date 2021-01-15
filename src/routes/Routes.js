@@ -33,6 +33,13 @@ const Routes = () => (
     <Route path="/course/lesson223" component={() => <Course Lesson={Lessons.Lesson223} />} />
     <Route path="/course/lesson224" component={() => <Course Lesson={Lessons.Lesson224} />} />
     <Route path="/course/lesson23" component={() => <Course Lesson={Lessons.Lesson23} />} />
+    <Route path="/course/lesson30" component={() => <Course Lesson={Lessons.Lesson30} />} />
+    <Route path="/course/lesson31" component={() => <Course Lesson={Lessons.Lesson31} />} />
+    <Route path="/course/lesson32" component={() => <Course Lesson={Lessons.Lesson32} />} />
+    <Route path="/course/lesson33" component={() => <Course Lesson={Lessons.Lesson33} />} />
+    <Route path="/course/lesson34" component={() => <Course Lesson={Lessons.Lesson34} />} />
+    <Route path="/course/lesson35" component={() => <Course Lesson={Lessons.Lesson35} />} />
+    <Route path="/course/lesson36" component={() => <Course Lesson={Lessons.Lesson36} />} />
   </Switch>
 );
 

@@ -17,16 +17,16 @@ const Course = ({ Lesson }) => (
             <Link to="/course/lesson10"># Uopsteno o DNK strukturi i replikaciji</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson11"># Značaj i istorija DNK sekvencioniranja</Link>
+            <Link to="/course/lesson11"># Istorija i Značaj DNK sekvencioniranja</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson12"># Genom kao string, očitavanje kao podstring</Link>
+            <Link to="/course/lesson12"># Genom kao niska</Link>
           </div>
           <div className={classes.sublesson}>
             <Link to="/course/lesson13"># Kako mašine rade DNK sekvencioniranje</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson14"># FASTQ format i rad sa njima</Link>
+            <Link to="/course/lesson14"># FASTQ format i rad sa njim</Link>
           </div>
           <div className={classes.sublesson}>
             <Link to="/course/lesson15"># Kako analiziramo prikupljene podatke</Link>
@@ -45,13 +45,13 @@ const Course = ({ Lesson }) => (
           <div className={classes.subsublesson}>
             <Link to="/course/lesson211"># Boyer-Moore</Link>
           </div>
-          <div className={classes.subsublesson}>
+          <div className={classes.subsubsublesson}>
             <Link to="/course/lesson2111"># Pravilo lošeg karaktera</Link>
           </div>
-          <div className={classes.subsublesson}>
+          <div className={classes.subsubsublesson}>
             <Link to="/course/lesson2112"># Pravilo dobrog sufiksa</Link>
           </div>
-          <div className={classes.subsublesson}>
+          <div className={classes.subsubsublesson}>
             <Link to="/course/lesson2113"># Boyer-Moore kao kombinacija dva pravila</Link>
           </div>
           <div className={classes.subsublesson}>
@@ -76,7 +76,7 @@ const Course = ({ Lesson }) => (
             <Link to="/course/lesson221"># Dirihleov princip</Link>
           </div>
           <div className={classes.subsublesson}>
-            <Link to="/course/lesson222"># Dinamičko programiranje i edit distanca</Link>
+            <Link to="/course/lesson222"># Dinamičko programiranje i edit rastojanje</Link>
           </div>
           <div className={classes.subsublesson}>
             <Link to="/course/lesson223"># Novo rešenje za približno podudaranje</Link>
@@ -89,7 +89,30 @@ const Course = ({ Lesson }) => (
           </div>
         </div>
         <div className={classes.lesson}>
-          <div className={classes.lessonInit}># Problem skapanja očitavanja</div>
+          <div className={classes.lessonInit}>
+            <Link to="/course/lesson30"># Problem skapanja očitavanja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson30"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson31"># Rekonstrukcija niske kao Ojlerova putanja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson32"># De Brujinov graf</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson33"># Ojlerova teorema</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson34"># Parovi očitavanja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson35"># Problem poravnanja očitavanja u praksi</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson36"># Problemi sa kojima se susrećemo</Link>
+          </div>
         </div>
       </div>
       <div className={classes.currentLesson}>
