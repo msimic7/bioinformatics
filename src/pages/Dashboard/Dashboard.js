@@ -26,12 +26,12 @@ const Dashboard = () => {
               dobijamo DNK sekvencioniranjem. Pre nego što počnemo same algoritme, diskutovaćemo o
               strukturi i replikaciji DNK, istoriji i značaju sekvencioniranja, kao i o tome kako
               rade sekvencione mašine druge generacije. Naučićemo više o genomima i tome kako ih
-              možemo predstaviti pomoću stringova na osnovu kojih ćemo biti u mogućnosti da
-              koristimo širok spektar algoritama.
+              možemo predstaviti pomoću niski na osnovu kojih ćemo biti u mogućnosti da koristimo
+              veliki broj algoritama.
             </p>
             <p>
-              Dva glavna problema koja će biti u fokusu su problem poravnanja očitavanja i problem
-              sklapanja očitavanja.
+              Dva glavna problema koja će biti u fokusu su{' '}
+              <b>problem poravnanja očitavanja i problem preklapanja očitavanja</b>.
             </p>
           </div>
           <button
@@ -39,7 +39,7 @@ const Dashboard = () => {
             className={classes.btnStartCourse}
             onClick={(e) => handleGetStarted(e)}
           >
-            Get started
+            Započni kurs
           </button>
         </div>
       </div>

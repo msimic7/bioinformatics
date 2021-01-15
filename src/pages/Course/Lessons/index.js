@@ -21,6 +21,13 @@ import Lesson222 from './Lesson222';
 import Lesson223 from './Lesson223';
 import Lesson224 from './Lesson224';
 import Lesson23 from './Lesson23';
+import Lesson30 from './Lesson30';
+import Lesson31 from './Lesson31';
+import Lesson32 from './Lesson32';
+import Lesson33 from './Lesson33';
+import Lesson34 from './Lesson34';
+import Lesson35 from './Lesson35';
+import Lesson36 from './Lesson36';
 
 export default {
   Lesson10,
@@ -46,4 +53,11 @@ export default {
   Lesson223,
   Lesson224,
   Lesson23,
+  Lesson30,
+  Lesson31,
+  Lesson32,
+  Lesson33,
+  Lesson34,
+  Lesson35,
+  Lesson36,
 };
