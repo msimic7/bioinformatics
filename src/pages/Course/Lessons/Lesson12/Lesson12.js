@@ -8,8 +8,8 @@ const Lesson12 = () => (
     <p className={classes.indent1x}>
       DNK možemo predstaviti pomoću jednog njegovog lanca (drugi lanac dobijamo njegovim
       komplementiranjem). Taj DNK lanac predstavljamo kao niz njegovih nukleotida koje ćemo
-      označavati prema azotnim bazama koje sadrže tj. slovima A (adenin), C (citozin), G (guanin) i
-      T (timin).
+      označavati prema azotnim bazama koje sadrže tj. slovima A (Adenin), C (Citozin), G (Guanin) i
+      T (Timin).
     </p>
     <img alt="" src="/assets/lesson12/pic1.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
@@ -26,21 +26,14 @@ const Lesson12 = () => (
     </p>
     <img alt="" src="/assets/lesson12/pic3.svg" className={classes.indent2x} />
     <h2 className={classes.indent1x}>Rad sa niskama</h2>
+    <p className={classes.indent2x}>Dužina niske:</p>
     <CodeEditor
       code={`
       s = 'ACGTGCTAGCTAGCAG'
-      s`}
-      result={`
-      ACGTGCTAGCTAGCAG`}
-      customClass={classes.indent2x}
-    />
-    <p className={classes.indent2x}>Duzina niske:</p>
-    <CodeEditor
-      code={`
       len(s)`}
       result={`
       16`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <pre className={`${classes.code} ${classes.indent2x}`} />
     <p className={classes.indent2x}>Podniske date niske s:</p>
@@ -49,21 +42,21 @@ const Lesson12 = () => (
       s[2:6]`}
       result={`
       GTGC`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <CodeEditor
       code={`
       s[:5]`}
       result={`
       ACGTG`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <CodeEditor
       code={`
       s[-4:]`}
       result={`
       GCAG`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>Konkatenacija (nadovezivanje) dve niske p i q:</p>
     <CodeEditor
@@ -73,7 +66,7 @@ const Lesson12 = () => (
       p + q`}
       result={`
       GCTAAACAAA`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>Poređenje dve niske:</p>
     <CodeEditor
@@ -81,7 +74,7 @@ const Lesson12 = () => (
       p == q`}
       result={`
       False`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
       Funkcija s.join(l) vraća nisku dobijenu nadovezivanjem elemenata liste l tako da je između
@@ -93,7 +86,7 @@ const Lesson12 = () => (
       ','.join(baze)`}
       result={`
       A,C,G,T`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
       Rad sa bibliotekom random. Ako dodamo seed tada će nam pri svakom poketanju vraćati isti
@@ -105,7 +98,7 @@ const Lesson12 = () => (
       random.choice('ACGT')`}
       result={`
       A`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>*ovde pri svakom pokretanju vraća G:</p>
     <CodeEditor
@@ -114,7 +107,7 @@ const Lesson12 = () => (
       random.choice('ACGT')`}
       result={`
       G`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>Pravimo nisku dužine 10 (svako slovo je nasumično birano):</p>
     <CodeEditor
@@ -123,7 +116,7 @@ const Lesson12 = () => (
       sekvenca`}
       result={`
       CTAAAGACAA`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <h2 className={classes.indent1x}>Manipulacija sa DNK niskama</h2>
     <p className={classes.indent2x}>
@@ -139,7 +132,7 @@ const Lesson12 = () => (
       najduziZajednickiPrefiks('AAATGCA','AACGATAAA')`}
       result={`
       AA`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
       Funkcija koja određuje komplementaran DNK lanac datom DNK lancu:
@@ -150,7 +143,7 @@ const Lesson12 = () => (
       komplement['T']`}
       result={`
       A`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <CodeEditor
       code={`
@@ -162,7 +155,7 @@ const Lesson12 = () => (
       obrnutiKomplement('CGATGATA')`}
       result={`
       TATCATCG`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <h2 className={classes.indent1x}>Kako parsiramo dati genom</h2>
     <p className={classes.indent2x}>
@@ -176,13 +169,13 @@ const Lesson12 = () => (
       TTTTTGGCCTCTGTCGTTTCCTTTCTCTGTTTTTGTCCGTGGAATGAACAATGGAAGTCAACAAAAAGCA
       GCTGGCTGACATTTTCGGTGCGAGTATCCGTACCATTCAGAACTGGCAGGAACAGGGAATGCCCGTTCTG
       ...`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>Preuzimamo datoteku koja sadrži genom ove bakterije:</p>
     <CodeEditor
       code={`
       !wget http://d28rh4a8wq0iu5.cloudfront.net/ads1/data/lambda_virus.fa`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>Čitamo genom iz datoteke:</p>
     <CodeEditor
@@ -195,7 +188,7 @@ const Lesson12 = () => (
               genom += line.rstrip()
         return genom
       genom = procitajGenom('lambda_virus.fa')`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
       Određujemo broj pojavljivanja nukleotida u genomu ove bakterije koristeći biblioteku
@@ -209,7 +202,7 @@ const Lesson12 = () => (
       pojavljivanja`}
       result={`
       {'A': 12334, 'C': 11362, 'G': 12820, 'T': 11986}`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
     <CodeEditor
       code={`
@@ -217,9 +210,9 @@ const Lesson12 = () => (
       collections.Counter(genom)`}
       result={`
       Counter({'A': 12334, 'C': 11362, 'G': 12820, 'T': 11986})`}
-      customClass={classes.indent2x}
+      customClass={classes.indent3x}
     />
-    <p className={classes.indent2x}>
+    <p className={classes.indent3x}>
       Na osnovu ovih podataka možemo videti da imamo približan broj svih baza u genomu ove
       bakterije.
     </p>

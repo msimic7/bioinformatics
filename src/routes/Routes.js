@@ -40,6 +40,7 @@ const Routes = () => (
     <Route path="/course/lesson34" component={() => <Course Lesson={Lessons.Lesson34} />} />
     <Route path="/course/lesson35" component={() => <Course Lesson={Lessons.Lesson35} />} />
     <Route path="/course/lesson36" component={() => <Course Lesson={Lessons.Lesson36} />} />
+    <Route path="/course/lesson37" component={() => <Course Lesson={Lessons.Lesson37} />} />
   </Switch>
 );
 

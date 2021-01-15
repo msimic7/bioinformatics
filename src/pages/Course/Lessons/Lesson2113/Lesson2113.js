@@ -16,7 +16,7 @@ const Lesson2113 = () => (
     <img alt="" src="/assets/lesson2113/pic2.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
       Kako se nijedan karakter ne podudara (odmah na početku imamo nepodudaranje), onda ovde ne
-      možemo primeniti Pravilo dobrog sufiksa, stoga primenjujemo Pravilo lošeg karaktera:
+      možemo primeniti pravilo dobrog sufiksa, stoga primenjujemo Pravilo lošeg karaktera:
     </p>
     <img alt="" src="/assets/lesson2113/pic3.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -37,7 +37,7 @@ const Lesson2113 = () => (
     <p className={classes.indent1x}>Dobijamo podudaranje na poziciji 18.</p>
     <p className={classes.indent1x}>
       Pošto nismo došli do kraja teksta, nastavljamo dalje. Kako se svi karakteri šablona podudaraju
-      sa tekstom ovde ćemo moći da primenimo samo Pravilo dobrog sufiksa:
+      sa tekstom ovde ćemo moći da primenimo samo pravilo dobrog sufiksa:
     </p>
     <img alt="" src="/assets/lesson2113/pic14.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -274,18 +274,6 @@ const Lesson2113 = () => (
     Šablon se javlja na poziciji 17
     Šablon se javlja na poziciji 23
     Šablon se javlja na poziciji 31`}
-      customClass={classes.indent1x}
-    />
-    <CodeEditor
-      code={`
-      p = 'AACCTG'
-      t = 'CACTTAATTTG'
-      print(p[0:2])
-      print(BoyerMooreAlg('AA',t))`}
-      result={`
-    AA
-    Šablon se javlja na poziciji 5
-    None`}
       customClass={classes.indent1x}
     />
   </div>
