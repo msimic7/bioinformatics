@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '../Lesson.module.scss';
+import CodeEditor from '../../../../components/CodeEditor';
 
 const Lesson221 = () => (
   <div className={classes.root}>
@@ -59,6 +60,127 @@ const Lesson221 = () => (
     </p>
     <img alt="" src="/assets/lesson221/pic6.svg" className={classes.indent2x} />
     <h2> Implemetacije u Python-u</h2>
+
+    <p className={classes.indent1x}>
+      Koristimo Boyer-Moore algoritam za tačno podudaranje sa malom izmenom.
+    </p>
+    <CodeEditor
+      code={`
+def BoyerMooreAlg(p, t):
+  izlaz = set()
+  pom  = 0
+  m = len(p)
+  n = len(t)
+
+  losKarakter = heuristikaLosKarakter(p)
+
+  pozicija_granice = [0] * (m + 1)
+  pomeraj = [0] * (m + 1)
+  preprocesiranje1(pomeraj, pozicija_granice, p, m)
+  preprocesiranje2(pomeraj, pozicija_granice, p, m)
+
+  while pom <= n - m:
+    j = m - 1
+
+    while j >= 0 and p[j] == t[pom + j]:
+      j -= 1
+    
+    if j < 0:
+      # umesto da štampamo poziciju gde se desilo podudaranje, dodajemo je u skup izlaz
+      izlaz.add(pom)
+      pomerajLK = (m - losKarakter[m-1][mapaKaraktera[t[pom + m]]] if pom + m < n else 1)
+      pomerajDS = pomeraj[0]
+      if pomerajDS >= pomerajLK:
+        pom += pomerajDS
+      else:
+        pom += pomerajLK
+    else:
+      pomerajLosKarakter = j - losKarakter[j - 1][mapaKaraktera[t[pom + j]]]
+      pomerajDobarSufiks = pomeraj[j+1]
+      if pomerajDobarSufiks >= pomerajLosKarakter:
+        pom += pomerajDobarSufiks
+      else:
+        pom += pomerajLosKarakter
+
+  return izlaz
+  `}
+      customClass={classes.indent2x}
+    />
+    <p className={classes.indent1x}>
+      Sledeća funkcija vraća sve pozicije gde se dati šablon podudara sa tekstom do na n razlika.
+    </p>
+    <CodeEditor
+      code={`
+def pribliznoPodudaranje(p, t, n):
+  # primenjujemo Dirihleov princip
+  duzina_porcije = int(round(len(p) / (n + 1)))
+  # skup svih pozicija gde se desilo približno podudaranje
+  priblizna_podudaranja = set()
+  # za svaku porciju Boyer-Moore algoritmom vraćamo skup pozicija gde se podudaranje desilo
+  for i in range(n+1):
+    # početak i kraj i-te pozicije
+    start = i * duzina_porcije
+    kraj = min((i+1) * duzina_porcije, len(p))
+
+    #tražimo da li imamo tačno podudaranje i-te porcije sa tekstom
+    podudaranja = BoyerMooreAlg(p[start:kraj], t)
+    # proverimo sve pozicije gde se desilo podudaranje i-te porcije
+    for poz in podudaranja:
+      # ako šablon ispada iz opsega teksta
+      if poz < start or (poz - start) + len(p) > len(t):
+        continue
+      # brojima sva nepodudaranja koja postoje između porcija koje se nalaze 
+      # pre i posle porcije koja se podudara sa tekstom
+      # i ako ne prelaze n, onda smo našli približno podudaranje šablona sa tekstom
+      nepodudaranja = 0
+      for j in range (0,start):
+        if not p[j] == t[poz - start + j]:
+          nepodudaranja += 1
+        if nepodudaranja > n:
+          break
+      for j in range (kraj, len(p)):
+        if not p[j] == t[poz - start + j]:
+          nepodudaranja += 1
+        if nepodudaranja > n:
+          break
+
+      # ako smo imali najviše n nepodudaranja dodajemo poziciju približnog podudaranja šablona u skup
+      if nepodudaranja <= n:
+        priblizna_podudaranja.add(poz - start)
+  
+  #koristili smo skup jer on ne dozvoljava ponavljajuće vrednosti koje možemo dobiti 
+  return list(priblizna_podudaranja)
+    `}
+      customClass={classes.indent2x}
+    />
+    <p className={classes.indent1x}>Testiramo datu funkciju na jednostavnom primeru:</p>
+    <CodeEditor
+      code={`
+p = 'AACTTG'
+t = 'CACTTAATTTG'
+print(pribliznoPodudaranje(p, t, 2))
+    `}
+      result={`
+    [0, 5]`}
+      customClass={classes.indent2x}
+    />
+    <p className={classes.indent1x}>Proveravamo tačnost:</p>
+    <CodeEditor
+      code={`
+t[0:6]
+    `}
+      result={`
+    CACTTA`}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+t[5:11]
+    `}
+      result={`
+    AATTTG`}
+      customClass={classes.indent2x}
+    />
   </div>
 );
 

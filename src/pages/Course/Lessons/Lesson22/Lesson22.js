@@ -29,9 +29,7 @@ const Lesson22 = () => (
       Za rešavanje ovog problema biće nam potrebni algoritmi za približno podudaranje očitavanja sa
       genomom.
     </p>
-    <p className={classes.indent1x}>
-      <b> Algoritmi za približno podudaranje </b>
-    </p>
+    <h2 className={classes.indent1x}>Algoritmi za približno podudaranje</h2>
     <p className={classes.indent1x}>
       U ovim algoritmima dopuštamo postojanje razlika između teksta i šablona. Razlike koje
       dopuštamo su sledeće:
@@ -117,7 +115,7 @@ const Lesson22 = () => (
                 pojavljivanja.append(i)
         return pojavljivanja 
     `}
-      className={classes.indent2x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       U njegovoj modifikaciji, kada naiđemo na prvo nepodudaranje karaktera šablona sa karakterom iz
@@ -140,7 +138,7 @@ const Lesson22 = () => (
                 pojavljivanja.append(i)
         return pojavljivanja
     `}
-      className={classes.indent2x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Lako možemo modifikovati naivni algoritam tačnog podudaranja u algoritam približnog

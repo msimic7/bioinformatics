@@ -79,7 +79,7 @@ const Lesson10 = () => (
       Dakle, jedan lanac DNK ide od 5’ kraja do 3’ kraja, dok drugi ide od 3’ kraja do 5’ kraja, tj.
       antiparalelni su.
     </p>
-    <h1>STRUKTURA DNK</h1>
+    <h1>REPLIKACIJA DNK</h1>
     <p className={`${classes.indent1x}`}>Posmatrajmo sledeći primer.</p>
     <img alt="" src="/assets/lesson10/pic14.svg" className={classes.indent2x} />
     <p className={`${classes.indent1x}`}>

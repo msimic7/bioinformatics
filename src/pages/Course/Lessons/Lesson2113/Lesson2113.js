@@ -11,6 +11,7 @@ const Lesson2113 = () => (
       nepodudaranja karaktera, izabraćemo ono pravilo koje preskače više poravnanja.
     </p>
     <p>Pokažimo to na sledećem primeru:</p>
+    <p>PRIMER</p>
     <img alt="" src="/assets/lesson2113/pic1.svg" className={classes.indent1x} />
     <img alt="" src="/assets/lesson2113/pic2.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -121,6 +122,7 @@ const Lesson2113 = () => (
             u tom prefiksu šablona.
                   '''
                   pom += j - losKarakter[j - 1][mapaKaraktera[t[pom + j]]]`}
+      customClass={classes.indent1x}
     />
     <CodeEditor
       code={`
@@ -130,6 +132,7 @@ const Lesson2113 = () => (
       pretragaLosKarakter(p, t) `}
       result={`
       Šablon se javlja na poziciji 6`}
+      customClass={classes.indent1x}
     />
     <h2>Pravilo dobrog sufiksa</h2>
     <CodeEditor
@@ -198,6 +201,7 @@ const Lesson2113 = () => (
                   '''pat[i] != pat[s+j] stoga pomeramo šablon za
                   shift[j+1]  mesta'''
                   pom += pomeraj[j + 1] `}
+      customClass={classes.indent1x}
     />
     <CodeEditor
       code={`
@@ -209,6 +213,7 @@ const Lesson2113 = () => (
     Šablon se javlja na poziciji 17
     Šablon se javlja na poziciji 23
     Šablon se javlja na poziciji 31`}
+      customClass={classes.indent1x}
     />
     <h2>Boyer-Moore algoritam</h2>
     <CodeEditor
@@ -247,6 +252,7 @@ const Lesson2113 = () => (
           else:
             pom += pomerajLosKarakter
     `}
+      customClass={classes.indent1x}
     />
     <CodeEditor
       code={`
@@ -256,6 +262,7 @@ const Lesson2113 = () => (
       result={`
     Šablon se javlja na poziciji 13
     Šablon se javlja na poziciji 21`}
+      customClass={classes.indent1x}
     />
     <CodeEditor
       code={`
@@ -267,6 +274,7 @@ const Lesson2113 = () => (
     Šablon se javlja na poziciji 17
     Šablon se javlja na poziciji 23
     Šablon se javlja na poziciji 31`}
+      customClass={classes.indent1x}
     />
     <CodeEditor
       code={`
@@ -278,6 +286,7 @@ const Lesson2113 = () => (
     AA
     Šablon se javlja na poziciji 5
     None`}
+      customClass={classes.indent1x}
     />
   </div>
 );
