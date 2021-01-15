@@ -36,16 +36,27 @@ const Lesson31 = () => (
     <p className={classes.indent3x}>Možemo. To će biti ista putanja kao malo pre:</p>
     <img alt="" src="/assets/lesson31/pic6.svg" className={classes.indent4x} />
 
+    <p className={classes.indent1x}>
+      Primetimo da smo u ovom primeru malo varali. Postavili smo čvorove u redosledu koji odgovara
+      njihovom redosledu u genomu. U realnosti, njihove pozicije, tj. njihov redosled, nije poznat.
+      Stoga, ako reorganizujemo redosled čvorova, problem sastavljanja genoma, tj. pronalaska
+      odgovarajuće putanje je teži.
+    </p>
     <p className={classes.indent1x} />
-    <p className={classes.indent1x} />
-    <p className={classes.indent1x} />
+    <p className={classes.indent1x}>
+      Na primer, neka su nam dati čvorovi poređani u leksikografskom redosledu:
+    </p>
     <img alt="" src="/assets/lesson31/pic7.svg" className={classes.indent2x} />
-    <p className={classes.indent2x} />
+    <p className={classes.indent2x}>Povežimo sve one čvorove koji se preklapaju za 2-gram:</p>
     <img alt="" src="/assets/lesson31/pic8.svg" className={classes.indent3x} />
-    <p className={classes.indent3x} />
+    <p className={classes.indent3x}>
+      Genom će biti konstruisan na osnovu putanje ovog grafa koja posećuje svaki čvor <b>tačno</b>{' '}
+      jednom:
+    </p>
 
     <p className={classes.indent3x}>korak1</p>
     <img alt="" src="/assets/lesson31/pic9.svg" className={classes.indent4x} />
+
     <p className={classes.indent3x}>korak2</p>
     <img alt="" src="/assets/lesson31/pic10.svg" className={classes.indent4x} />
     <p className={classes.indent3x}>korak3</p>

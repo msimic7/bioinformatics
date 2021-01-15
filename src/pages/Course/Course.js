@@ -17,7 +17,7 @@ const Course = ({ Lesson }) => (
             <Link to="/course/lesson10"># Uopsteno o DNK strukturi i replikaciji</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson11"># Istorija i Značaj DNK sekvencioniranja</Link>
+            <Link to="/course/lesson11"># Istorija i značaj DNK sekvencioniranja</Link>
           </div>
           <div className={classes.sublesson}>
             <Link to="/course/lesson12"># Genom kao niska</Link>
@@ -93,25 +93,25 @@ const Course = ({ Lesson }) => (
             <Link to="/course/lesson30"># Problem skapanja očitavanja</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson30"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
+            <Link to="/course/lesson31"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson31"># Rekonstrukcija niske kao Ojlerova putanja</Link>
+            <Link to="/course/lesson32"># Rekonstrukcija niske kao Ojlerova putanja</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson32"># De Brujinov graf</Link>
+            <Link to="/course/lesson33"># De Brujinov graf</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson33"># Ojlerova teorema</Link>
+            <Link to="/course/lesson34"># Ojlerova teorema</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson34"># Parovi očitavanja</Link>
+            <Link to="/course/lesson35"># Parovi očitavanja</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson35"># Problem poravnanja očitavanja u praksi</Link>
+            <Link to="/course/lesson36"># Problem poravnanja očitavanja u praksi</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson36"># Problemi sa kojima se susrećemo</Link>
+            <Link to="/course/lesson37"># Problemi sa kojima se susrećemo</Link>
           </div>
         </div>
       </div>

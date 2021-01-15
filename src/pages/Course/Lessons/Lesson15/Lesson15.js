@@ -13,8 +13,8 @@ const Lesson15 = () => (
     <p className={classes.indent2x}>Želimo da sekvencioniramo sledeći genom:</p>
     <img alt="" src="/assets/lesson15/pic1.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
-      DNK sekvenciona mašina radi tako što iznova i iznova čita random podstringove datih kopija
-      genoma i te podstringove nazivamo <b>sekvencionim očitavanjima</b>:
+      DNK sekvenciona mašina radi tako što iznova i iznova čita nasumične podniske datih kopija
+      genoma i te podniske nazivamo <b>sekvencionim očitavanjima</b>:
     </p>
     <img alt="" src="/assets/lesson15/pic2.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>
@@ -38,9 +38,9 @@ const Lesson15 = () => (
     <p className={classes.indent2x}>
       Pretpostavimo da imamo hiljadu kopija istog izdanja novina na jednoj gomili, a ispod njih
       postavljen dinamit. Upalimo fitilj i zamislimo da nije sve samo izgorelo već da se raspršilo u
-      milione delića papira. Pretpostavimo da želimo da od tih papira sklopimo sadržaj novina. Ako
-      bismo imali kopiju tih novina, onda bismo sa to uradili poređenjem delova koji su ostali
-      očuvani nakon eksplozije sa tom kopijom.
+      milion delića papira. Pretpostavimo da želimo da od tih papira sklopimo sadržaj novina. Ako
+      bismo imali kopiju tih novina, onda bismo to uradili poređenjem delova koji su ostali očuvani
+      nakon eksplozije sa tom kopijom.
     </p>
     <img alt="" src="/assets/lesson15/pic4.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>

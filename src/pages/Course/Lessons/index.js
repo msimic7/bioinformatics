@@ -28,6 +28,7 @@ import Lesson33 from './Lesson33';
 import Lesson34 from './Lesson34';
 import Lesson35 from './Lesson35';
 import Lesson36 from './Lesson36';
+import Lesson37 from './Lesson37';
 
 export default {
   Lesson10,
@@ -60,4 +61,5 @@ export default {
   Lesson34,
   Lesson35,
   Lesson36,
+  Lesson37,
 };

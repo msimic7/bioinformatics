@@ -131,7 +131,7 @@ const Lesson222 = () => (
     <img alt="" src="/assets/lesson222/pic13.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
       U ovom primeru imamo dva puta rekurzivni poziv
-      <span className={classes.red}>{`>editDistRekurzivna('AB','BB')`}</span>
+      <span className={classes.red}>editDistRekurzivna(&apos;AB&apos;,&apos;BB&apos;)</span>
       {`, dok ćemo u celom procesu
       imati daleko više. Kako bismo bolje približili koliki je to problem, pogledajmo sledeći kod u
       kome nalazimo n koje predstavlja broj rekurzivnih poziva za argument ('AAGTGAT', 'AATGTGA')

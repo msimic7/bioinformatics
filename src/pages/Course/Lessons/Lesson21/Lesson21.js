@@ -192,8 +192,6 @@ const Lesson21 = () => (
           start = random.randint(0, len(genom) - duzinaOcitavanja) - 1
           ocitavanja.append(genom[start : start + duzinaOcitavanja])
         return ocitavanja`}
-      result={`
-        AG`}
       customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>

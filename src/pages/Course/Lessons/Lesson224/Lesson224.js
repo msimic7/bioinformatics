@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '../Lesson.module.scss';
+import CodeEditor from '../../../../components/CodeEditor';
 
 const Lesson224 = () => (
   <div className={classes.root}>
@@ -93,6 +94,82 @@ const Lesson224 = () => (
     <p className={classes.indent1x}>
       <b> Implementacija globalnog poravnanja</b>
     </p>
+    <CodeEditor
+      code={`
+azbuka = ['A', 'C', 'G', 'T']
+kazne = [[0, 4, 2, 4, 8],
+         [4, 0, 4, 2, 8],
+         [2, 4, 0, 4, 8],
+         [4, 2, 4, 0, 8],
+         [8, 8, 8, 8, 8]]
+    `}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+# konvertuje karakter u njegovu poziciju u listi azbuka
+azbuka.index('G')
+    `}
+      result={`
+    2`}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+# kazna koja odgovara nepodudaranja karaktera A (iz stringa X) sa karakterom T (iz stringa Y)
+kazne[azbuka.index('A')][azbuka.index('T')]
+    `}
+      result={`
+    4`}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+# kazna koja odgovara brisanju C (iz stringa X) iz striga Y
+kazne[azbuka.index('C')][-1]
+    `}
+      result={`
+    8`}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+def globalnoPoravnanje(x, y):
+    # Kreiramo matricu distanci
+    D = []
+    for i in range(len(x)+1):
+        D.append([0] * (len(y)+1))
+        
+    # Inicijalizujemo prvu kolonu 
+    for i in range(1, len(x)+1):
+        D[i][0] = D[i-1][0] + kazne[azbuka.index(x[i-1])][-1]
+
+    # Inicijalizujemo prvu vrstu
+    for j in range(1,len(y)+1):
+        D[0][j] = D[0][j-1] + kazne[-1][azbuka.index(y[j-1])]
+        
+    # Popunjavamo ostatak matrice
+    for i in range(1, len(x)+1):
+        for j in range(1, len(y)+1):
+            distHor = D[i][j-1] + kazne[-1][azbuka.index(y[j-1])]
+            distVer = D[i-1][j] + kazne[azbuka.index(x[i-1])][-1]
+            distDiag = D[i-1][j-1] + kazne[azbuka.index(x[i-1])][azbuka.index(y[j-1])]
+            D[i][j] = min(distHor, distVer, distDiag)
+    
+    return D[-1][-1]  # vraća vrednost iz donjeg desnog polja matriice D
+    `}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+x = 'TATGTCATGC'
+y = 'TATGGCAGC'
+print(globalnoPoravnanje(x,y))
+    `}
+      result={`
+    12`}
+      customClass={classes.indent2x}
+    />
 
     <h2> LOKALNO PORAVNANJE</h2>
 

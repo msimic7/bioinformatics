@@ -51,7 +51,7 @@ const Lesson14 = () => (
       brojčani kvalitet baze (Q) dobiti tako što ćemo taj karakter prebaciti u ceo broj pomoću ASCII
       tabele i od njega oduzeti 33.
     </p>
-    <p className={classes.indent4x}>Funkcije koje ćemo korsititi za to su sledeće:</p>
+    <p className={classes.indent4x}>Funkcije koje ćemo koristiti za to su sledeće:</p>
 
     <CodeEditor
       code={`
@@ -214,9 +214,12 @@ const Lesson14 = () => (
       import matplotlib.pyplot as plt
       plt.bar(range(len(h)), h)
       plt.show()`}
-      result=""
       customClass={classes.indent3x}
     />
+    <p className={classes.indent3x}>
+      Grafik koji će se dobiti nakon pokretanja ovog koda je sledeći:
+    </p>
+    <img alt="" src="/assets/lesson14/grafik1.svg" className={classes.indent4x} />
     <p className={classes.indent3x}>
       Možemo zapaziti da ima dosta baza sa kvalitetom Q = 2, to nam govori da postoji dosta baza za
       koje The base caller nije siguran da li ih je dobro odredio (bilo je više različitih boja i
@@ -251,13 +254,16 @@ const Lesson14 = () => (
       gc = GCuZavisnostiOdPozicije(sekvence)
       plt.plot(range(len(gc)), gc)
       plt.show()`}
-      result=""
       customClass={classes.indent3x}
     />
     <p className={classes.indent3x}>
-      Kao što možemo videti sa grafika sadržaj GC je skoro pa konstantan, sa malim oscilacijama. On
-      je veći od 0,5 (obično između 0,56 i 0,58), odakle možemo zaključiti da je zbir broja G i C
-      baza veći od zbira broja A i T baza.
+      Grafik koji će se dobiti nakon pokretanja ovog koda je sledeći:
+    </p>
+    <img alt="" src="/assets/lesson14/grafik2.svg" className={classes.indent4x} />
+    <p className={classes.indent3x}>
+      Sadržaj GC je skoro pa konstantan, sa malim oscilacijama. On je veći od 0.5 (obično između
+      0.56 i 0.58), odakle možemo zaključiti da je zbir broja G i C baza veći od zbira broja A i T
+      baza.
     </p>
     <p className={classes.indent2x}>
       Koristeći collections.Counter(), sa kojim smo se već susreli, dobijamo sledeće:

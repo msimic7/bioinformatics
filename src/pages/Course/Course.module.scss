@@ -12,7 +12,7 @@
   height: calc(100vh - 112px);
   width: 20%;
   border-right: rgb(22, 27, 34) solid 2px;
-  padding: 24px 8px 16px 8px;
+  padding: 24px 16px 16px 16px;
   overflow-y: auto;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   width: 100%;
   display: flex;
@@ -40,7 +40,7 @@
 
 .lessonInit {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
 
   & a {
@@ -54,7 +54,7 @@
 
 .sublesson {
   margin-left: 16px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 
   & a {
