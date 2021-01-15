@@ -158,8 +158,8 @@ const Lesson13 = () => (
     </p>
     <h2 className={classes.indent1x}>PRIMER</h2>
     <p className={classes.indent2x}>
-      Međutim, može doći do greške, ako se terminator ne dodana bazu i DNK polimeraza ne bude
-      sprečena (pre slikanja) da doda novu bazu. Sledeći primer to ilustuje:
+      Posmatramo samo one baze koje je dodala DNK polimeraza. Pretpostavimo da do slikanja još nije
+      došli i da DNK polimeraza nije postavila terminator na jednu bazu.
     </p>
     <img alt="" src="/assets/lesson13/pic25.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
@@ -179,7 +179,7 @@ const Lesson13 = () => (
       baze.
     </p>
     <img alt="" src="/assets/lesson13/pic29.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>Nakon dodavanja tih baza, naš fotoaparat pravi sliku.</p>
+    <p className={classes.indent2x}>Nakon dodavanja tih baza, naš fotoaparat pravi sliku:</p>
     <img alt="" src="/assets/lesson13/pic30.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>
       Na osnovu ovog primera, možemo zaključiti da kako se krećemo od jednog do drugog sekvencionog
@@ -189,7 +189,7 @@ const Lesson13 = () => (
     </p>
     <p>
       Softver koji se bavi ovim fotografijama, odnosno određivanjem ovih boja (tj. azotnih baza),
-      kao i obrađivanjem grešaka se zove The base caller. On može biti:
+      kao i obrađivanjem grešaka se zove Određivač baza (eng.The base caller). On može biti:
     </p>
     <img alt="" src="/assets/lesson13/pic31.svg" className={classes.indent1x} />
     <p>
@@ -215,8 +215,8 @@ const Lesson13 = () => (
     <h2>PRIMER</h2>
     <img alt="" src="/assets/lesson13/pic34.svg" className={classes.indent1x} />
     <p>
-      U realnosti The base caller radI određivanje ove verovatnoće na mnogo komplikovaniji način,
-      ali i ovaj način ima smisla.
+      U realnosti Određivač baza radi određivanje ove verovatnoće na mnogo komplikovaniji način, ali
+      i ovaj način ima smisla.
     </p>
   </div>
 );

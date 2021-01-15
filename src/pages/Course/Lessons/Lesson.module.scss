@@ -7,9 +7,17 @@
     margin: 24px 0;
   }
 
+  & img {
+    display: block;
+  }
+
   & p {
     margin-bottom: 16px;
   }
+}
+
+.red {
+  color: red;
 }
 
 .inlineTxtWithPic {
