@@ -8,12 +8,11 @@ const Lesson10 = () => (
       Dezoksiribonukleinska kiselina (DNK) je kiselina koja sadrži uputstva za razvoj i pravilno
       funkionisanje svih živih organizama. Sva živa bića svoj genetički materijal nose u obliku DNK,
       osim pojedinih virusa koji svoj genetički materijal nose u obliku RNK. Genom jednog organizma
-      predstavlja celokupan njegov DNK.
+      predstavlja celokupan njegov DNK.Iako je svaki čovek različit, 99.8% ljudskog genoma isto je
+      kod svih ljudi; preostalih 0.2% određuje sve one velike razlike između ljudi: od boje kože i
+      očiju, do zdravlja i bolesti.
     </p>
-    <p className={classes.indent1x}>
-      Iako je svaki čovek različit, 99.8% ljudskog genoma isto je kod svih ljudi; preostalih 0.2%
-      određuje sve one velike razlike između ljudi: od boje kože i očiju, do zdravlja i bolesti.
-    </p>
+    <p className={classes.indent1x} />
     <p className={classes.indent1x}>
       DNK je molekul koji se sastoji od dva lanca koji su uvrnuti jedan oko drugog, tako da čine
       dupli heliks.
@@ -76,7 +75,7 @@ const Lesson10 = () => (
       :
     </p>
     <img alt="" src="/assets/lesson10/pic13.svg" className={classes.indent2x} />
-    <p className={`${classes.indent2x}`}>
+    <p className={`${classes.indent1x}`}>
       Dakle, jedan lanac DNK ide od 5’ kraja do 3’ kraja, dok drugi ide od 3’ kraja do 5’ kraja, tj.
       antiparalelni su.
     </p>
@@ -177,8 +176,7 @@ const Lesson10 = () => (
     <img alt="" src="/assets/lesson10/pic32.svg" className={classes.indent2x} />
     <p className={`${classes.indent1x}`}>
       Izgled hromozoma je veoma karakterističan i prepoznatljiv: sastoji se od dve hromatide koje su
-      spojene jednom centromerom tako da liče na latinično slovo X. Sav genetski materijal se nalazi
-      u hromatidama.
+      spojene jednom centromerom tako da liče na X. Sav genetski materijal se nalazi u hromatidama.
     </p>
     <img alt="" src="/assets/lesson10/pic33.svg" className={classes.indent2x} />
     <p className={`${classes.indent1x}`}>

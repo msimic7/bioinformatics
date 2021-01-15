@@ -16,6 +16,23 @@ const Routes = () => (
     <Route path="/course/lesson13" component={() => <Course Lesson={Lessons.Lesson13} />} />
     <Route path="/course/lesson14" component={() => <Course Lesson={Lessons.Lesson14} />} />
     <Route path="/course/lesson15" component={() => <Course Lesson={Lessons.Lesson15} />} />
+    <Route path="/course/lesson20" component={() => <Course Lesson={Lessons.Lesson20} />} />
+    <Route path="/course/lesson21" component={() => <Course Lesson={Lessons.Lesson21} />} />
+    <Route path="/course/lesson211" component={() => <Course Lesson={Lessons.Lesson211} />} />
+    <Route path="/course/lesson2111" component={() => <Course Lesson={Lessons.Lesson2111} />} />
+    <Route path="/course/lesson2112" component={() => <Course Lesson={Lessons.Lesson2112} />} />
+    <Route path="/course/lesson2113" component={() => <Course Lesson={Lessons.Lesson2113} />} />
+    <Route path="/course/lesson212" component={() => <Course Lesson={Lessons.Lesson212} />} />
+    <Route path="/course/lesson213" component={() => <Course Lesson={Lessons.Lesson213} />} />
+    <Route path="/course/lesson214" component={() => <Course Lesson={Lessons.Lesson214} />} />
+    <Route path="/course/lesson215" component={() => <Course Lesson={Lessons.Lesson215} />} />
+    <Route path="/course/lesson216" component={() => <Course Lesson={Lessons.Lesson216} />} />
+    <Route path="/course/lesson22" component={() => <Course Lesson={Lessons.Lesson22} />} />
+    <Route path="/course/lesson221" component={() => <Course Lesson={Lessons.Lesson221} />} />
+    <Route path="/course/lesson222" component={() => <Course Lesson={Lessons.Lesson222} />} />
+    <Route path="/course/lesson223" component={() => <Course Lesson={Lessons.Lesson223} />} />
+    <Route path="/course/lesson224" component={() => <Course Lesson={Lessons.Lesson224} />} />
+    <Route path="/course/lesson23" component={() => <Course Lesson={Lessons.Lesson23} />} />
   </Switch>
 );
 

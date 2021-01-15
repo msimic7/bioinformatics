@@ -33,20 +33,60 @@ const Course = ({ Lesson }) => (
           </div>
         </div>
         <div className={classes.lesson}>
-          <div className={classes.lessonInit}># Problem poravnanja očitavanja</div>
-          <div className={classes.sublesson}># Problem tačnog podudaranja</div>
-          <div className={classes.subsublesson}># Boyer-Moore</div>
-          <div className={classes.subsublesson}># Offline i online algoritmie</div>
-          <div className={classes.subsublesson}># Indeksiranje i k-gram indeksi</div>
-          <div className={classes.subsublesson}># Implementacija indeksa</div>
-          <div className={classes.subsublesson}># Varijacije k-gram indeksa</div>
-          <div className={classes.subsublesson}># Indeksi genoma koji se koriste u praksi</div>
-          <div className={classes.sublesson}># Problem približnog podudaranja</div>
-          <div className={classes.subsublesson}># Dirihleov princip</div>
-          <div className={classes.subsublesson}># Dinamičko programiranje i edit distanca</div>
-          <div className={classes.subsublesson}># Novo rešenje za približno podudaranje</div>
-          <div className={classes.subsublesson}># Globalno i lokalno poravnanje</div>
-          <div className={classes.sublesson}># Problem poravnanje očitavanja u praksi</div>
+          <div className={classes.lessonInit}>
+            <Link to="/course/lesson20"># Problem poravnanja očitavanja</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson20"># Zašto je on težak?</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson21"># Problem tačnog podudaranja</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson211"># Boyer-Moore</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson2111"># Pravilo lošeg karaktera</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson2112"># Pravilo dobrog sufiksa</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson2113"># Boyer-Moore kao kombinacija dva pravila</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson212"># Offline i online algoritmi</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson213"># Indeksiranje i k-gram indeksi</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson214"># Implementacija indeksa</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson215"># Varijacije k-gram indeksa</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson216"># Indeksi genoma koji se koriste u praksi</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson22"># Problem približnog podudaranja</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson221"># Dirihleov princip</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson222"># Dinamičko programiranje i edit distanca</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson223"># Novo rešenje za približno podudaranje</Link>
+          </div>
+          <div className={classes.subsublesson}>
+            <Link to="/course/lesson224"># Globalno i lokalno poravnanje</Link>
+          </div>
+          <div className={classes.sublesson}>
+            <Link to="/course/lesson23"># Problem poravnanja očitavanja u praksi</Link>
+          </div>
         </div>
         <div className={classes.lesson}>
           <div className={classes.lessonInit}># Problem skapanja očitavanja</div>

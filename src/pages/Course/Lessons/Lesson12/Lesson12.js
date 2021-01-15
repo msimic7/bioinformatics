@@ -5,7 +5,7 @@ import classes from '../Lesson.module.scss';
 
 const Lesson12 = () => (
   <div className={classes.root}>
-    <h1>GENOM KAO STRING</h1>
+    <h1>GENOM KAO NISKA</h1>
     <p className={classes.indent1x}>
       DNK možemo predstaviti pomoću jednog njegovog lanca (drugi lanac dobijamo njegovim
       komplementiranjem). Taj DNK lanac predstavljamo kao niz njegovih nukleotida koje ćemo
@@ -14,28 +14,28 @@ const Lesson12 = () => (
     </p>
     <img alt="" src="/assets/lesson12/pic1.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
-      {`Tada deo DNK lanca koji je prikazan na slici možemo predstaviti kao string S koji sadrži
+      {`Tada deo DNK lanca koji je prikazan na slici možemo predstaviti kao nisku S koja sadrži
       elemente iz skupa {A, C, G, T}.`}
     </p>
     <img alt="" src="/assets/lesson12/pic2.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
-      {`Dakle, genom određenog organizma možemo predstaviti kao string čiji su karakteri iz skupa
+      {`Dakle, genom određenog organizma možemo predstaviti kao nisku čiji su karakteri iz skupa
       {A, C, G, T}.`}
     </p>
     <p className={classes.indent1x}>
       Na primer, deo genoma enterobakterije fag lambda je prikazan ispod.
     </p>
     <img alt="" src="/assets/lesson12/pic3.svg" className={classes.indent2x} />
-    <h2 className={classes.indent1x}>Rad sa stringovima</h2>
+    <h2 className={classes.indent1x}>Rad sa niskama</h2>
     <CodeEditor
       code={`
-      s = 'ACGTGCTAGCTAGCAGs'
+      s = 'ACGTGCTAGCTAGCAG'
       s`}
       result={`
       ACGTGCTAGCTAGCAG`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Duzina stringa:</p>
+    <p className={classes.indent2x}>Duzina niske:</p>
     <CodeEditor
       code={`
       len(s)`}
@@ -44,7 +44,7 @@ const Lesson12 = () => (
       customClass={classes.indent2x}
     />
     <pre className={`${classes.code} ${classes.indent2x}`} />
-    <p className={classes.indent2x}>Podstringovi datog stringa s:</p>
+    <p className={classes.indent2x}>Podniske date niske s:</p>
     <CodeEditor
       code={`
       s[2:6]`}
@@ -66,7 +66,7 @@ const Lesson12 = () => (
       GCAG`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Konkatenacija (nadovezivanje) dva stringa p i q:</p>
+    <p className={classes.indent2x}>Konkatenacija (nadovezivanje) dve niske p i q:</p>
     <CodeEditor
       code={`
       p = 'GCTAA'
@@ -76,7 +76,7 @@ const Lesson12 = () => (
       GCTAAACAAA`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Poređenje dva stringa:</p>
+    <p className={classes.indent2x}>Poređenje dve niske:</p>
     <CodeEditor
       code={`
       p == q`}
@@ -85,8 +85,8 @@ const Lesson12 = () => (
       customClass={classes.indent2x}
     />
     <p className={classes.indent2x}>
-      Funkcija s.join(l) vraća string dobijen nadovezivanjem elemenata liste l tako da je između
-      svakog elementa te liste dodat string s:
+      Funkcija s.join(l) vraća nisku dobijenu nadovezivanjem elemenata liste l tako da je između
+      svakog elementa te liste dodata niska s:
     </p>
     <CodeEditor
       code={`
@@ -117,7 +117,7 @@ const Lesson12 = () => (
       G`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Pravimo string dužine 10 (svako slovo je nasumično birano):</p>
+    <p className={classes.indent2x}>Pravimo niske dužine 10 (svako slovo je nasumično birano):</p>
     <CodeEditor
       code={`
       sekvenca = ''.join([random.choice('ACGT') for _ in range(10)])
@@ -126,9 +126,9 @@ const Lesson12 = () => (
       CTAAAGACAA`}
       customClass={classes.indent2x}
     />
-    <h2 className={classes.indent1x}>Manipulacija sa DNK stringovima</h2>
+    <h2 className={classes.indent1x}>Manipulacija sa DNK niskama</h2>
     <p className={classes.indent2x}>
-      Funkcija koja traži najveći zajednički prefiks za dva stringa s1 i s2:
+      Funkcija koja traži najveći zajednički prefiks za dve niske s1 i s2:
     </p>
     <CodeEditor
       code={`
@@ -167,7 +167,7 @@ const Lesson12 = () => (
     />
     <h2 className={classes.indent1x}>Kako parsiramo dati genom</h2>
     <p className={classes.indent2x}>
-      Fajl sa genomom enterobakterije fag lambda izgleda na sledeći način:
+      Datoteka sa genomom enterobakterije fag lambda izgleda na sledeći način:
     </p>
     <CodeEditor
       code={`
@@ -179,18 +179,18 @@ const Lesson12 = () => (
       ...`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Preuzimamo dati fajl koji sadrži genom ove bakterije:</p>
+    <p className={classes.indent2x}>Preuzimamo datoteku koja sadrži genom ove bakterije:</p>
     <CodeEditor
       code={`
       !wget http://d28rh4a8wq0iu5.cloudfront.net/ads1/data/lambda_virus.fa`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Čitamo genom iz fajla:</p>
+    <p className={classes.indent2x}>Čitamo genom iz datoteke:</p>
     <CodeEditor
       code={`
-      def procitajGenom(imeFajla):
+      def procitajGenom(imeDatoteke):
         genom = ''
-        with open(imeFajla,'r') as f:
+        with open(imeDatoteke,'r') as f:
           for line in f:
             if not line[0] == '>':
               genom += line.rstrip()

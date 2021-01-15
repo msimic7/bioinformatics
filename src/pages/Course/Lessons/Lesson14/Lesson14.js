@@ -51,16 +51,39 @@ const Lesson14 = () => (
       tabele i od njega oduzeti 33.{' '}
     </p>
     <p className={classes.indent4x}>Funkcije koje ćemo korsititi za to su sledeće:</p>
+
+    <CodeEditor
+      code={`
+      def QuFred33(Q):
+        return chr(Q + 33)
+        # Q je kvalitet baze koji je već zaokružen na ceo broj
+        # funkcija chr konvertuje ceo broj u odgovarajući karakter pomoću ASCII tabele
+        `}
+      result=""
+      customClass={classes.indent5x}
+    />
+    <CodeEditor
+      code={`
+      def fred33uQ(c):
+      return ord(c) - 33
+      # c je kvalitet baze koji je predstavljen metodom Fred 33 kao karakter
+      # funkcija ord konvertuje karakter u odgovarajući ceo broj pomoću ASCII tabele
+        `}
+      result=""
+      customClass={classes.indent5x}
+    />
+
     <img alt="" src="/assets/lesson14/pic6.svg" className={classes.indent5x} />
     <p className={classes.indent2x}>
-      Celokupan fajl u FASTQ formatu koji sadrži informacije o svim očitavanjima koje smo
-      sekvencionirali će biti predstavljen na sledeći način (ovde ćemo prikazati samo dva
-      očitavanja, iako će njih biti oko milion ili čak bilion):
+      Cela datoteka u FASTQ formatu koja sadrži informacije o svim očitavanjima koje smo
+      sekvencionirali će biti predstavljena na sledeći način (ovde ćemo prikazati samo dva
+      očitavanja, iako će njih biti oko milion ili čak milijardu):
     </p>
     <img alt="" src="/assets/lesson14/pic7.svg" className={classes.indent2x} />
     <h2 className={classes.indent1x}>Rad sa očitavanjima koja su u FASTQ formatu</h2>
     <p className={classes.indent2x}>
-      Učitavamo fajl koji je u FASTQ formatu i koji sadrži prvih 1000 očitavanja ljudskog genoma:
+      Učitavamo datoteku koja je u FASTQ formatu i koja sadrži prvih 1000 očitavanja ljudskog
+      genoma:
     </p>
     <CodeEditor
       code={`
@@ -69,16 +92,16 @@ const Lesson14 = () => (
       customClass={classes.indent2x}
     />
     <p className={classes.indent2x}>
-      Funkcija koja čita sekvence i kvalitete baza za svako očitavanje iz gore navedenog fajla:
+      Funkcija koja čita sekvence i kvalitete baza za svako očitavanje iz gore navedene datoteke:
     </p>
     <CodeEditor
       code={`
-      def procitajFASTQ(imeFajla):
-        # niz čiji su elementi sekvence svih očitavanja iz datog fajla
+      def procitajFASTQ(imeDatoteke):
+        # niz čiji su elementi sekvence svih očitavanja iz datoteke
         sekvence = []
-        # niz čiji su elementi kvaliteti baza svih očitavanja iz datog fajla
+        # niz čiji su elementi kvaliteti baza svih očitavanja iz datoteke
         kvaliteti = []
-        with open(imeFajla) as f:
+        with open(imeDatoteke) as f:
           while True:
             # preskačemo prvu liniju jer nam je to ime očitavanja
             f.readline()
@@ -101,9 +124,7 @@ const Lesson14 = () => (
       result=""
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>
-      Čitamo sekvence i kvalitete baza za prvih 5 očitavanja iz datog fajla:
-    </p>
+    <p className={classes.indent2x}>Čitamo sekvence i kvalitete baza za prvih 5 očitavanja:</p>
     <CodeEditor
       code={`
       for i in range(5):
@@ -238,7 +259,7 @@ const Lesson14 = () => (
       baza veći od zbira broja A i T baza.
     </p>
     <p className={classes.indent2x}>
-      Koristeći collections.Counter() sa kojim smo se već susreli dobijamo sledeće:
+      Koristeći collections.Counter(), sa kojim smo se već susreli, dobijamo sledeće:
     </p>
     <CodeEditor
       code={`
