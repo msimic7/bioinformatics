@@ -30,7 +30,7 @@ const Lesson222 = () => (
                 rastojanje += 1
         return rastojanje
     `}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Pre nego što implementiramo algoritam za edit rastojanje, pogledajmo sledeće nejednakosti:
@@ -54,9 +54,7 @@ const Lesson222 = () => (
       - |y|| promena.
     </p>
 
-    <p className={classes.indent1x}>
-      <b>ALGORITAM ZA EDIT RASTOJANJE</b>
-    </p>
+    <h2 className={classes.indent1x}>Algoritam za edit rastojanje</h2>
     <p className={classes.indent1x}>
       Posmatrajmo niske X i Y. Neka su date niske jako dugački, tako da ćemo prikazati samo njihov
       krajnji deo:
@@ -104,7 +102,7 @@ const Lesson222 = () => (
             # vraćamo minimum od ove tri distance
             return min(dist1, dist2, dist3)
     `}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Prikazana implementacija funkcije za edit rastojanje je jako spora. Kako bismo prikazali i
@@ -122,7 +120,7 @@ const Lesson222 = () => (
       result={`
     Edit rastojanje je: 2
     54.09838`}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Kao što možemo videti, trebalo nam je približno 54 sekunde, što je jako dugo za ovako kratke
@@ -164,7 +162,7 @@ const Lesson222 = () => (
     `}
       result={`
     n: 3366`}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       {`Ovo bi značilo da smo 3366 puta pozivali funkciju za argument ('AAGTGAT', 'AATGTGA') i svaki
@@ -230,7 +228,7 @@ const Lesson222 = () => (
         # Edit distanca je vrednost u donjem desnom uglu matrice 
         return E[-1][-1]
     `}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Vreme koje je potrebno za izvršavanje istog primera koji smo radili i za rekurzivnu verziju:
@@ -246,7 +244,7 @@ const Lesson222 = () => (
       result={`
       Edit rastojanje je: 3
       0.000832`}
-      className={classes.indent1x}
+      customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
       Dosta brže nego rekurzivna verzija, što smo i očekivali s obzirom na to da sada nemamo

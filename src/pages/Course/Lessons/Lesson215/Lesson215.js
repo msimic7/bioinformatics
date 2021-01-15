@@ -5,9 +5,7 @@ const Lesson215 = () => (
   <div className={classes.root}>
     <h1>VARIJACIJE K-GRAM INDEKSA</h1>
     <p className={classes.indent1x}>Posmatraćemo dve varijacije k-gram indeksa.</p>
-    <p className={classes.indent1x}>
-      <b>Indeks od svakog n-tog k-grama</b>
-    </p>
+    <h2 className={classes.indent1x}>Indeks od svakog n-tog k-grama</h2>
 
     <p className={classes.indent2x}>
       U prošlom delu smo gradili 5-gram indeks od teksta T tako što smo uzimali svaki 5-gram od T i
@@ -79,6 +77,43 @@ const Lesson215 = () => (
     </p>
     <p className={classes.indent1x}>Na primer:</p>
     <img alt="" src="/assets/lesson215/pic10.svg" className={classes.indent2x} />
+    <h2 className={classes.indent1x}>Indeks od podsekvenci</h2>
+    <p className={classes.indent2x}>U drugoj varijiciji indeks ćemo graditi pomoću podsekvenci.</p>
+    <p className={classes.indent2x}>Pokažimo to na prethodnom primeru:</p>
+    <p className={classes.indent2x}>PRIMER</p>
+    <img alt="" src="/assets/lesson215/pic11.svg" className={classes.indent3x} />
+    <p className={classes.indent3x}>
+      Umesto da uzmemo prvi 5-gram, uzimamo prvu podsekvencu određenog oblika (uzimamo dva
+      karaktera, pa jedan preskačemo, zatim uzimamo jedan karaktera, pa opet jedan preskačemo i na
+      kraju uzimamo još dva karaktera):
+    </p>
+    <p className={classes.indent3x}>korak1</p>
+    <img alt="" src="/assets/lesson215/pic12.svg" className={classes.indent4x} />
+    <p className={classes.indent3x}>
+      Zatim dodajemo u indeks drugu podekvencu koji ima isti oblik kao i prva:
+    </p>
+    <p className={classes.indent3x}>korak2</p>
+    <img alt="" src="/assets/lesson215/pic13.svg" className={classes.indent4x} />
+    <p className={classes.indent3x}>
+      Nastavljamo dalje dodavanje podsekvenci na isti način i dobijamo indeks:
+    </p>
+    <img alt="" src="/assets/lesson215/pic14.svg" className={classes.indent4x} />
+    <p className={classes.indent3x}>
+      Na sledećem primeru ćemo pokazati na koji način koristimo dati indeks:
+    </p>
+    <p className={classes.indent3x}>PRIMER</p>
+    <img alt="" src="/assets/lesson215/pic15.svg" className={classes.indent4x} />
+    <p className={classes.indent4x}>
+      Uzimamo prvu podsekvencu šablona P koja je istog oblika kao i podsekvence indeksa (uzećemo dva
+      karaktera, onda peskočiti jedan, zatim uzeti još jedan karakter, onda preskočiti još jedan
+      karaketer i na kraju uzeti jos 2 karaktera):
+    </p>
+    <img alt="" src="/assets/lesson215/pic16.svg" className={classes.indent5x} />
+    <p className={classes.indent2x}>
+      Ovom varijacijom indeksa povećavamo specifičnost indeksa, tj. ako imamo pogodak indeksa veća
+      je šansa da ćemo imati podudaranje šablona nego kod indeksa koji je građen od podniski
+      (uzastopnih karaktera).
+    </p>
   </div>
 );
 

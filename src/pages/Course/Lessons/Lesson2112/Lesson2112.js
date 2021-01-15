@@ -10,6 +10,7 @@ const Lesson2112 = () => (
       Kao i kod pravila lošeg karaktera, poređenje karaktera šablona i dela teksta, sa kojim je taj
       šablon poravnat, ide zdesna na levo:
     </p>
+    <p>PRIMER</p>
     <img alt="" src="/assets/lesson2112/pic1.svg" className={classes.indent1x} />
     <img alt="" src="/assets/lesson2112/pic2.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -113,13 +114,13 @@ const Lesson2112 = () => (
       gde je m dužina šablona P (jer je taj sufiks šablona prazan string) .
     </p>
     <p>Na primer, neka je dat sledeći šablon:</p>
-    <h2>PRIMER</h2>
+    <p>PRIMER</p>
     <img alt="" src="/assets/lesson2112/pic20.svg" className={classes.indent1x} />
     <p>{`Ako znamo pozicija_granice[k] za sve k iz skupa {i, i + 1, ... , m} (m je dužina šablona P), tada možemo odrediti i pozicija_granice[i - 1]:`}</p>
     <p className={classes.indent1x}>
       Neka je j = pozicija_granice[i] i neka je to niska s kao na slici:
     </p>
-    <img alt="" src="/assets/lesson2112/pic21.svg" className={classes.indent1x} />
+    <img alt="" src="/assets/lesson2112/pic21.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
       Vrednost pozicija_granice[i - 1] tražimo tako što posmatramo da li se granica s može proširiti
       sa p[i-1]. Ako je p[i-1] = p[j-1] onda se ona može proširiti i tada je pozicija_granice[i-1] =
@@ -131,7 +132,7 @@ const Lesson2112 = () => (
       biće na poziciji granica[j] jer je to najduža granica sufiksa s koji počinje na poziciji j.
       Označimo je sa j = pozicija_granice[j]:
     </p>
-    <img alt="" src="/assets/lesson2112/pic22.svg" className={classes.indent1x} />
+    <img alt="" src="/assets/lesson2112/pic22.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
       Ako je p[i-1] = p[j-1] onda se granica r može proširiti i pozicija_granice[i-1] = j-1. Inače,
       ako to nije slučaj onda koristimo najdužu granicu sufiksa r i novo j će nam biti j =
@@ -158,7 +159,6 @@ const Lesson2112 = () => (
     <CodeEditor
       code={`
     def preprocesiranje1(pomeraj, pozicija_granice, p, m): 
-
       # m je dužina šablona 
       i = m 
       j = m + 1
@@ -175,6 +175,7 @@ const Lesson2112 = () => (
         i -= 1
         j -= 1
         pozicija_granice[i] = j `}
+      customClass={classes.indent1x}
     />
     <p>
       Funkcija preprocesiranje2(p) određuje pomeraj za sve one sufikse šablona p koji ne
@@ -190,21 +191,21 @@ const Lesson2112 = () => (
     <p className={classes.indent1x}>{`1. |s| <= |t|`}</p>
     <img alt="" src="/assets/lesson2112/pic28.svg" className={classes.indent2x} />
     <p className={classes.indent2x}>Tada pomeramo šablon za pomeraj[i] = j:</p>
-    <img alt="" src="/assets/lesson2112/pic29.svg" className={classes.indent2x} />
+    <img alt="" src="/assets/lesson2112/pic29.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>{`2. |s| > |t|`}</p>
     <img alt="" src="/assets/lesson2112/pic30.svg" className={classes.indent2x} />
     <p className={classes.indent2x}>
       Tada tražimo nisku r koja je granica šablona P i koja je kraći od s, odnosno tražimo najdužu
       granicu od s:
     </p>
-    <img alt="" src="/assets/lesson2112/pic31.svg" className={classes.indent2x} />
+    <img alt="" src="/assets/lesson2112/pic31.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
       Imaćemo da je novo j = pozicija_granice[j] i jednu od sledeće dve situacije, kao i na početku:
     </p>
     <p className={classes.indent3x}>{`1.  i <= j :`}</p>
     <img alt="" src="/assets/lesson2112/pic32.svg" className={classes.indent4x} />
     <p className={classes.indent4x}>Šablon pomeramo za pomeraj[i] = j:</p>
-    <img alt="" src="/assets/lesson2112/pic33.svg" className={classes.indent4x} />
+    <img alt="" src="/assets/lesson2112/pic33.svg" className={classes.indent5x} />
     <p className={classes.indent3x}>{`2. i > j`}</p>
     <p className={classes.indent3x}>
       Ponavljamo isti postupak, odnosno tražimo najdužu granicu od r i ispitujemo da li je ona veće
@@ -224,6 +225,7 @@ const Lesson2112 = () => (
           if i == j:
             j = pozicija_granice[j]
     `}
+      customClass={classes.indent1x}
     />
     <h2>PRETRAGA</h2>
     <p>
@@ -233,7 +235,6 @@ const Lesson2112 = () => (
     <CodeEditor
       code={`
     def pretragaDobarSufiks(p, t): 
-
       # Pomeraj šablona u odnosu na tekst
       pom = 0
       m = len(p) 
@@ -266,6 +267,7 @@ const Lesson2112 = () => (
           pomeraj[j+1]  mesta'''
           pom += pomeraj[j + 1] 
     `}
+      customClass={classes.indent1x}
     />
     <p>
       Kako bi algritam bio u potpunosti jasan, detaljnije ćemo objasniti sledeća pomeranja, odnosno
@@ -276,7 +278,7 @@ const Lesson2112 = () => (
       code={`
       pom += pomeraj[0] 
     `}
-      className={classes.indent1x}
+      customClass={classes.indent1x}
     />
     <p className={classes.indent1x}>Posmatrajmo sledeći deo prethodnog primera:</p>
     <img alt="" src="/assets/lesson2112/pic34.svg" className={classes.indent2x} />
@@ -292,7 +294,7 @@ const Lesson2112 = () => (
       code={`
       pom += pomeraj[j + 1]
     `}
-      className={classes.indent1x}
+      customClass={classes.indent1x}
     />
     <p className={classes.indent1x}>Posmatrajmo sledeći deo prethodnog primera:</p>
     <img alt="" src="/assets/lesson2112/pic37.svg" className={classes.indent2x} />

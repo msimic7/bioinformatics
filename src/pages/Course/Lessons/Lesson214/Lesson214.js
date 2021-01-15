@@ -21,9 +21,7 @@ const Lesson214 = () => (
       na redosledu, kao što smo imali kod indeksa knjige, dok se druga bazira na grupisanju
       podataka, kao što smo imali kod grupisanja namirnica u prodavnici.
     </p>
-    <p className={classes.indent1x}>
-      <b>1. Lista</b>
-    </p>
+    <h2 className={classes.indent1x}>Lista</h2>
     <p className={classes.indent2x}>
       Prva struktura koju ćemo raditi bazira se na redosledu podataka.
     </p>
@@ -74,9 +72,7 @@ const Lesson214 = () => (
     </p>
     <img alt="" src="/assets/lesson214/pic12.svg" className={classes.indent4x} />
 
-    <p className={classes.indent1x}>
-      <b>2. Heš tabela</b>
-    </p>
+    <h2 className={classes.indent1x}>Heš tabela</h2>
     <p className={classes.indent2x}>
       Druga struktura jeste heš tabela koja se bazira na grupisanju podataka pomoću heš funkcije.
     </p>
@@ -149,19 +145,17 @@ const Lesson214 = () => (
       U Python-u koristimo rečnik jer on predstavlja implementaciju heš tabele. Rečnik se koristi na
       sledeći način:
     </p>
-    <CodeEditor customClass={classes.indent3x} />
     <CodeEditor
       code={`
-      >>> t = ‘GTGCGTGTGGGGG’
-      >>> indeks = {‘GTG’: [0, 4, 6],‘TGC’: [1], ‘GCG’: [2],
-                            ‘CGT’: [3], ‘TGT’: [5], ‘TGG’: [7], 
-                            ‘GGG’: [8, 9, 10] }
-      >>> indeks[‘GGG’]
-      [8, 9, 10]
-      >>> indeks[‘CGT’]
-      [3] 
+      t = ‘GTGCGTGTGGGGG’
+      indeks = {‘GTG’: [0, 4, 6],‘TGC’: [1], ‘GCG’: [2],
+                ‘CGT’: [3], ‘TGT’: [5], ‘TGG’: [7], 
+                ‘GGG’: [8, 9, 10] }
+      indeks[‘GGG’]
     `}
-      className={classes.indent3x}
+      result={`
+    [8, 9, 10]`}
+      customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
       U ovoj implementaciji detalji su sakriveni od nas, ne znamo koja se heš funkcija koristi, kao
@@ -169,6 +163,80 @@ const Lesson214 = () => (
       kada korsitimo rečnik zapravo koristimo heš tabelu koju smo malo pre prikazali.
     </p>
     <h2>Implemetacija indeksa pomoću liste</h2>
+
+    <p className={classes.indent1x}>
+      k-gram indeks teksta T kao lista parova (k-gram teksta T, pozicija početka tog k-grama u
+      tekstu T)
+    </p>
+    <CodeEditor
+      code={`
+import bisect
+import sys
+class Indeks:
+    def init(self, t, k):
+        ''' Kreira indeks od svih k-grama '''
+        self.k = k 
+        self.indeks = []
+        for i in range(len(t) - k + 1):  # za svaki k-gram
+            self.indeks.append((t[i:i+k], i))  # dodajemo par (k-gram, poziciju njegvog početka)
+        self.indeks.sort()  # sortiramo po k-gramima
+    
+    def pretrazi(self, p):
+        ''' Vraća pogotke indeksa za prvi k-gram šablona P '''
+        kgram = p[:self.k]  # prvi k-gram šablona P
+        i = bisect.bisect_left(self.indeks, (kgram, -1))  # binarna pretraga
+        pogodak_indeksa = []
+        # idemo od mesta gde smo naišli na prvi pogodak sve do kraja liste ili dok ne naiđemo na različiti k-gram
+        while i < len(self.indeks):
+            if self.indeks[i][0] != kgram:
+                break
+            pogodak_indeksa.append(self.indeks[i][1])
+            i += 1
+        return pogodak_indeksa
+    `}
+      customClass={classes.indent2x}
+    />
+    <p className={classes.indent1x}>
+      Kao što smo već i videli na primerima, ako je nešto pogodak indeksa, to ne mora značiti da će
+      biti sigurno podudaranje šablona sa tekstom, stoga moramo izvršiti verifikaciju.
+    </p>
+    <CodeEditor
+      code={`
+def pretragaUzPomocIndeksa(p, t, indeks):
+    k = indeks.k
+    pozicije_pojavljivanja = []
+    for i in indeks.pretrazi(p):
+        if p[k:] == t[i + k : i + len(p)]:  # verifikacija da li se ostatak šablona P poklapa sa tekstom
+            pozicije_pojavljivanja.append(i)
+    return pozicije_pojavljivanja
+    `}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+t = 'ACTTGGAGATCTTTGAGGCTAGGTATTCGGGATCGAAGCTCATTTCGGGGATCGATTACGATATGGTGGGTATTCGGGA'
+p = 'GGTATTCGGGA'
+    `}
+      customClass={classes.indent2x}
+    />
+    <CodeEditor
+      code={`
+indeks = Indeks(t, 4)
+print(pretragaUzPomocIndeksa(p, t, indeks))
+    `}
+      result={`
+    [21, 68]`}
+      customClass={classes.indent2x}
+    />
+    <p className={classes.indent1x}>Proveravamo da li je rešenje dobro:</p>
+    <CodeEditor
+      code={`
+t[21:21+len(p)] == p
+    `}
+      result={`
+    True`}
+      customClass={classes.indent2x}
+    />
   </div>
 );
 

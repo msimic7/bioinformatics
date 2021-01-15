@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import CodeEditor from '../../../../components/CodeEditor';
 import classes from '../Lesson.module.scss';
@@ -117,7 +116,7 @@ const Lesson12 = () => (
       G`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent2x}>Pravimo niske dužine 10 (svako slovo je nasumično birano):</p>
+    <p className={classes.indent2x}>Pravimo nisku dužine 10 (svako slovo je nasumično birano):</p>
     <CodeEditor
       code={`
       sekvenca = ''.join([random.choice('ACGT') for _ in range(10)])

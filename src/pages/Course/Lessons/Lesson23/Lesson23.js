@@ -10,7 +10,7 @@ const Lesson23 = () => (
       jeste kombinacija indeksiranja i dinamičkog programiranja.
     </p>
     <p className={classes.indent1x} />
-    <h2> KOMBINACIJA INDEKSIRANJA I DINAMIČKOG PROGRAMIRANJA </h2>
+    <h2 className={classes.indent1x}> KOMBINACIJA INDEKSIRANJA I DINAMIČKOG PROGRAMIRANJA </h2>
     <p className={classes.indent1x}>
       Pomoću indeksa određujemo <b>potencijalne</b> pozicije na kojima se dešava približno
       podudaranje očitavanja sa genomom:

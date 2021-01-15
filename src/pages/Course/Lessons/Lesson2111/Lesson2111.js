@@ -12,7 +12,7 @@ const Lesson2111 = () => (
     <p>- nepodudaranje postane podudaranje ili</p>
     <p>- šablon P ne prođe mesto (karakter) na kojem se desilo nepodudaranje.</p>
     <p>Kako bismo približili ovo pravilo, pogledajmo sledeći primer:</p>
-    <h2>PRIMER</h2>
+    <p>PRIMER</p>
     <img alt="" src="/assets/lesson2111/pic1.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
       Krećemo od prvog poravnanja i radimo poređenje karaktera zdesna na levo.
@@ -84,6 +84,7 @@ const Lesson2111 = () => (
                 losKarakter[i][mapaKaraktera['T']] = losKarakter[i - 1][mapaKaraktera['T']]
             losKarakter[i][mapaKaraktera[niska[i]]] = i
         return losKarakter`}
+      customClass={classes.indent1x}
     />
     <p>U prethodnom primeru lista losKarakter bi imala sledeće vrednosti:</p>
     <img alt="" src="/assets/lesson2111/pic14.svg" className={classes.indent1x} />
@@ -136,6 +137,7 @@ const Lesson2111 = () => (
                     u šablonu levo od karaktera nepodudaranja.
                 '''
                 pom += j - losKarakter[j - 1][mapaKaraktera[t[pom + j]]]`}
+      customClass={classes.indent1x}
     />
     <p>
       Kako bi algritam bio u potpunosti jasan, detaljnije ćemo objasniti sledeća pomeranja, odnosno
@@ -145,7 +147,7 @@ const Lesson2111 = () => (
     <CodeEditor
       code={`
       pom += (m - losKarakter[m-1][mapaKaraktera[t[pom + m]]] if pom + m < n else 1)`}
-      className={classes.indent1x}
+      customClass={classes.indent1x}
     />
     <p className={classes.indent1x}>Posmatrajmo sledeći deo prethodnog primera:</p>
     <img alt="" src="/assets/lesson2111/pic15.svg" className={classes.indent2x} />
@@ -173,13 +175,13 @@ const Lesson2111 = () => (
     <CodeEditor
       code={`
       pom += j - losKarakter[j - 1][mapaKaraktera[t[pom + j]]]`}
-      className={classes.indent1x}
+      customClass={classes.indent1x}
     />
     <p className={classes.indent1x}>Posmatrajmo sledeći deo prethodnog primera:</p>
     <img alt="" src="/assets/lesson2111/pic19.svg" className={classes.indent2x} />
     <p className={classes.indent2x}>
       Dolazimo do nepodudaranja na poziciji j=4 (karakter T). To je karakter t[pom + j] = t[0 + 4] =
-      t[4] = ‘C’ teksta T.{' '}
+      t[4] = ‘C’ teksta T.
     </p>
     <p className={classes.indent2x}>
       Tražimo karakter C u šablonu levo od pozicije nepodudaranja odnosno u prefiksu šablona koji ne

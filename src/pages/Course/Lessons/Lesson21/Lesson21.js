@@ -5,33 +5,36 @@ import CodeEditor from '../../../../components/CodeEditor';
 const Lesson21 = () => (
   <div className={classes.root}>
     <h1>PROBLEM TAČNOG PODUDARANJA</h1>
-    <p>
+    <p className={classes.indent1x}>
       U ovom problemu tražimo sve pozicije na kojima šablon P počinje u tekstu T. Šablon P je kao
       igla, a tekst T kao plast sena u kojem tražimo tu iglu.
     </p>
-    <p>Posmatrajmo sledeći primer:</p>
-    <img alt="" src="/assets/lesson21/pic1.svg" className={classes.indent1x} />
-    <p className={classes.indent1x}>
+    <p className={classes.indent1x}>Posmatrajmo sledeći primer:</p>
+    <img alt="" src="/assets/lesson21/pic1.svg" className={classes.indent2x} />
+    <p className={classes.indent2x}>
       U ovom primeru imamo šablon P koji je engleska reč word i imamo tekst T u kojem se šablon P
       pojavljuje jednom i to pred sam kraj, počevši na poziciji 40.
     </p>
-    <p className={classes.indent1x}>
+    <p className={classes.indent2x}>
       Ovo je pojednostavljena verzija problema poravnjanja očitavanja, ali je sjajno mesto za
       početak njegove analize.
     </p>
-    <p>Naivna implementacija algoritma za tačno podudaranje.</p>
-    <h2>PROBLEM TAČNOG PODUDARANJA</h2>
+    <h2 className={classes.indent1x}>Naivna implementacija algoritma za tačno podudaranje</h2>
     <p className={classes.indent1x}>
+      Kako bismo definisali algoritam za dati problem, prvo moramo da precizno definišemo problem:
+    </p>
+    <p className={classes.indent1x}>PROBLEM TAČNOG PODUDARANJA</p>
+    <p className={classes.indent2x}>
       ulaz: niska P koji predstavlja šablon, niska T koji predstavlja tekst
     </p>
-    <p className={classes.indent1x}>izlaz: sve pozicije u tekstu T gde počinje šablon P</p>
-    <p>
+    <p className={classes.indent2x}>izlaz: sve pozicije u tekstu T gde počinje šablon P</p>
+    <p className={classes.indent1x}>
       Prvo ćemo pokušati da rešimo dati problem na što jednostavniji način. Posmatrajmo opet isti
       primer kao na početku. Probaćemo sva moguća poravnanja šablona P sa tekstom T, odnosno za
       svaku poziciju ćemo proveriti da li dati šablon P počinje na njoj:
     </p>
-    <img alt="" src="/assets/lesson21/pic2.svg" className={classes.indent1x} />
-    <p>
+    <img alt="" src="/assets/lesson21/pic2.svg" className={classes.indent2x} />
+    <p className={classes.indent1x}>
       Implementacija u Python-u naivnog algoritam koji funkioniše na ovaj način će biti sledeća:
     </p>
     <CodeEditor
@@ -52,59 +55,60 @@ const Lesson21 = () => (
                 pojavljivanja.append(i)`}
       customClass={classes.indent2x}
     />
-    <p>Pre nego što nastavimo dalje, odgovorićemo na sledeća pitanja:</p>
     <p className={classes.indent1x}>
+      Pre nego što nastavimo dalje, odgovorićemo na sledeća pitanja:
+    </p>
+    <p className={classes.indent2x}>
       1. Ako imamo šablon P dužine x i tekst T dužine y, koliko ćemo imati poravnanja?
     </p>
-    <img alt="" src="/assets/lesson21/pic3.svg" className={classes.indent2x} />
-    <p className={classes.indent2x}>Imaćemo y - x + 1 poravnanja.</p>
-    <p className={classes.indent1x}>
+    <img alt="" src="/assets/lesson21/pic3.svg" className={classes.indent3x} />
+    <p className={classes.indent3x}>Imaćemo y - x + 1 poravnanja.</p>
+    <p className={classes.indent2x}>
       2. Ako imamo šablon P dužine x i tekst T dužine y, koliki je najveći mogući broj poređenja
       karaktera?
     </p>
-    <img alt="" src="/assets/lesson21/pic4.svg" className={classes.indent2x} />
-    <p className={classes.indent2x}>
+    <img alt="" src="/assets/lesson21/pic4.svg" className={classes.indent3x} />
+    <p className={classes.indent3x}>
       Najveći mogući broj poređenja karaktera će biti x(y- x + 1), tj. to će biti ona situacija u
       kojoj će se šablon poklapati sa svakim poravnanjem koje postoji, na primer:
     </p>
-    <img alt="" src="/assets/lesson21/pic5.svg" className={classes.indent3x} />
-    <p className={classes.indent3x}>
+    <img alt="" src="/assets/lesson21/pic5.svg" className={classes.indent4x} />
+    <p className={classes.indent4x}>
       U ovom primeru moraćemo da prođemo kroz proveru svih poravnanja i svako poravnanje će
       rezultirati uspehom.
     </p>
-    <p className={classes.indent1x}>
+    <p className={classes.indent2x}>
       3. Ako imamo šablon P dužine x i tekst T dužine y, koliki je najmanji mogući broj poređenja
       karaktera?
     </p>
-    <img alt="" src="/assets/lesson21/pic6.svg" className={classes.indent2x} />
-    <p className={classes.indent2x}>
+    <img alt="" src="/assets/lesson21/pic6.svg" className={classes.indent3x} />
+    <p className={classes.indent3x}>
       Najmanji mogući broj poređenja karaktera će biti y- x + 1, tj. to će biti ona situacija u
       kojoj ćemo odmah na početku svakog poravnanja doći do neslaganja karaktera, na primer:
     </p>
-    <img alt="" src="/assets/lesson21/pic7.svg" className={classes.indent2x} />
-    <p>Vratimo se na primer sa početka:</p>
-    <img alt="" src="/assets/lesson21/pic8.svg" className={classes.indent1x} />
-    <p className={classes.indent1x}>
+    <img alt="" src="/assets/lesson21/pic7.svg" className={classes.indent3x} />
+    <p className={classes.indent1x}>Vratimo se na primer sa početka:</p>
+    <img alt="" src="/assets/lesson21/pic8.svg" className={classes.indent2x} />
+    <p className={classes.indent2x}>
       Ono što nas zanima jeste koliko smo ovde poređenja karaktera imali?
     </p>
-    <img alt="" src="/assets/lesson21/pic9.svg" className={classes.indent2x} />
-    <p className={classes.indent2x}>
+    <img alt="" src="/assets/lesson21/pic9.svg" className={classes.indent3x} />
+    <p className={classes.indent3x}>
       Imali smo ukupno 40 neslaganja i 6 slaganja, odnosno 46 poređenja karaktera.
     </p>
-    <pre className={classes.indent2x}>
+    <pre className={classes.indent3x}>
       {`Kako je x = |P| = 4
                y = |T| = 44`}
     </pre>
-    <p className={classes.indent2x}>
+    <p className={classes.indent3x}>
       U najboljem slučaju to bi bilo 44 - 4 + 1 = 41, a u najgorem 4*(44 - 4 + 1) = 164 poređenja
       karaktera. Samim tim, rezultat broja poređenja karaktera je mnogo bliži najboljem slučaju,
       nego što je najgorem. Ovo važi za ovaj primer, ali se ispostavlja da to nije samo za njega
       tako, nego i za mnoge druge primere u praksi.
     </p>
-    <h2>Naivni algoritam za tačno podudaranje</h2>
+    <h2>Primena naivnog algoritma</h2>
     <p className={classes.indent1x}>
-      U ovom delu ćemo raditi Naivni algoritam za tačno podudaranje. Genom nad kojim ćemo ga
-      testirati biće genom od phi X organizma.
+      Genom nad kojim ćemo testirati naivni algoritam biće genom od phi X organizma.
     </p>
     <p className={classes.indent1x}>Njega preuzimamo pomoću komande:</p>
     <CodeEditor
@@ -121,7 +125,6 @@ const Lesson21 = () => (
                 if not line[0] == '>':
                     genom += line.rstrip()
         return genom
-
     genom = procitajGenom('phix.fa')
     genom`}
       result={`
@@ -178,7 +181,7 @@ const Lesson21 = () => (
         AG`}
       customClass={classes.indent2x}
     />
-    <h2>Podudaranja sa veštački napravljenim očitavanjima</h2>
+    <h2 className={classes.indent1x}>Podudaranja sa veštački napravljenim očitavanjima</h2>
     <p className={classes.indent1x}>Sledeća funkcija generiše nasumična očitavanja.</p>
     <CodeEditor
       code={`
@@ -193,12 +196,13 @@ const Lesson21 = () => (
         AG`}
       customClass={classes.indent2x}
     />
-    <p className={classes.indent1x}>Sledeća funkcija generiše nasumična očitavanja.</p>
+    <p className={classes.indent1x}>
+      Primenjujemo naivni algoritam nad veštački napravljenim očitavanjima:
+    </p>
     <CodeEditor
       code={`
     #kontruišemo 100 očitavanja dužine 100
     ocitavanja = generisiOcitavanja(genom, 100, 100)
-
     #brojimo koliko se očitavanja poklapa sa nekim delom genoma
     brojPodudaranja = 0
     for o in ocitavanja:
@@ -211,9 +215,9 @@ const Lesson21 = () => (
     100 / 100 ocitavanja se poklapa!`}
       customClass={classes.indent2x}
     />
-    <h2>Podudaranja sa realnim sekvencionim očitavanjima</h2>
+    <h2 className={classes.indent1x}>Podudaranja sa realnim sekvencionim očitavanjima</h2>
     <p className={classes.indent1x}>
-      Sada ćemo koristiti realna sekvencionim očitavanjima. Preuzimamo ih na sledeći način:
+      Sada ćemo koristiti realna sekvenciona očitavanja. Preuzimamo ih na sledeći način:
     </p>
     <CodeEditor
       code={`
