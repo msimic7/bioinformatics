@@ -8,7 +8,7 @@ const Layout = ({ children }) => (
     <Navbar />
     {children}
     <div className={classes.footer}>
-      <p>Made by Milica Simic and Milan Simic</p>
+      <p>Made by Milica Simić and Milan Simić</p>
     </div>
   </>
 );
