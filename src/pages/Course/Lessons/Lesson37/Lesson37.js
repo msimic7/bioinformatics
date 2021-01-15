@@ -3,7 +3,7 @@ import classes from '../Lesson.module.scss';
 
 const Lesson36 = () => (
   <div className={classes.root}>
-    <h1>Problemi sa kojima se susrećemo</h1>
+    <h1>LITERATURA</h1>
   </div>
 );
 

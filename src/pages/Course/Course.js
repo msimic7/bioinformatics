@@ -110,8 +110,8 @@ const Course = ({ Lesson }) => (
           <div className={classes.sublesson}>
             <Link to="/course/lesson36"># Problem poravnanja očitavanja u praksi</Link>
           </div>
-          <div className={classes.sublesson}>
-            <Link to="/course/lesson37"># Problemi sa kojima se susrećemo</Link>
+          <div className={classes.lessonInit}>
+            <Link to="/course/lesson37"># Literatura</Link>
           </div>
         </div>
       </div>
