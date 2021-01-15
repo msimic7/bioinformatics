@@ -5,7 +5,7 @@ import CodeEditor from '../../../../components/CodeEditor';
 
 const Lesson14 = () => (
   <div className={classes.root}>
-    <h1>FASTQ format za čuvanje očitavanja dobijenih prilikom sekvencioniranja</h1>
+    <h1>FASTQ FORMAT ZA ČUVANJE OČITAVANJA DOBIJENIH PRILIKOM SEKVENCIONIRANJA </h1>
     <p className={classes.indent1x}>
       FASTQ format jeste tekstualni format za čuvanje svih očitavanja koja smo dobili prilikom DNK
       sekvencioniranja.

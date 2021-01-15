@@ -14,6 +14,12 @@
   border-right: rgb(22, 27, 34) solid 2px;
   padding: 24px 16px 16px 16px;
   overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .currentLesson {
@@ -31,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .lesson {
@@ -54,7 +60,7 @@
 
 .sublesson {
   margin-left: 16px;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
 
   & a {

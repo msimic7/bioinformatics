@@ -3,7 +3,7 @@ import classes from '../Lesson.module.scss';
 
 const Lesson34 = () => (
   <div className={classes.root}>
-    <h1>Ojlerova teorema</h1>
+    <h1>OJLEROVA TEOREMA</h1>
   </div>
 );
 
