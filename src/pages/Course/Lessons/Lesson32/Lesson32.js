@@ -31,7 +31,7 @@ const Lesson32 = () => (
     <p className={classes.indent2x}>korak1</p>
     <img alt="" src="/assets/lesson32/pic6.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>
-      Imamo tri AT čvora, stoga ćemo ih prvo približiti tako da budu jedan ispod drugog:
+      Imamo tri AT čvora. Prvo ih približavamo tako da budu jedan ispod drugog:
     </p>
     <img alt="" src="/assets/lesson32/pic7.svg" className={classes.indent4x} />
     <p className={classes.indent3x}>Zatim ih spajajmo u jedan čvor:</p>
@@ -43,15 +43,15 @@ const Lesson32 = () => (
     <img alt="" src="/assets/lesson32/pic10.svg" className={classes.indent4x} />
     <p className={classes.indent2x}>korak3</p>
     <p className={classes.indent3x}>
-      Na kraju nam ostaju samo još dva identična čvora, cvorovi GG:
+      Na kraju nam ostaju samo još dva identična čvora, čvorovi GG:
     </p>
     <img alt="" src="/assets/lesson32/pic11.svg" className={classes.indent4x} />
     <p className={classes.indent3x}>Spajamo ih:</p>
     <img alt="" src="/assets/lesson32/pic12.svg" className={classes.indent4x} />
 
     <p className={classes.indent2x}>
-      Kao rezultat dobijamo graf kojim ćemo se baviti u ovom delu, takozvani{' '}
-      <b>Brujinov graf niske</b>:
+      Kao rezultat dobijamo graf kojim ćemo se baviti u ovom delu, takozvani
+      <b>De Brujinov graf</b>:
     </p>
     <img alt="" src="/assets/lesson32/pic13.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>
@@ -100,7 +100,8 @@ const Lesson32 = () => (
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
-      Nakon objašnjenja da genom možemo naći pomoću Ojlerove putanje, uvodimo sledeći problem:
+      Sada naš problem rekonstrukcije niske na osnovu njene kolekcije možemo definisati na sledeći
+      način:
     </p>
     <p className={classes.indent1x}>PROBLEM OJLEROVE PUTANJE</p>
     <p className={classes.indent2x}>ulaz: graf Graf</p>
@@ -156,8 +157,8 @@ const Lesson32 = () => (
     <p className={classes.indent1x}>
       Međutim, ispostavlja se da ova dva problema imaju različitu algoritamsku sudbinu. Za problem
       Hamiltonove putanje (koji je NP-kompletan problem) ne postoji efikasan algoritam koji ga
-      rešava, dok za problem Ojlerove putanje to nije slučaj (Ojler našao efikasan algoritam za
-      njegovo rešavanje). Samim tim, u nastavku ćemo se fokusirati na Ojlerov problem i prikazati ga
+      rešava, dok za problem Ojlerove putanje to nije slučaj (Ojler je našao efikasan algoritam za
+      taj problem). Samim tim, u nastavku ćemo se fokusirati na Ojlerov problem i prikazati ga
       detaljnije.
     </p>
   </div>

@@ -90,7 +90,7 @@ const Course = ({ Lesson }) => (
         </div>
         <div className={classes.lesson}>
           <div className={classes.lessonInit}>
-            <Link to="/course/lesson30"># Problem skapanja očitavanja</Link>
+            <Link to="/course/lesson30"># Problem preklapanja očitavanja</Link>
           </div>
           <div className={classes.sublesson}>
             <Link to="/course/lesson31"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
