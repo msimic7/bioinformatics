@@ -15,7 +15,7 @@ const Lesson35 = () => (
     <p className={classes.indent1x}>
       Ono što smo izostavili jeste da dati graf može imati više od jedne Ojlerove putanje. U datom
       primeru postoji još jedna Ojlerova putanja (kada prvi put dođemo do čvora TG, ići ćemo ka GG
-      čvoru, a ne ka GC, kao što smo to radili pri kreiranju prve Ojlerove piutanje). Na osnovu nje
+      čvoru, a ne ka GC, kao što smo to radili pri kreiranju prve Ojlerove putanje). Na osnovu nje
       dobijamo sledeći genom:
     </p>
     <img alt="" src="/assets/lesson35/pic3.svg" className={classes.indent2x} />
@@ -30,10 +30,10 @@ const Lesson35 = () => (
     </p>
     <img alt="" src="/assets/lesson35/pic5.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
-      Idealna situacija bi bila kada bismo imali samo jednu takvu podnisku, odnosno jedan genom koji
-      bismo dobili na osnovu ovog grafa. Kako nije uvek moguće da nemamo grananja u grafu, ono što
-      možemo uraditi jeste da smanjimo broj grananja, odnosno da smanjimo broj ovih podniski radi
-      dobijanja jedinstvenog genoma. To postižemo korišćenjem <b>parova očitavanja</b>:
+      Idealna situacija bi bila kada bismo imali samo jednu takvu podnisku (koja bi zapravo
+      predstavljala ceo genom). Kako nije uvek moguće da nemamo grananja u grafu, ono što možemo
+      uraditi jeste da smanjimo broj grananja, odnosno da smanjimo broj ovih podniski radi dobijanja
+      jedinstvenog genoma. To postižemo korišćenjem <b>parova očitavanja</b>:
     </p>
     <img alt="" src="/assets/lesson35/pic6.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
@@ -71,8 +71,8 @@ const Lesson35 = () => (
     <p className={classes.indent2x}>
       Želimo da na osnovu očitavanja sastavimo genom za koga će važiti da je njegova uparena 3-gram
       kompozicija baš dati niz očitavanja. To radimo pomoću uparenog De Brujinovog grafa, kojeg
-      formiramo na sličan način kao i De Brujinov graf (kod dela o De Brujinovog grafa smo pokazali
-      jedan način njegovog formiranja, ovde čemo drugi):
+      formiramo na sličan način kao i De Brujinov graf (kod dela o De Brujinovom grafu smo prikazali
+      jedan način njegovog formiranja, ovde ćemo drugi):
     </p>
     <p className={classes.indent2x}>
       1. Od svakog uparenog 3-grama pravimo dva čvora koja predstavljaju njegov prefiks i sufiks
@@ -100,17 +100,16 @@ const Lesson35 = () => (
     <p className={classes.indent2x}>korak6 </p>
     <img alt="" src="/assets/lesson35/pic18.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>korak7 </p>
-    <img alt="" src="/assets/lesson35/pic19.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>korak8 </p>
     <img alt="" src="/assets/lesson35/pic20.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>korak9 </p>
+    <p className={classes.indent2x}>korak8 </p>
     <img alt="" src="/assets/lesson35/pic21.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>korak10 </p>
+    <p className={classes.indent2x}>korak9 </p>
     <img alt="" src="/assets/lesson35/pic22.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>korak11 </p>
+    <p className={classes.indent2x}>korak10 </p>
     <img alt="" src="/assets/lesson35/pic23.svg" className={classes.indent3x} />
-    <p className={classes.indent2x}>korak12 </p>
+    <p className={classes.indent2x}>korak11 </p>
     <img alt="" src="/assets/lesson35/pic24.svg" className={classes.indent3x} />
+    <p className={classes.indent2x} />
     <p className={classes.indent2x}>Na kraju dobijamo upareni De Brujinov graf:</p>
     <img alt="" src="/assets/lesson35/pic25.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>
@@ -120,8 +119,7 @@ const Lesson35 = () => (
     <p className={classes.indent1x}>
       Upareni De Brujinov graf se formira na sličan način kao i De Brujinov graf, osim što je za
       njegovo formiranje potrebno manje spajanja. On je jednostavniji za rad i njegova glavna
-      prednost, kao što smo i pokazali na prethodnom primeru, je ta što on daje jedinstveni genom,
-      za razliku od De Brujinovog grafa na osnovu koga smo u prikazanom primeru dobili dva genoma.
+      prednost, kao što smo i pokazali na prethodnom primeru, je ta što on daje jedinstveni genom.
     </p>
   </div>
 );

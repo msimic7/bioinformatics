@@ -25,22 +25,23 @@ const Lesson31 = () => (
       Na primer, povezaćemo TAA sa AAT jer je sufiks2(TAA) = prefiks2(AAT) = AA.
     </p>
     <p className={classes.indent2x}>
-      Dakle, kako bismo dobili genom, povežaćemo svaka dva ćvora koja se preklapaju za 2-gram:
+      Dakle, kako bismo dobili genom, povezaćemo svaka dva čvora koja se preklapaju za 2-gram:
     </p>
     <img alt="" src="/assets/lesson31/pic4.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
-      Međutim, ovde ćemo imati još čvorova koji se preklapaju za 2-gram, tj. imaćemo još veza:
+      Međutim, ovde ćemo imati još čvorova koji se preklapaju za 2-gram, tj. imaćemo još veza (grana
+      grafa):
     </p>
     <img alt="" src="/assets/lesson31/pic5.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>Da li još uvek možemo da nađemo genom pomoću ovog grafa?</p>
-    <p className={classes.indent3x}>Možemo. To će biti ista putanja kao malo pre:</p>
+    <p className={classes.indent3x}>Možemo. To će biti ista putanja kao i malo pre:</p>
     <img alt="" src="/assets/lesson31/pic6.svg" className={classes.indent4x} />
 
     <p className={classes.indent1x}>
       Primetimo da smo u ovom primeru malo varali. Postavili smo čvorove u redosledu koji odgovara
       njihovom redosledu u genomu. U realnosti, njihove pozicije, tj. njihov redosled, nije poznat.
       Stoga, ako reorganizujemo redosled čvorova, problem sastavljanja genoma, tj. pronalaska
-      odgovarajuće putanje je teži.
+      odgovarajuće putanje, je teži.
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -55,6 +56,7 @@ const Lesson31 = () => (
     </p>
 
     <p className={classes.indent3x}>korak1</p>
+    <p className={classes.indent4x}>Krećemo od čvora TAA jer on nema nijednu ulaznu granu.</p>
     <img alt="" src="/assets/lesson31/pic9.svg" className={classes.indent4x} />
 
     <p className={classes.indent3x}>korak2</p>
