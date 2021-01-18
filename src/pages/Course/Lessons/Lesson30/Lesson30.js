@@ -12,7 +12,6 @@ const Lesson30 = () => (
       Oni se zatim sastavljaju pomoću kompjuterskih programa koji pronalaze gde se fragmenti
       preklapaju.
     </p>
-    <p className={classes.indent1x} />
     <p className={classes.indent1x}>Posmatrajmo primer u kome imamo sledeća očitavanja:</p>
     <img alt="" src="/assets/lesson30/pic1.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
@@ -25,8 +24,8 @@ const Lesson30 = () => (
     <p className={classes.indent2x}>izlaz: niska Genom rekonstruisana na osnovu Ocitavanja</p>
     <p className={classes.indent1x}>
       Ovaj problem nije dobro definisan, jer nismo definisali način na koji koristimo očitavanja pri
-      rekonstrukciji genoma. Stoga, pre nego što definišemo korektan problem, moramo definisati
-      k-gram kompoziciju niske:
+      rekonstrukciji genoma. Pre nego što definišemo korektan problem, potrebno je definisati k-gram
+      kompoziciju niske:
     </p>
     <img alt="" src="/assets/lesson30/pic0.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>PRIMER. Naći 3-gram kompoziciju niske TAATGCCATGGGATGTT.</p>
@@ -38,7 +37,7 @@ const Lesson30 = () => (
       Ocitavanja
     </p>
     <p className={classes.indent1x}>
-      Sada imamo korektno definisan problem. Želimo da steknemo intucijiu, stoga ćemo prvo
+      Sada imamo korektno definisan problem. Želimo da steknemo intuiciju. Samim tim, prvo ćemo
       posmatrati najprirodniji način za njegovo rešavanje. Posmatrajmo prethodni primer i 3-grame
       koje smo dobili u njemu:
     </p>
