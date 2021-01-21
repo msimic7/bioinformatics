@@ -126,8 +126,32 @@ const Lesson34 = () => (
     <p className={classes.indent1x}>
       Na osnovu ovog primera možemo napisati algoritam za pronalazak Ojlerovog cilkusa.
     </p>
+    <p className={classes.indent1x} />
+    <p className={classes.indent1x}>
+      De Brujinov graf nije balansiran. Da bismo u njemu mogli pronaći Ojlerov ciklus, a zatim i
+      Ojlerovu putanju, moramo dodati jednu granu koja će povezati njegov prvi i poslednji čvor, tj.
+      koja će povezati dva čvora tog grafa od kojih jedan nema nijednu ulaznu granu (početni čvor),
+      dok drugi nema nijednu izlaznu granu (krajnji čvor). Kako to radimo pokazaćemo na sledećem
+      primeru:
+    </p>
+    <p className={classes.indent1x}>PRIMER</p>
+    <img alt="" src="/assets/lesson34/pic31.svg" className={classes.indent2x} />
+    <p className={classes.indent2x}>
+      Dobijeni De Brujinov graf postaje balansiran dodavanjem sledeće grane (jer za sve čvorove važi
+      da imaju jednak broj ulaznih i izlaznih grana, sem za početni i krajnji čvor):
+    </p>
+    <img alt="" src="/assets/lesson34/pic32.svg" className={classes.indent3x} />
+    <p className={classes.indent2x}>
+      Sada će svaki čvor imati jednak broj ulaznih i izlaznih grana, tj. dati graf će biti
+      balansiran, pa će u njemu postojati Ojlerov ciklus:
+    </p>
+    <img alt="" src="/assets/lesson34/pic33.svg" className={classes.indent3x} />
+    <p className={classes.indent2x}>
+      Ojlerovu putanju dobijamo tako što obrišemo granu koju smo prethodno dodali:
+    </p>
+    <img alt="" src="/assets/lesson34/pic34.svg" className={classes.indent2x} />
     <h2 className={classes.indent1x}>
-      Implementacija algoritma koji pronalazi Ojlerov ciklus u grafu
+      Implementacija algoritma koji pronalazi Ojlerov ciklus i u grafu
     </h2>
   </div>
 );

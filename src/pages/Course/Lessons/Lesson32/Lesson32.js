@@ -5,8 +5,9 @@ const Lesson32 = () => (
   <div className={classes.root}>
     <h1> REKONSTRUKCIJA NISKE KAO OJLEROVA PUTANJA </h1>
     <p className={classes.indent1x}>
-      Posmatrali smo prirodan način za rešavanje problema preklapanja očitavanja, odnosno problema
-      Hamiltonove putanje. Ono što nismo pomenuli jeste da možemo imati više takvih putanja:
+      U prethodnom delu smo problem rekonstrukcije niske na osnovu njene kompozicije rešavali pomoću
+      Hamiltonove putanje u grafu koji smo formirali na osnovu njene kompozicije. Ono što nismo
+      pomenuli jeste da možemo imati više takvih putanja:
     </p>
     <p className={classes.indent2x}>Putanja koju smo dobili u prethodnom delu:</p>
     <img alt="" src="/assets/lesson32/pic1.svg" className={classes.indent3x} />
@@ -100,7 +101,7 @@ const Lesson32 = () => (
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
-      Sada naš problem rekonstrukcije niske na osnovu njene kolekcije možemo definisati na sledeći
+      Sada naš problem rekonstrukcije niske na osnovu njene kompozicije možemo definisati na sledeći
       način:
     </p>
     <p className={classes.indent1x}>PROBLEM OJLEROVE PUTANJE</p>
@@ -138,8 +139,8 @@ const Lesson32 = () => (
       problemu koji rešavamo.
     </p>
     <p className={classes.indent1x}>
-      Nakon prikaza ovog problema, sada imamo dva veoma slična problema koja su ekvivalentna
-      problemu preklapanja očitavanja:
+      Nakon prikaza ovog problema imamo dva veoma slična problema koja su ekvivalentna problemu
+      rekonstrukcije niske:
     </p>
 
     <p className={classes.indent1x}>PROBLEM HAMILTONOVE PUTANJE</p>
