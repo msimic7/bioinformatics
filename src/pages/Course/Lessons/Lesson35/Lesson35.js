@@ -57,7 +57,7 @@ const Lesson35 = () => (
     <p className={classes.indent2x}>ulaz: kolekcija uparenih k-grama Ocitavanja</p>
     <p className={classes.indent2x}>
       izlaz: niska Genom za koju važi da je njena uparena k-gram kompozicija ekvivalentna kolekciji
-      uparenih k-grama Ocitavanja
+      Ocitavanja
     </p>
     <p className={classes.indent1x}>
       Posmatrajmo prethodni primer i uparene 3-grame koje smo dobili u njemu:
@@ -70,7 +70,7 @@ const Lesson35 = () => (
     <img alt="" src="/assets/lesson35/pic10.svg" className={classes.indent2x} />
     <p className={classes.indent2x}>
       Želimo da na osnovu očitavanja sastavimo genom za koga će važiti da je njegova uparena 3-gram
-      kompozicija baš dati niz očitavanja. To radimo pomoću uparenog De Brujinovog grafa, kojeg
+      kompozicija baš dati niz očitavanja. To radimo pomoću uparenog De Brujinovog grafa, koji
       formiramo na sličan način kao i De Brujinov graf (kod dela o De Brujinovom grafu smo prikazali
       jedan način njegovog formiranja, ovde ćemo drugi):
     </p>
@@ -119,7 +119,8 @@ const Lesson35 = () => (
     <p className={classes.indent1x}>
       Upareni De Brujinov graf se formira na sličan način kao i De Brujinov graf, osim što je za
       njegovo formiranje potrebno manje spajanja. On je jednostavniji za rad i njegova glavna
-      prednost, kao što smo i pokazali na prethodnom primeru, je ta što on daje jedinstveni genom.
+      prednost, kao što smo i pokazali na prethodnom primeru, je ta što će on imati manje podgrafova
+      (koji nemaju grananja) od De Brujinovog grafa, pa će samim tim pre dati jedinstveni genom.
     </p>
   </div>
 );

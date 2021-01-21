@@ -94,7 +94,7 @@ const Lesson31 = () => (
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
-      Sada naš problem rekonstrukcije niske na osnovu njene kolekcije možemo definisati na sledeći
+      Sada naš problem rekonstrukcije niske na osnovu njene kompozicije možemo definisati na sledeći
       način:
     </p>
     <p className={classes.indent1x}>PROBLEM HAMILTONOVE PUTANJE</p>
