@@ -71,17 +71,13 @@ def BoyerMooreAlg(p, t):
   pom  = 0
   m = len(p)
   n = len(t)
-
   losKarakter = heuristikaLosKarakter(p)
-
   pozicija_granice = [0] * (m + 1)
   pomeraj = [0] * (m + 1)
   preprocesiranje1(pomeraj, pozicija_granice, p, m)
   preprocesiranje2(pomeraj, pozicija_granice, p, m)
-
   while pom <= n - m:
     j = m - 1
-
     while j >= 0 and p[j] == t[pom + j]:
       j -= 1
     
@@ -101,7 +97,6 @@ def BoyerMooreAlg(p, t):
         pom += pomerajDobarSufiks
       else:
         pom += pomerajLosKarakter
-
   return izlaz
   `}
       customClass={classes.indent2x}
@@ -113,24 +108,23 @@ def BoyerMooreAlg(p, t):
       code={`
 def pribliznoPodudaranje(p, t, n):
   # primenjujemo Dirihleov princip
-  duzina_porcije = int(round(len(p) / (n + 1)))
+  duzina_particije = int(round(len(p) / (n + 1)))
   # skup svih pozicija gde se desilo približno podudaranje
   priblizna_podudaranja = set()
-  # za svaku porciju Boyer-Moore algoritmom vraćamo skup pozicija gde se podudaranje desilo
+  # za svaku particiju Boyer-Moore algoritmom vraćamo skup pozicija gde se podudaranje desilo
   for i in range(n+1):
     # početak i kraj i-te pozicije
-    start = i * duzina_porcije
-    kraj = min((i+1) * duzina_porcije, len(p))
-
-    #tražimo da li imamo tačno podudaranje i-te porcije sa tekstom
+    start = i * duzina_particije
+    kraj = min((i+1) * duzina_particije, len(p))
+    #tražimo da li imamo tačno podudaranje i-te particije sa tekstom
     podudaranja = BoyerMooreAlg(p[start:kraj], t)
-    # proverimo sve pozicije gde se desilo podudaranje i-te porcije
+    # proverimo sve pozicije gde se desilo podudaranje i-te particije
     for poz in podudaranja:
       # ako šablon ispada iz opsega teksta
       if poz < start or (poz - start) + len(p) > len(t):
         continue
-      # brojima sva nepodudaranja koja postoje između porcija koje se nalaze 
-      # pre i posle porcije koja se podudara sa tekstom
+      # brojima sva nepodudaranja koja postoje između particije koje se nalaze 
+      # pre i posle particije koja se podudara sa tekstom
       # i ako ne prelaze n, onda smo našli približno podudaranje šablona sa tekstom
       nepodudaranja = 0
       for j in range (0,start):
@@ -143,7 +137,6 @@ def pribliznoPodudaranje(p, t, n):
           nepodudaranja += 1
         if nepodudaranja > n:
           break
-
       # ako smo imali najviše n nepodudaranja dodajemo poziciju približnog podudaranja šablona u skup
       if nepodudaranja <= n:
         priblizna_podudaranja.add(poz - start)

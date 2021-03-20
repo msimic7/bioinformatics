@@ -9,8 +9,10 @@ const Lesson2111 = () => (
       U ovom pravilu kada dođemo do prvog nepodudaranja karaktera između teksta T i šablona P,
       preskačemo poravnanja (pomeramo šablon u desno) sve dok:
     </p>
-    <p>- nepodudaranje postane podudaranje ili</p>
-    <p>- šablon P ne prođe mesto (karakter) na kojem se desilo nepodudaranje.</p>
+    <p className={classes.indent1x}>- nepodudaranje postane podudaranje ili</p>
+    <p className={classes.indent1x}>
+      - šablon P ne prođe mesto (karakter) na kojem se desilo nepodudaranje.
+    </p>
     <p>Kako bismo približili ovo pravilo, pogledajmo sledeći primer:</p>
     <p>PRIMER</p>
     <img alt="" src="/assets/lesson2111/pic1.svg" className={classes.indent1x} />
@@ -107,18 +109,18 @@ const Lesson2111 = () => (
         # za dati šablon p
         losKarakter = heuristikaLosKarakter(p) 
     
-        # s je pozicija gde se nalazi početak šablon u odnosu na tekst
+        # pom je pozicija gde se nalazi početak šablon u odnosu na tekst
         # krećemo od prvog poravnanja, tj. kad je šablon na početku teksta
         pom = 0
         while(pom <= n - m): 
             j = m - 1
     
             # Smanjujemo indeks j od šablona 
-            # sve dok se karakteri šablona i teksta podudaraju za trenutno s 
+            # sve dok se karakteri šablona i teksta podudaraju za trenutno pom
             while j >= 0 and p[j] == t[pom + j]: 
                 j -= 1
     
-            # Ako se šablon nalazi u tekst na poziciji s, 
+            # Ako se šablon nalazi u tekstu na poziciji pom, 
             # onda će indeks j postati -1 nakon petlje iznad
             if j<0: 
                 print("Šablon se javlja na poziciji %d" %pom) 
@@ -126,7 +128,7 @@ const Lesson2111 = () => (
                 '''	 
                     Pomeramo šablon tako da se sledeći karakter poravna 
                         sa poslednjim pojavljivanjem tog karaktera u šablonu.
-                        Uslov s + m < n je neophodan za slučaj da se šablon
+                        Uslov pom + m < n je neophodan za slučaj da se šablon
                         pojavio na kraju 
                 '''
                 pom += (m - losKarakter[m-1][mapaKaraktera[t[pom + m]]] if pom + m < n else 1) 

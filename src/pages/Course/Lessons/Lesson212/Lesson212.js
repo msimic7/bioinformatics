@@ -62,7 +62,7 @@ const Lesson212 = () => (
     </p>
     <p className={classes.indent2x}>
       Svake nedelje dobijamo skup sekvencioniranih očitavanja za različitog čoveka, a imamo jedan
-      ljudski referenti genom (koji je dobijemđn u projektu ljudskog genoma). Želimo da odredimo
+      ljudski referenti genom (koji je dobijen u projektu ljudskog genoma). Želimo da odredimo
       pozicije tih očitavanja u odnosu na referenti genom.
     </p>
     <p className={classes.indent2x}>

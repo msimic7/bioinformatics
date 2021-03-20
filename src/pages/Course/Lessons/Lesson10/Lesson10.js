@@ -8,7 +8,7 @@ const Lesson10 = () => (
       Dezoksiribonukleinska kiselina (DNK) je kiselina koja sadrži uputstva za razvoj i pravilno
       funkionisanje svih živih organizama. Sva živa bića svoj genetički materijal nose u obliku DNK,
       osim pojedinih virusa koji svoj genetički materijal nose u obliku RNK. Genom jednog organizma
-      predstavlja celokupan njegov DNK.Iako je svaki čovek različit, 99.8% ljudskog genoma isto je
+      predstavlja celokupan njegov DNK. Iako je svaki čovek različit, 99.8% ljudskog genoma isto je
       kod svih ljudi; preostalih 0.2% određuje sve one velike razlike između ljudi: od boje kože i
       očiju, do zdravlja i bolesti.
     </p>
@@ -48,6 +48,7 @@ const Lesson10 = () => (
       Dakle, DNK ima dva lanca koja se mogu predstaviti kao niz međusobno povezanih nukleotida.
     </p>
     <img alt="" src="/assets/lesson10/pic9.svg" className={classes.indent2x} />
+    <p className={`${classes.indent1x} ${classes.mb16}`}> ORIJENTACIJA DNK LANACA</p>
     <p className={`${classes.indent1x}`}>
       Dezoksiriboze suprotnih lanaca su usmerene u suprotnim pravcima (atom kiseonika u jednim je
       gore, a u drugim dole) kao što možemo videti na slici ispod, samim tim ta dva lanca su
@@ -89,7 +90,7 @@ const Lesson10 = () => (
     <img alt="" src="/assets/lesson10/pic15.svg" className={classes.indent2x} />
     <p className={`${classes.indent1x}`}>
       Pre nego što ćelija uđe u deobu, ona mora izvršiti replikaciju svog genetičkog materijala,
-      odnosno DNK. Replikacija DNK predstvalja udvajanje DNK molekula i ona se odvija na
+      odnosno DNK. Replikacija DNK predstavlja udvajanje DNK molekula i ona se odvija na
       semikonzervativan način što znači da stari (roditeljski) DNK lanci služe kao kalupi za sintezu
       novih DNK lanaca. Na kraju replikacije nastaju dva molekula DNK pri čemu svaki od njih ima
       jedan stari i jedan novosintetisani lanac.
@@ -150,7 +151,7 @@ const Lesson10 = () => (
     <p className={`${classes.indent2x}`}>
       3. Kako idemo dalje tako se DNK lanci raspliću sve više i više i pošto DNK polimeraza ide samo
       u jednom smeru, zaostajući lanac se gradi iz delova (Okazakijevi segmenti), dok se vodeći
-      lanac gradi kontinuirano
+      lanac gradi kontinuirano.
     </p>
     <img alt="" src="/assets/lesson10/pic27.svg" className={classes.indent3x} />
     <p className={`${classes.indent1x}`}>

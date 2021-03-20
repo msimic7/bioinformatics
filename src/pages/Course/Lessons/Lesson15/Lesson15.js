@@ -76,7 +76,7 @@ const Lesson15 = () => (
     <p className={classes.indent1x}>
       Stoga, u prvom delu ovog kursa ćemo se baviti problemom sastavljanja genoma na osnovu
       dobijenih očitavanja i referentog genoma koji će nam služiti kao vodič pri tom sastavljanju,
-      na isti način na koji nam kopija novina služiti kao vodič pri sastavljanju tih novina od
+      na isti način na koji će nam kopija novina služiti kao vodič pri sastavljanju tih novina od
       očuvanih papira posle eksplozije. Ovaj problem ćemo zvati{' '}
       <b>Problem poravnanja očitavanja (eng. read alignment problem)</b>.
     </p>

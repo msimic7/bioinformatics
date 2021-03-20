@@ -123,19 +123,19 @@ const Lesson222 = () => (
       customClass={classes.indent2x}
     />
     <p className={classes.indent1x}>
-      Kao što možemo videti, trebalo nam je približno 54 sekunde, što je jako dugo za ovako kratke
+      {`Kao što možemo videti, trebalo nam je približno 54 sekunde, što je jako dugo za ovako kratke
       niske. Razlog tome jesu ponavljajući rekurzivni pozivi koji se svaku put računaju iznova. Na
-      primer, na sledećoj slici imamo prikazano nekoliko rekurzivnih poziva za funkciju{' '}
+      primer, na sledećoj slici imamo prikazano nekoliko rekurzivnih poziva za funkciju `}
       <b>editDistRekurzivna(&apos;ABC&apos;,&apos;BBC&apos;)</b>:
     </p>
     <img alt="" src="/assets/lesson222/pic13.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
-      U ovom primeru imamo dva puta rekurzivni poziv
+      {` U ovom primeru imamo dva puta rekurzivni poziv `}
       <span className={classes.red}>editDistRekurzivna(&apos;AB&apos;,&apos;BB&apos;)</span>
-      {`, dok ćemo u celom procesu
-      imati daleko više. Kako bismo bolje približili koliki je to problem, pogledajmo sledeći kod u
-      kome nalazimo n koje predstavlja broj rekurzivnih poziva za argument ('AAGTGAT', 'AATGTGA')
-      rekurzivne funckije editDistRekurzivna('AAGTGATCGTGA','AATGTGACGGGA'):`}
+      {`, dok
+      ćemo u celom procesu imati daleko više. Kako bismo bolje približili koliki je to problem,
+      pogledajmo sledeći kod u kome nalazimo n koje predstavlja broj rekurzivnih poziva za argument
+      ('AAGTGAT', 'AATGTGA') rekurzivne funckije editDistRekurzivna('AAGTGATCGTGA','AATGTGACGGGA'):`}
     </p>
     <CodeEditor
       code={`
@@ -170,8 +170,8 @@ const Lesson222 = () => (
     </p>
     <p className={classes.indent1x}>
       Želimo da napravimo poboljšanje koje će nam omogućiti da samo jednom računamo datu funkciju za
-      iste argumente, a svaki sledeći put samo pročitamo već izračunatu vrednost. Jedan od načina da
-      to uradimo jeste pomoću dinamičkog programiranja (koristeći matricu). Prikazaćemo kako
+      određeni argument, a svaki sledeći put samo pročitamo već izračunatu vrednost. Jedan od načina
+      da to uradimo jeste pomoću dinamičkog programiranja (koristeći matricu). Prikazaćemo kako
       formiramu tu matricu za sledeći primer:
     </p>
     <p className={classes.indent1x}>PRIMER</p>

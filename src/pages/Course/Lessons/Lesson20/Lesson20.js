@@ -12,7 +12,7 @@ const Lesson20 = () => (
     </p>
     <p className={classes.indent1x}>
       Neka su nam data očitavanja i ljudski referentni genom (ovde smo prikazali oko 1000 nukleotida
-      tom genoma). Posmatrajmo jedno očitavanje:
+      tog genoma). Posmatrajmo jedno očitavanje:
     </p>
 
     <img alt="" src="/assets/lesson20/pic1.svg" className={classes.indent2x} />
@@ -29,7 +29,7 @@ const Lesson20 = () => (
     <img alt="" src="/assets/lesson20/pic2.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
       Stoga, pretraga sekvence u referentom genomu koja se skoro poklapa sa našim očitavanjem je kao
-      traženje igle u plastu sena. Osim što u našem slučaju imamo bilion igli koje tražimo u jako
+      traženje igle u plastu sena. Osim što u našem slučaju imamo milion igli koje tražimo u jako
       velikom plastu sena. Dobra strana jeste to što očitavanja i referentni genom možemo
       predstaviti kao niske, a za rad sa njima imamo veliki broj algoritama koji nam mogu pomoći pri
       efikasnom rešavanju ovog problema.

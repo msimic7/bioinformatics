@@ -4,7 +4,7 @@ import CodeEditor from '../../../../components/CodeEditor';
 
 const Lesson22 = () => (
   <div className={classes.root}>
-    <h1> PROBLEM PRIBLIŽNOG PODUDARANJA OČITAVANJA SA GENOMOM </h1>
+    <h1> PROBLEM PRIBLIŽNOG PODUDARANJA </h1>
     <p className={classes.indent1x}>
       U prethodnim delovima smo diskutovali o različitim načinima za rešavanje problema tačnog
       podudaranja. Naivni algoritam za tačno podudaranje, Boyer-Moore algoritam i offline algoritmi
@@ -13,7 +13,7 @@ const Lesson22 = () => (
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
-      Sekvencionirana očitavanje ne moraju da se tačno podudaraju sa referentim genomom. Postoje
+      Sekvencionirana očitavanja ne moraju da se tačno podudaraju sa referentim genomom. Postoje
       određeni razlozi zbog kojih možemo očekivati razlike između očitavanja i referentnog genoma i
       oni su:
     </p>
@@ -57,7 +57,9 @@ const Lesson22 = () => (
       Određivanje broja tih razlika, odnosno broja razlika između šablona P i odgovarajućeg dela
       teksta T, radićemo pomoću sledećih rastojanja:
     </p>
-    <p className={classes.indent1x}>Hamingovo rastojanje</p>
+    <p className={classes.indent1x}>
+      <b>Hamingovo rastojanje</b>
+    </p>
     <p className={classes.indent2x}>Neka su X i Y dve niske iste dužine.</p>
     <p className={classes.indent2x}>
       hamingovoRastojanje(X,Y) = minimalni broj substitucija pomoću kojih od jedne niske dobijamo
@@ -65,7 +67,9 @@ const Lesson22 = () => (
     </p>
     <p className={classes.indent2x}>PRIMER</p>
     <img alt="" src="/assets/lesson22/pic6.svg" className={classes.indent3x} />
-    <p className={classes.indent1x}>Edit rastojanje</p>
+    <p className={classes.indent1x}>
+      <b>Edit rastojanje</b>
+    </p>
     <p className={classes.indent2x}>
       editRastojanje(X,Y) = minimalni broj promena (brisanje/umetanje, substitucija) pomoću kojih od
       jedne niske dobijamo drugu nisku.

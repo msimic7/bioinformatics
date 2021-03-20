@@ -35,7 +35,7 @@ const Lesson14 = () => (
       Četvrta linija predstavlja ASCII-enokidiran kvalitet baze Q za svaku bazu iz očitavanja, tj.
       koristimo karakter kako bismo enkodirali brojčanu vrednost Q.
     </p>
-    <p className={classes.indent3x}>ASCII tabla data je slikom ispod.</p>
+    <p className={classes.indent3x}>ASCII tabela data je slikom ispod.</p>
     <img alt="" src="/assets/lesson14/pic5.svg" className={classes.indent4x} />
     <p className={classes.indent4x}>
       Kako vrednost kvaliteta baze ne mora biti ceo broj, pitamo se kako ga onda predstavljamo
@@ -222,18 +222,18 @@ const Lesson14 = () => (
     <img alt="" src="/assets/lesson14/grafik1.svg" className={classes.indent4x} />
     <p className={classes.indent3x}>
       Možemo zapaziti da ima dosta baza sa kvalitetom Q = 2, to nam govori da postoji dosta baza za
-      koje The base caller nije siguran da li ih je dobro odredio (bilo je više različitih boja i
+      koje Određivač baza nije siguran da li ih je dobro odredio (bilo je više različitih boja i
       njihov odnos je bio sličan). Kao što smo već i rekli, to nam se često dešava pri kraju
       očitavanja.
     </p>
     <h2 className={classes.indent1x}>Analiziranje očitavanja u zavisnosti od njihove pozicije</h2>
     <p className={classes.indent2x}>
-      Sadržaj GC (odnos između broja zbira broja G i C baza naspram broja svih baza) je nešto što je
-      različito od vrste do vrste. Odnosno, različite vrste će imati različite karakteristike
-      sadržaja GC. Ovde želimo da vidimo kako se sadržaj GC menja kako se pomeramo kroz očitavanje.
-      Očekujemo da se neće drastično promeniti, tj. da će ostati približno konstantan. Ali ako se
-      desi greška, na primer ako se desi jedan loš ciklus, onda možemo očekivati da ćemo videti
-      različiti odnos zbira G i C baza u odnosu na ostale baze:
+      Sadržaj GC (odnos između broja G i C baza naspram broja svih baza) je nešto što je različito
+      od vrste do vrste. Odnosno, različite vrste će imati različite karakteristike sadržaja GC.
+      Ovde želimo da vidimo kako se sadržaj GC menja kako se pomeramo kroz očitavanje. Očekujemo da
+      se neće drastično promeniti, tj. da će ostati približno konstantan. Ali ako se desi greška, na
+      primer ako se desi jedan loš ciklus, onda možemo očekivati da ćemo videti različiti odnos
+      broja G i C baza u odnosu na broj svih baza:
     </p>
     <CodeEditor
       code={`
@@ -281,7 +281,7 @@ const Lesson14 = () => (
     />
     <p className={classes.indent3x}>
       {`Ovo nam potvrđuje da imamo više G i C od A i T baza. Još nešto što zapažamo jeste da imamo i
-      slovo 'N', koje nam znači da The base caller uopšte ne odredi bazu jer nema nikakvu sigurnost
+      slovo 'N', koje nam znači da Određivač baza uopšte ne odredi bazu jer nema nikakvu sigurnost
       u to šta bi ona mogla biti.`}
     </p>
   </div>

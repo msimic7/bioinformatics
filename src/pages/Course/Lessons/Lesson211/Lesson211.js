@@ -36,7 +36,7 @@ Dolazimo do nepodudaranja pri poređenju karaktera ‘r’ šablona sa karaktero
       poravnanja ostati da idu sleva na desno:
     </p>
     <img alt="" src="/assets/lesson211/pic4.svg" className={classes.indent2x} />
-    <p className={classes.indent1x}>U Boyer-Moore algoritmu koristi dva takva pravila:</p>
+    <p className={classes.indent1x}>Boyer-Moore algoritam koristi dva takva pravila:</p>
     <p className={classes.indent2x}>1. Pravilo lošeg karaktera</p>
     <p className={classes.indent2x}>2. Pravilo dobrog sufiksa</p>
   </div>

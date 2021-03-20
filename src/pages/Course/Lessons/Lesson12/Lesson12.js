@@ -89,7 +89,7 @@ const Lesson12 = () => (
       customClass={classes.indent3x}
     />
     <p className={classes.indent2x}>
-      Rad sa bibliotekom random. Ako dodamo seed tada će nam pri svakom poketanju vraćati isti
+      Rad sa bibliotekom random. Ako dodamo seed tada će nam pri svakom pokretanju vraćati isti
       element, inače će vraćati različiti:
     </p>
     <CodeEditor
@@ -213,8 +213,7 @@ const Lesson12 = () => (
       customClass={classes.indent3x}
     />
     <p className={classes.indent3x}>
-      Na osnovu ovih podataka možemo videti da imamo približan broj svih baza u genomu ove
-      bakterije.
+      Na osnovu ovih podataka možemo videti da imamo približan broj svih baza u datom genomu.
     </p>
   </div>
 );

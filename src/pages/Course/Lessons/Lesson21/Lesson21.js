@@ -305,7 +305,7 @@ const Lesson21 = () => (
       očitavanja sa istog lanca, što ne mora biti slučaj.
     </p>
     <p className={classes.indent1x}>
-      Ovaj problem rešavamo tako što ćemo osim poređenja očitavanje, porediti i njegov inverzni
+      Ovaj problem rešavamo tako što ćemo osim poređenja očitavanja, porediti i njegov inverzni
       komplement sa genomom. To će obuhvatiti slučaj u kome je očitavanje došlo sa drugog lanca
       genoma.
     </p>

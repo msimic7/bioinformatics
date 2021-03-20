@@ -31,7 +31,7 @@ const Lesson223 = () => (
     <p className={classes.indent2x}>Tražimo minimum u poslednjoj vrsti:</p>
     <img alt="" src="/assets/lesson223/pic5.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
-      Minimum, koji je ovde 2, predstavlja najbliže podudaranje šablona P sa teksom T (između njih
+      Minimum, koji je ovde 2, predstavlja najbliže podudaranje šablona P sa tekstom T (između njih
       ima samo 2 razlike). Sada znamo edit rastojanje između šablona i teksta, ali ne znamo na kojoj
       poziciji se to približno podudaranje desilo. Prvo što treba da uradimo jeste da vidimo kako
       smo došli do polja gde nam se nalazi 2. To ćemo uraditi primenom inverznog postupka računanja

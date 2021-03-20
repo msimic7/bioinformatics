@@ -8,7 +8,7 @@ const Lesson36 = () => (
       Prilikom formiranja algoritama za problem preklapanja očitavanja imali smo sledeće
       pretpostavke:
     </p>
-    <pre className={classes.indent1x}>
+    <pre className={classes.indent2x}>
       {` 
 1. Očitavanja savršeno pokrivaju genom, tj. svaki k-gram genoma predstavlja jedno očitavanje;
 2. Očitavanja nisu podložna greškama;
@@ -20,7 +20,7 @@ const Lesson36 = () => (
       Međutim, ove pretpostavke ne moraju da važe. Štaviše, u realnosti se susrećemo sa sledećim
       problemima:
     </p>
-    <pre className={classes.indent1x}>
+    <pre className={classes.indent2x}>
       {` 
 1. Očitavanja ne pokrivaju savršeno genom, tj. očitavanja predstavljaju neke k-grame genoma (ne sve);
 2. Očitavanja su podložna greškama, kao što smo imali prilike da vidimo u prvom delu;
@@ -30,7 +30,7 @@ const Lesson36 = () => (
     </pre>
     <p className={classes.indent1x}>
       Nerealne pretpostavke su jako korisne, jer bez njih ne bismo bili u stanju da predstavimo
-      osnovne ideje postojećih algoritama za sekvencioniranje genoma. Stoga, prvo smo ih uveli radi
+      osnovne ideje postojećih algoritama za asembliranje genoma. Stoga, prvo smo ih uveli radi
       pojednostavljenja problema i pronalaska algoritama koji rešavaju pojednostavljeni problem.
       Sada ćemo prikazati kako neke od tih nerealnih pretpostavki prevazilazimo, tj. kako
       prilagođavamo naše algoritme da rade u realnim situacijama:
@@ -46,7 +46,7 @@ const Lesson36 = () => (
       DRUGA NEREALNA PRETPOSTAVKA : očitavanja nisu podložna greškama
     </p>
     <p className={classes.indent2x}>
-      Posmatrajmo prethodni prImer i pretpostavimo da smo dobili jedno očitavanje koje ima grešku:
+      Posmatrajmo prethodni primer i pretpostavimo da smo dobili jedno očitavanje koje ima grešku:
     </p>
     <p className={classes.indent2x}>PRIMER</p>
     <img alt="" src="/assets/lesson36/pic2.svg" className={classes.indent3x} />
