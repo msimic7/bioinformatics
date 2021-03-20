@@ -51,8 +51,8 @@ const Lesson32 = () => (
     <img alt="" src="/assets/lesson32/pic12.svg" className={classes.indent4x} />
 
     <p className={classes.indent2x}>
-      Kao rezultat dobijamo graf kojim ćemo se baviti u ovom delu, takozvani
-      <b>De Brujinov graf</b>:
+      Kao rezultat dobijamo graf kojim ćemo se baviti u ovom delu, takozvani <b>De Brujinov graf</b>
+      :
     </p>
     <img alt="" src="/assets/lesson32/pic13.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>

@@ -37,8 +37,8 @@ const Lesson13 = () => (
     <img alt="" src="/assets/lesson13/pic7.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
       Na datoj ravnoj ploči nasumično će biti postavljeni svi jednolančani fragmenti (oko milion ili
-      bilion njih). Ovi fragmenti su zapravo DNK molekuli koje želimo da sekvencioniramo. Za svaki
-      fragment sa date ploče ćemo imati jedno sekvenciono očitavanje (komplementarni lanac
+      milijardu njih). Ovi fragmenti su zapravo DNK molekuli koje želimo da sekvencioniramo. Za
+      svaki fragment sa date ploče ćemo imati jedno sekvenciono očitavanje (komplementarni lanac
       fragmenta).
     </p>
     <p className={classes.indent2x}>
@@ -130,7 +130,7 @@ const Lesson13 = () => (
       prvo vršimo njihovo komplementiranje, odnosno prolazimo čitav proces njhove sinteze.
     </p>
     <p className={classes.indent1x}>Da sumiramo, kod sekvencioniranja sintezom imamo:</p>
-    <p className={classes.indent1x}>- bilion fragmenata koje treba da sekvencioniramo</p>
+    <p className={classes.indent1x}>- milijardu fragmenata koje treba da sekvencioniramo</p>
     <p className={classes.indent1x}>
       - masivnu paralelnost : foroaparat istovremeno slika sve boje koje se manifestuju u jednom
       ciklusu, odnosno slika sve fragmente istovremeno
@@ -155,7 +155,7 @@ const Lesson13 = () => (
     </p>
     <img alt="" src="/assets/lesson13/pic24.svg" className={classes.indent3x} />
     <p className={classes.indent2x}>
-      Međutim, može doći do greške, ako se terminator ne dodana bazu i DNK polimeraza ne bude
+      Međutim, može doći do greške, ako se terminator ne doda na bazu i DNK polimeraza ne bude
       sprečena (pre slikanja) da doda novu bazu. Sledeći primer to ilustuje:
     </p>
     <p className={classes.indent2x}>PRIMER</p>
@@ -211,7 +211,7 @@ const Lesson13 = () => (
     <img alt="" src="/assets/lesson13/pic33.svg" className={classes.indent2x} />
     <p className={classes.indent2x}>
       Odavde možemo zaključiti da kako dodajemo 10 na Q, tako delimo sa 10 šansu da je baza pogrešno
-      doređena i baš zbog toga nam je Q jednostavniji za rad.
+      određena i baš zbog toga nam je Q jednostavniji za rad.
     </p>
     <p className={classes.indent1x}>Kako određujemo Q? Pokažimo to na sledećem primeru:</p>
     <p className={classes.indent1x}>PRIMER</p>

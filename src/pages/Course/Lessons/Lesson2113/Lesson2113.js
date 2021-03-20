@@ -16,12 +16,12 @@ const Lesson2113 = () => (
     <img alt="" src="/assets/lesson2113/pic2.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
       Kako se nijedan karakter ne podudara (odmah na početku imamo nepodudaranje), onda ovde ne
-      možemo primeniti pravilo dobrog sufiksa, stoga primenjujemo Pravilo lošeg karaktera:
+      možemo primeniti pravilo dobrog sufiksa, stoga primenjujemo pravilo lošeg karaktera:
     </p>
     <img alt="" src="/assets/lesson2113/pic3.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
       Pravilo lošeg karaktera (lk) preskače 6 poravnanja (pomera P za 7 pozicija), dok pravilo
-      dobrog sufiksa (ds) ne preskače nijedno poravnanja jer u ovom slučaju nije primenljivo, stoga
+      dobrog sufiksa (ds) ne preskače nijedno poravnanje jer u ovom slučaju nije primenljivo, stoga
       biramo pravilo lošeg karaktera. To ćemo kraće zapisivati:
     </p>
     <img alt="" src="/assets/lesson2113/pic4.svg" className={classes.indent1x} />

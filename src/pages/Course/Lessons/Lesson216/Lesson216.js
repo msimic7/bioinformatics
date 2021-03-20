@@ -43,8 +43,8 @@ const Lesson216 = () => (
     <p className={classes.indent1x}>
       Niz sufiksa je samo jedna primer iz familije sufiksnih indeksa. Još neki od primeri su:
     </p>
-    <p className={classes.indent1x}>- Drvo sufiksa</p>
-    <p className={classes.indent1x}>- FM indeks</p>
+    <p className={classes.indent2x}>- Drvo sufiksa</p>
+    <p className={classes.indent2x}>- FM indeks</p>
     <img alt="" src="/assets/lesson216/pic5.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
       Drvo sufiksa je kao niz sufiksa, organizuje sve sufikse genoma na određeni način. Međutim, za
@@ -53,9 +53,9 @@ const Lesson216 = () => (
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
-      FM indeks je baziran na Burov-Vilerovoj transformaciji. Ova transformacija je prvobitno bila
-      napravljena za kompresiju podataka, ali se koristi i za pravljenje FM indeksa, koji je jako
-      kompaktan.
+      FM indeks je baziran na Burov-Vilerovoj transformaciji (eng. Burrows–Wheeler transform). Ova
+      transformacija je prvobitno bila napravljena za kompresiju podataka, ali se koristi i za
+      pravljenje FM indeksa, koji je jako kompaktan.
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>

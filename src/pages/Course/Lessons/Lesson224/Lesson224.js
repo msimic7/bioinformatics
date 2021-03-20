@@ -25,13 +25,13 @@ const Lesson224 = () => (
     <p className={classes.indent1x}>
       U praksi tako nešto nije realno jer se mogu desiti sledeće situacije:
     </p>
-    <p className={classes.indent1x}>
+    <p className={classes.indent2x}>
       1. Substitucije određenih baza se češće pojavljuju od drugih substitucija, samim tim bi imalo
       smisla da njima dodeljujemo manju kaznu nego drugim substitucijama;
     </p>
-    <p className={classes.indent1x}>
+    <p className={classes.indent2x}>
       2. Umetanja/brisanja su mnogo ređa nego substitucije, tako da ćemo njima dodeljivati veće
-      vrednosti, odnosno veću kaznu nego subtitucijama.
+      vrednosti, odnosno veću kaznu nego substitucijama.
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
@@ -40,11 +40,11 @@ const Lesson224 = () => (
     <p className={classes.indent2x}>
       Sve moguće DNK substitucije možemo podeliti u dve kategorije:
     </p>
-    <p className={classes.indent2x}>- tranzicije</p>
-    <p className={classes.indent2x}>- transverzije</p>
+    <p className={classes.indent3x}>- tranzicije</p>
+    <p className={classes.indent3x}>- transverzije</p>
     <p className={classes.indent2x}>
       Tranzicija predstavljaju substituciju koja menja jednu purinsku bazu (A ili G) u drugu
-      purinsku bazu, dok transverzija predstavljaju sve ostale substitiucije. Kako što možemo videti
+      purinsku bazu, dok transverzija predstavljaju sve ostale substitucije. Kao što možemo videti
       sa slike koja se nalazi ispod, imamo 4 puta više transverzija nego tranzicija. Međutim, u
       praksi se ispostavlja drugačije. Ako uporedimo genome dva čoveka, koja nisu u srodstvu,
       dobićemo da se tranzicije duplo više pojavljaju nego transverzije. Samim tim, kazna za
@@ -79,8 +79,8 @@ const Lesson224 = () => (
     </p>
     <img alt="" src="/assets/lesson224/pic4.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
-      Na sličan način kao što smo to radili u pethodnom delu popunjavamo matricu E, samo sada to
-      radimo uz pomoć matrice kazni, odnosno uz pomoć globalnog poravnanja:
+      Na sličan način popunjavamo matricu E kao što smo to radili i kod edit rastojanja, samo sada
+      to radimo uz pomoć matrice kazni, odnosno uz pomoć globalnog poravnanja:
     </p>
     <img alt="" src="/assets/lesson224/pic5.svg" className={classes.indent2x} />
     <p className={classes.indent1x}>
@@ -143,7 +143,6 @@ def globalnoPoravnanje(x, y):
     # Inicijalizujemo prvu kolonu 
     for i in range(1, len(x)+1):
         D[i][0] = D[i-1][0] + kazne[azbuka.index(x[i-1])][-1]
-
     # Inicijalizujemo prvu vrstu
     for j in range(1,len(y)+1):
         D[0][j] = D[0][j-1] + kazne[-1][azbuka.index(y[j-1])]

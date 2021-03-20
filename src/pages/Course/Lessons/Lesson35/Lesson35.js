@@ -110,10 +110,12 @@ const Lesson35 = () => (
     <p className={classes.indent2x}>korak11 </p>
     <img alt="" src="/assets/lesson35/pic24.svg" className={classes.indent3x} />
     <p className={classes.indent2x} />
-    <p className={classes.indent2x}>Na kraju dobijamo upareni De Brujinov graf:</p>
+    <p className={classes.indent2x}>
+      Na kraju dobijamo <b>upareni De Brujinov graf</b>:
+    </p>
     <img alt="" src="/assets/lesson35/pic25.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>
-      Ova graf ima jednu Ojlerovu putanju na osnovu koj dobijamo <b>jedinstveni genom</b>:
+      Ovaj graf ima jednu Ojlerovu putanju na osnovu koj dobijamo <b>jedinstveni genom</b>:
     </p>
     <img alt="" src="/assets/lesson35/pic26.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>

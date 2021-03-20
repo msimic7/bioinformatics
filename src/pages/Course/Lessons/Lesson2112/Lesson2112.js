@@ -47,8 +47,8 @@ const Lesson2112 = () => (
     <p className={classes.indent1x}>
       Iz prethodna dva koraka možemo zaključiti da pomeranje šablona vršimo tako što nalazimo:
     </p>
-    <p className={classes.indent1x}>- podnisku šablona koja je jednak t ili </p>
-    <p className={classes.indent1x}>- prefiks šablona koji je jednak sufiksu od t </p>
+    <p className={classes.indent2x}>- podnisku šablona koja je jednak t ili </p>
+    <p className={classes.indent2x}>- prefiks šablona koji je jednak sufiksu od t </p>d
     <p className={classes.indent1x}>
       i zatim ih poravnamo tako da nijedno podudaranje karaktera ne postane nepodudaranje.
     </p>
@@ -63,7 +63,7 @@ const Lesson2112 = () => (
     </p>
     <img alt="" src="/assets/lesson2112/pic13.svg" className={classes.indent1x} />
     <p className={classes.indent1x}>
-      Pomeramo šablon tako da se zaokružene niske nađu jedna ispod drugog:
+      Pomeramo šablon tako da se zaokružene niske nađu jedna ispod druge:
     </p>
     <img alt="" src="/assets/lesson2112/pic14.svg" className={classes.indent1x} />
     <img alt="" src="/assets/lesson2112/pic15.svg" className={classes.indent1x} />
@@ -81,7 +81,7 @@ const Lesson2112 = () => (
     <img alt="" src="/assets/lesson2112/pic16.svg" className={classes.indent1x} />
     <p>Ona ima jednu granicu CTTAC koja je dužine 5.</p>
     <p>
-      <span className={classes.red}>Teorema.</span>
+      <span className={classes.red}>Teorema. </span>
       {`Neka su r i s dve granice niske x, tako da važi |r| < |s|. Tada je r granica i od s.`}
     </p>
     <p className={classes.indent1x}>dokaz.</p>
@@ -93,7 +93,7 @@ const Lesson2112 = () => (
       Kao što možemo videti r će biti i prefiks i sufiks niske s, odnosno njena granica.
     </p>
     <p>
-      <span className={classes.red}>Definicija.</span>Neka je r granica niske x i a karakter. Tada
+      <span className={classes.red}>Definicija.</span> Neka je r granica niske x i a karakter. Tada
       se granica r može prošitiri sa a ako je ar granica niske ax.
     </p>
     <img alt="" src="/assets/lesson2112/pic18.svg" className={classes.indent2x} />
@@ -127,7 +127,7 @@ const Lesson2112 = () => (
       j-1.
     </p>
     <p className={classes.indent1x}>
-      Inače, ako je p[i-1] != p[j-1] tada ćemo korsititi granicu r koja je najduža granica sufiksa s
+      Inače, ako je p[i-1] != p[j-1] tada ćemo koristiti granicu r koja je najduža granica sufiksa s
       i proveriti da li se ona, kao najduža granica posle s, može proširiti sa p[i-1]. Ta granica r
       biće na poziciji granica[j] jer je to najduža granica sufiksa s koji počinje na poziciji j.
       Označimo je sa j = pozicija_granice[j]:
@@ -154,7 +154,7 @@ const Lesson2112 = () => (
     <img alt="" src="/assets/lesson2112/pic25.svg" className={classes.indent1x} />
     <p>Odnosno, pomeraj[j] = j - i:</p>
     <img alt="" src="/assets/lesson2112/pic26.svg" className={classes.indent1x} />
-    <p>{`Pri računanju pozicija_granice[i-1]  možemo odrediti pomeraje za sve one sufikse koji predstavljaju najdužu granicu sufiksa koji počinju na nekoj poziciji iz skupa {i, i + 1, ... , m} i za koje to već nije urađeno (ako je pmeraj različit od nule) jer već imamo poznate vrednosti pozicija_granice[k] za sve k iz skupa {i, i + 1, ... , m}.`}</p>
+    <p>{`Pri računanju pozicija_granice[i-1]  možemo odrediti pomeraje za sve one sufikse koji predstavljaju najdužu granicu sufiksa koji počinju na nekoj poziciji iz skupa {i, i + 1, ... , m} i za koje to već nije urađeno (ako je pomeraj različit od nule) jer već imamo poznate vrednosti pozicija_granice[k] za sve k iz skupa {i, i + 1, ... , m}.`}</p>
     <p>Implementacija ove funkcije data je ispod.</p>
     <CodeEditor
       code={`
