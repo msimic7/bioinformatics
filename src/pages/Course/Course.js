@@ -14,7 +14,7 @@ const Course = ({ Lesson }) => (
             <Link to="/course/lesson10"># Uvod</Link>
           </div>
           <div className={classes.sublesson}>
-            <Link to="/course/lesson10"># Uopsteno o DNK strukturi i replikaciji</Link>
+            <Link to="/course/lesson10"># Uopšteno o DNK strukturi i replikaciji</Link>
           </div>
           <div className={classes.sublesson}>
             <Link to="/course/lesson11"># Istorija i značaj DNK sekvencioniranja</Link>
