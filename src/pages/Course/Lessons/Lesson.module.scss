@@ -78,6 +78,30 @@
   margin-top: 48px !important;
 }
 
+.mr8 {
+  margin-right: 8px !important;
+}
+
+.mr16 {
+  margin-right: 16px !important;
+}
+
+.mr24 {
+  margin-right: 24px !important;
+}
+
+.mr32 {
+  margin-right: 32px !important;
+}
+
+.mr40 {
+  margin-right: 40px !important;
+}
+
+.mr48 {
+  margin-right: 48px !important;
+}
+
 .mb8 {
   margin-bottom: 8px !important;
 }
@@ -116,4 +140,18 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.literatureItem {
+  display: flex;
+  align-items: center;
+}
+
+.materialText {
+  display: flex;
+  flex-direction: column;
+}
+
+.materialLink {
+  color: rgb(5, 223, 223);
 }
