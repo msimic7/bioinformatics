@@ -2,10 +2,53 @@ import React from 'react';
 import Literature from '../../Literature';
 import classes from '../Lesson.module.scss';
 
-const Lesson36 = () => (
+const Lesson37 = () => (
   <div className={classes.root}>
     <h1>LITERATURA</h1>
     <h2 className={classes.indent1x}>UVOD</h2>
+    <p className={classes.indent1x}>
+      {`Svi materijali su pretežno rađeni na osnovu prva tri dela kursa Algorithms for DNA Sequencing
+      (`}
+      <a
+        href="https://www.coursera.org/learn/dna-sequencing"
+        target="_blank"
+        rel="noreferrer"
+        className={classes.materialLink}
+      >
+        link
+      </a>
+      {`), kao i video predavanja koja pokrivaju
+      treće poglavlje knjige Bioinformatics Algorithms: an Active Learning Approach (`}
+      <a
+        href="https://www.bioinformaticsalgorithms.org/"
+        target="_blank"
+        rel="noreferrer"
+        className={classes.materialLink}
+      >
+        link
+      </a>
+      {`). Kodovi su preuzeti sa git repozitorijuma
+      (`}
+      <a
+        href="https://github.com/BenLangmead/ads1-notebooks"
+        target="_blank"
+        rel="noreferrer"
+        className={classes.materialLink}
+      >
+        link
+      </a>
+      {`), kao i sa zvanične stranice master kursa “Uvod u
+      bioinformatiku” Matematičkog fakulteta u Beogradu (`}
+      <a
+        href="http://www.bioinformatika.matf.bg.ac.rs/#3_tab"
+        target="_blank"
+        rel="noreferrer"
+        className={classes.materialLink}
+      >
+        link
+      </a>
+      ).
+    </p>
     <p className={classes.indent2x}>Uopšteno o DNK strukturi i replikaciji</p>
     <Literature
       img="wiki"
@@ -241,7 +284,7 @@ const Lesson36 = () => (
       customClass={classes.indent4x}
     />
     <Literature
-      img="unknown"
+      img="matf"
       title="Knuth-Morris-Pratt algorithm"
       url="https://www.inf.hs-flensburg.de/lang/algorithmen/pattern/kmpen.htm"
       customClass={classes.indent4x}
@@ -255,10 +298,10 @@ const Lesson36 = () => (
       customClass={classes.indent4x}
     />
 
-    <p className={classes.indent3x}>Lecture: Indexing and the k-mer index</p>
+    <p className={classes.indent3x}>Indeksiranje i k-gram indeksi</p>
     <Literature
       img="coursera"
-      title="Lecture: Preprocessing"
+      title="Lecture: Indexing and the k-mer index"
       url="https://www.coursera.org/lecture/dna-sequencing/lecture-indexing-and-the-k-mer-index-d5oFY"
       customClass={classes.indent4x}
     />
@@ -289,7 +332,7 @@ const Lesson36 = () => (
       customClass={classes.indent4x}
     />
 
-    <p className={classes.indent3x}>Lecture: Indexing and the k-mer index</p>
+    <p className={classes.indent3x}>Varijacije k-gram indeksa</p>
     <Literature
       img="coursera"
       title="Lecture: Variations on k-mer indexes"
@@ -297,17 +340,11 @@ const Lesson36 = () => (
       customClass={classes.indent4x}
     />
 
-    <p className={classes.indent3x}>Lecture: Indexing and the k-mer index</p>
+    <p className={classes.indent3x}>Indeksi genoma koji se koriste u praksi</p>
     <Literature
       img="coursera"
       title="Lecture: Genome indexes used in research"
       url="https://www.coursera.org/lecture/dna-sequencing/lecture-genome-indexes-used-in-research-r8Xh3"
-      customClass={classes.indent4x}
-    />
-    <Literature
-      img="wiki"
-      title="Burrows–Wheeler transform"
-      url="https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform"
       customClass={classes.indent4x}
     />
 
@@ -440,7 +477,6 @@ const Lesson36 = () => (
     <Literature
       img="dms"
       title="Miodrag Petković. Zanimljivi matematički problemi velikih matematičara."
-      url="TODO"
       customClass={classes.indent3x}
     />
     <Literature
@@ -496,4 +532,4 @@ const Lesson36 = () => (
   </div>
 );
 
-export default Lesson36;
+export default Lesson37;

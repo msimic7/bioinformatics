@@ -55,7 +55,17 @@ const Lesson216 = () => (
     <p className={classes.indent1x}>
       FM indeks je baziran na Burov-Vilerovoj transformaciji (eng. Burrows–Wheeler transform). Ova
       transformacija je prvobitno bila napravljena za kompresiju podataka, ali se koristi i za
-      pravljenje FM indeksa, koji je jako kompaktan.
+      pravljenje FM indeksa, koji je jako kompaktan. Vise o Burov-Vilerovoj transformaciji mozete
+      naci{' '}
+      <a
+        href="https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform"
+        target="_blank"
+        rel="noreferrer"
+        className={classes.materialLink}
+      >
+        ovde
+      </a>
+      .
     </p>
     <p className={classes.indent1x} />
     <p className={classes.indent1x}>
