@@ -5,7 +5,6 @@ import classes from '../Lesson.module.scss';
 const Lesson37 = () => (
   <div className={classes.root}>
     <h1>LITERATURA</h1>
-    <h2 className={classes.indent1x}>UVOD</h2>
     <p className={classes.indent1x}>
       {`Svi materijali su pretežno rađeni na osnovu prva tri dela kursa Algorithms for DNA Sequencing
       (`}
@@ -49,6 +48,8 @@ const Lesson37 = () => (
       </a>
       ).
     </p>
+
+    <h2 className={classes.indent1x}>UVOD</h2>
     <p className={classes.indent2x}>Uopšteno o DNK strukturi i replikaciji</p>
     <Literature
       img="wiki"
