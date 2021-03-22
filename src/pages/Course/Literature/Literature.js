@@ -7,9 +7,11 @@ const Literature = ({ img, title, url, customClass }) => (
     <img alt="" src={`/assets/material-sources/${img}.svg`} className={classes.mr16} />
     <div className={classes.materialText}>
       <div>{title}</div>
-      <a href={url} className={classes.materialLink} target="_blank" rel="noreferrer">
-        link
-      </a>
+      {url && (
+        <a href={url} className={classes.materialLink} target="_blank" rel="noreferrer">
+          link
+        </a>
+      )}
     </div>
   </div>
 );
