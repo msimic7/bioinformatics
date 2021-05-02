@@ -40,7 +40,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: rgb(48, 54, 61);
     border: solid 1px rgb(139, 148, 158);
   }

@@ -3,7 +3,8 @@ import classes from '../Lesson.module.scss';
 
 const Lesson13 = () => (
   <div className={classes.root}>
-    <h1>PREDSTAVLJANJE GENOMA POMOĆU LEGO KOCKICA</h1>
+    <h1>KAKO MAŠINE RADE DNK SEKVENCIONIRANJE</h1>
+    <h2>Predstavljanje genoma pomoću lego kockica</h2>
     <p className={classes.indent1x}>
       Nukleotide ćemo poistovetiti sa njihovim azotnim bazama i predstaviti ih kao lego kockice:
     </p>
@@ -15,9 +16,9 @@ const Lesson13 = () => (
       sledeći način:
     </p>
     <img alt="" src="/assets/lesson13/pic2.svg" className={classes.indent2x} />
-    <h1>DNK REPLIKACIJA U LOGO SVETU</h1>
+    <h2>DNK replikacija u logo svetu</h2>
     <img alt="" src="/assets/lesson13/pic3.svg" className={classes.indent1x} />
-    <h1>NAČIN NA KOJI RADI DRUGA GENERACIJA SEKVENCIONIH MAŠINA</h1>
+    <h2>Način na koji radi druga generacija sekvencionih mašina</h2>
     <p className={classes.indent1x}>
       U prvom delu smo videli kako se DNK replicira. Sada ćemo pokazati kako sekvenciona mašina
       nadgleda ovaj proces kako bi sekvencionirala mnogo šablona (delova genoma) istovremeno.

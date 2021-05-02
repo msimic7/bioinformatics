@@ -3,7 +3,8 @@ import classes from '../Lesson.module.scss';
 
 const Lesson10 = () => (
   <div className={classes.root}>
-    <h1>STRUKTURA DNK</h1>
+    <h1>UOPŠTENO O DNK STRUKTURI I REPLIKACIJI</h1>
+    <h2>Struktura DNK</h2>
     <p className={classes.indent1x}>
       Dezoksiribonukleinska kiselina (DNK) je kiselina koja sadrži uputstva za razvoj i pravilno
       funkionisanje svih živih organizama. Sva živa bića svoj genetički materijal nose u obliku DNK,
@@ -80,7 +81,7 @@ const Lesson10 = () => (
       Dakle, jedan lanac DNK ide od 5’ kraja do 3’ kraja, dok drugi ide od 3’ kraja do 5’ kraja, tj.
       antiparalelni su.
     </p>
-    <h1>REPLIKACIJA DNK</h1>
+    <h2>Replikacija DNK</h2>
     <p className={`${classes.indent1x}`}>Posmatrajmo sledeći primer.</p>
     <img alt="" src="/assets/lesson10/pic14.svg" className={classes.indent2x} />
     <p className={`${classes.indent1x}`}>
@@ -170,7 +171,7 @@ const Lesson10 = () => (
       novoformirani DNK lanac i baš zbog toga proces replikacije je semikonzervativan (poluočuvan).
     </p>
     <img alt="" src="/assets/lesson10/pic31.svg" className={classes.indent2x} />
-    <h1>GEN KAO DEO HROMOZOMSKE DNK</h1>
+    <h2>Gen kao deo hromozomske DNK</h2>
     <p className={`${classes.indent1x}`}>
       Hromozomi su telašca koji se mogu uočiti u jedru ćelija za vreme njihove deobe.
     </p>
