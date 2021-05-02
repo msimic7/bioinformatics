@@ -6,6 +6,7 @@
   & a {
     text-decoration: none;
   }
+  position: relative;
 }
 
 .tableOfContents {
@@ -44,11 +45,9 @@
   margin-bottom: 8px;
 }
 
-.lessonInit {
+.literature {
   font-weight: 600;
   font-size: 14px;
-  cursor: pointer;
-
   & a {
     color: rgb(5, 223, 223);
   }
@@ -56,6 +55,11 @@
   & a:hover {
     color: aqua;
   }
+}
+
+.lessonInit {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .sublesson {
@@ -97,5 +101,36 @@
 
   & a:hover {
     color: aqua;
+  }
+}
+
+.lessonActionButtons {
+  position: absolute;
+  display: flex;
+  right: 32px;
+  top: 16px;
+
+  .btnLinkLeft {
+    margin-right: 8px;
+  }
+}
+
+.btnLink {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #21262d;
+  border: solid 1px rgb(48, 54, 61);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: rgb(48, 54, 61);
+    border: solid 1px rgb(139, 148, 158);
   }
 }
