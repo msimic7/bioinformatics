@@ -14,6 +14,7 @@ const Dashboard = () => {
       <div className={classes.root}>
         <div className={classes.contentWrapper}>
           <div className={classes.introductionMsg}>
+            <h1>ALGORITMI ZA DNK SEKVENCIONIRANJE</h1>
             <p>
               Sekvencioniranje DNK predstavlja proces očitavanja niza slova određenog fragmenta DNK.
               Preciznije, određuje se redosled četiri gradivna elementa zvana „baze“ (A adenin, T

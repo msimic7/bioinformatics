@@ -25,7 +25,7 @@ const Lesson13 = () => (
     </p>
     <p className={classes.indent1x}>Na primer, sekvencioniramo Vaš genom.</p>
     <img alt="" src="/assets/lesson13/pic4.svg" className={classes.indent2x} />
-    <p className={classes.indent2x}>U laboratoriji “izvlačimo” Vaš genom iz svake ćelije.</p>
+    <p className={classes.indent2x}>U laboratoriji „izvlačimo” Vaš genom iz svake ćelije.</p>
     <p className={classes.indent2x}>
       Radi jednostavnosti, pretpostavimo da je izvučeni genom sledeća niska:
     </p>

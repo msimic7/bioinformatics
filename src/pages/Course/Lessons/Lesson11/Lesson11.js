@@ -20,7 +20,7 @@ const Lesson11 = () => (
       genom i dostavi javnosti do 2005. godine.
     </p>
     <p className={classes.indent1x}>
-      Godine 1997. Kreg Venter osniva privatnu kompaniju pod nazivom “Solara Genomics” koja je imala
+      Godine 1997. Kreg Venter osniva privatnu kompaniju pod nazivom „Solara Genomics” koja je imala
       za cilj da sekvencionira ljudski genom pre nego što to urade kolege koji su vodili Projekat
       ljudskog genoma. Samim tim, trka za sekvenconiranje genoma počinje, što dovodi do toga da 5
       godina pre predviđenog datuma, 2000. godine, ljudski genom biva sekvencioniran.

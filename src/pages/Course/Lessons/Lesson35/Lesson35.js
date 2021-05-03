@@ -115,7 +115,7 @@ const Lesson35 = () => (
     </p>
     <img alt="" src="/assets/lesson35/pic25.svg" className={classes.indent3x} />
     <p className={classes.indent3x}>
-      Ovaj graf ima jednu Ojlerovu putanju na osnovu koj dobijamo <b>jedinstveni genom</b>:
+      Ovaj graf ima jednu Ojlerovu putanju na osnovu koje dobijamo <b>jedinstveni genom</b>:
     </p>
     <img alt="" src="/assets/lesson35/pic26.svg" className={classes.indent3x} />
     <p className={classes.indent1x}>
