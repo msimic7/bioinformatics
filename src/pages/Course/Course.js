@@ -102,7 +102,9 @@ const Course = ({ Lesson }) => {
               <Link to="/course/lesson2112"># Pravilo dobrog sufiksa</Link>
             </div>
             <div className={classes.subsubsublesson}>
-              <Link to="/course/lesson2113"># Boyer-Moore kao kombinacija dva pravila</Link>
+              <Link to="/course/lesson2113">
+                # Boyer-Moore algoritam kao kombinacija dva pravila
+              </Link>
             </div>
             <div className={classes.subsublesson}>
               <Link to="/course/lesson212"># Offline i online algoritmi</Link>
@@ -140,6 +142,9 @@ const Course = ({ Lesson }) => {
           </div>
           <div className={classes.lesson}>
             <div className={classes.lessonInit}>Problem preklapanja očitavanja</div>
+            <div className={classes.sublesson}>
+              <Link to="/course/lesson30"># Problem preklapanja očitavanja</Link>
+            </div>
             <div className={classes.sublesson}>
               <Link to="/course/lesson31"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
             </div>

@@ -36,7 +36,7 @@ const Lesson37 = () => (
       >
         link
       </a>
-      {`), kao i sa zvanične stranice master kursa “Uvod u
+      {`), kao i sa zvanične stranice master kursa „Uvod u
       bioinformatiku” Matematičkog fakulteta u Beogradu (`}
       <a
         href="http://www.bioinformatika.matf.bg.ac.rs/#3_tab"
@@ -172,7 +172,9 @@ const Lesson37 = () => (
       customClass={classes.indent3x}
     />
 
-    <p className={classes.indent2x}>FASTQ format i rad sa njim</p>
+    <p className={classes.indent2x}>
+      FASTQ format za čuvanje očitavanja dobijenih prilikom sekvencioniranja
+    </p>
     <Literature
       img="coursera"
       title="Lecture: Sequencing reads in FASTQ format"
@@ -204,7 +206,9 @@ const Lesson37 = () => (
       customClass={classes.indent3x}
     />
 
-    <p className={classes.indent2x}>Kako analiziramo prikupljene podatke</p>
+    <p className={classes.indent2x}>
+      Kako analiziramo podatke koje smo prikupili sekvencioniranjem
+    </p>
     <Literature
       img="coursera"
       title="Lecture: Sequencers give pieces to genomic puzzles"
@@ -219,7 +223,7 @@ const Lesson37 = () => (
     />
 
     <h2 className={classes.indent1x}>PROBLEM PORAVNANJA OČITAVANJA</h2>
-    <p className={classes.indent2x}>Zašto je on težak?</p>
+    <p className={classes.indent2x}>Zašto je problem poravnanja očitavanja težak?</p>
     <Literature
       img="coursera"
       title="Lecture: Read alignment and why it's hard"
@@ -259,7 +263,7 @@ const Lesson37 = () => (
       customClass={classes.indent3x}
     />
 
-    <p className={classes.indent3x}>Boyer-Moore</p>
+    <p className={classes.indent3x}>Boyer-Moore algoritam</p>
     <Literature
       img="coursera"
       title="Lecture: Boyer-Moore basics"
@@ -299,7 +303,7 @@ const Lesson37 = () => (
       customClass={classes.indent4x}
     />
 
-    <p className={classes.indent3x}>Indeksiranje i k-gram indeksi</p>
+    <p className={classes.indent3x}>Indeksiranje i k-gram indeks</p>
     <Literature
       img="coursera"
       title="Lecture: Indexing and the k-mer index"
@@ -307,7 +311,7 @@ const Lesson37 = () => (
       customClass={classes.indent4x}
     />
 
-    <p className={classes.indent3x}>Implementacija indeksa</p>
+    <p className={classes.indent3x}>Implementacija indeksa za tekst T</p>
     <Literature
       img="coursera"
       title="Lecture: Ordered structures for indexing"

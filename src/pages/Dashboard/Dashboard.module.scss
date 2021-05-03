@@ -7,6 +7,14 @@
   background: url('./background.jpg') no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
+
+  h1 {
+    margin: 24px 0;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
 }
 
 .contentWrapper {

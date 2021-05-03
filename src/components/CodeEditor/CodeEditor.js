@@ -7,7 +7,7 @@ const CodeEditor = ({ code, result, copyable, customClass }) => {
   const [isRun, setIsRun] = useState(false);
 
   const handleRun = () => {
-    setIsRun(true);
+    setIsRun((value) => !value);
   };
 
   const handleCopyToClipboard = () => {
