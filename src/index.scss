@@ -4,6 +4,11 @@
   box-sizing: border-box;
   color: #c9d1d9;
   font-family: 'Monda', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  @media only screen and (max-width: 1337px) {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -12,9 +17,13 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.react-viewer-canvas {
+  background-color: #0d1117de;
 }

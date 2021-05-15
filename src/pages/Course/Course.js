@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import Layout from '../Layout';
 import classes from './Course.module.scss';
 import history from '../../services/history';
+import TableOfContents from './TableOfContents';
+import Lessons from './Lessons';
 
-const Course = ({ Lesson }) => {
+const Course = () => {
   const location = useLocation();
 
   const lessons = [
@@ -57,117 +58,7 @@ const Course = ({ Lesson }) => {
   return (
     <Layout>
       <div className={classes.root}>
-        <div className={classes.tableOfContents}>
-          <div className={classes.title}>Sadržaj</div>
-          <div className={classes.lesson}>
-            <div className={classes.lessonInit}>Uvod</div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson10"># Uopšteno o DNK strukturi i replikaciji</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson11"># Istorija i značaj DNK sekvencioniranja</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson12"># Genom kao niska</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson13"># Kako mašine rade DNK sekvencioniranje</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson14">
-                # FASTQ format za čuvanje očitavanja dobijenih prilikom sekvencioniranja
-              </Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson15">
-                # Kako analiziramo podatke koje smo prikupili sekvencioniranjem
-              </Link>
-            </div>
-          </div>
-          <div className={classes.lesson}>
-            <div className={classes.lessonInit}>Problem poravnanja očitavanja</div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson20"># Zašto je problem poravnanja očitavanja težak?</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson21"># Problem tačnog podudaranja</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson211"># Boyer-Moore algoritam</Link>
-            </div>
-            <div className={classes.subsubsublesson}>
-              <Link to="/course/lesson2111"># Pravilo lošeg karaktera</Link>
-            </div>
-            <div className={classes.subsubsublesson}>
-              <Link to="/course/lesson2112"># Pravilo dobrog sufiksa</Link>
-            </div>
-            <div className={classes.subsubsublesson}>
-              <Link to="/course/lesson2113">
-                # Boyer-Moore algoritam kao kombinacija dva pravila
-              </Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson212"># Offline i online algoritmi</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson213"># Indeksiranje i k-gram indeks</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson214"># Implementacija indeksa za tekst T</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson215"># Varijacije k-gram indeksa</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson216"># Indeksi genoma koji se koriste u praksi</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson22"># Problem približnog podudaranja</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson221"># Dirihleov princip</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson222"># Dinamičko programiranje i edit rastojanje</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson223"># Novo rešenje za problem približnog podudaranja</Link>
-            </div>
-            <div className={classes.subsublesson}>
-              <Link to="/course/lesson224"># Globalno i lokalno poravnanje</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson23"># Problem poravnanja očitavanja u praksi</Link>
-            </div>
-          </div>
-          <div className={classes.lesson}>
-            <div className={classes.lessonInit}>Problem preklapanja očitavanja</div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson30"># Problem preklapanja očitavanja</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson31"># Rekonstrukcija niske kao Hamiltonova putanja</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson32"># Rekonstrukcija niske kao Ojlerova putanja</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson33"># De Brujinov graf</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson34"># Ojlerova teorema</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson35"># Parovi očitavanja</Link>
-            </div>
-            <div className={classes.sublesson}>
-              <Link to="/course/lesson36"># Problemi sa kojima se susrećemo</Link>
-            </div>
-            <div className={classes.literature}>
-              <Link to="/course/lesson37">Literatura</Link>
-            </div>
-          </div>
-        </div>
+        <TableOfContents />
         <div className={classes.currentLesson}>
           <div className={classes.lessonActionButtons}>
             <div
@@ -181,15 +72,43 @@ const Course = ({ Lesson }) => {
               <i className="fas fa-arrow-right" />
             </div>
           </div>
-          <Lesson />
+          <Switch>
+            <Route path="/course/lesson10" component={Lessons.Lesson10} />
+            <Route path="/course/lesson11" component={Lessons.Lesson11} />
+            <Route path="/course/lesson12" component={Lessons.Lesson12} />
+            <Route path="/course/lesson13" component={Lessons.Lesson13} />
+            <Route path="/course/lesson14" component={Lessons.Lesson14} />
+            <Route path="/course/lesson15" component={Lessons.Lesson15} />
+            <Route path="/course/lesson20" component={Lessons.Lesson20} />
+            <Route path="/course/lesson21" component={Lessons.Lesson21} />
+            <Route path="/course/lesson211" component={Lessons.Lesson211} />
+            <Route path="/course/lesson2111" component={Lessons.Lesson2111} />
+            <Route path="/course/lesson2112" component={Lessons.Lesson2112} />
+            <Route path="/course/lesson2113" component={Lessons.Lesson2113} />
+            <Route path="/course/lesson212" component={Lessons.Lesson212} />
+            <Route path="/course/lesson213" component={Lessons.Lesson213} />
+            <Route path="/course/lesson214" component={Lessons.Lesson214} />
+            <Route path="/course/lesson215" component={Lessons.Lesson215} />
+            <Route path="/course/lesson216" component={Lessons.Lesson216} />
+            <Route path="/course/lesson22" component={Lessons.Lesson22} />
+            <Route path="/course/lesson221" component={Lessons.Lesson221} />
+            <Route path="/course/lesson222" component={Lessons.Lesson222} />
+            <Route path="/course/lesson223" component={Lessons.Lesson223} />
+            <Route path="/course/lesson224" component={Lessons.Lesson224} />
+            <Route path="/course/lesson23" component={Lessons.Lesson23} />
+            <Route path="/course/lesson30" component={Lessons.Lesson30} />
+            <Route path="/course/lesson31" component={Lessons.Lesson31} />
+            <Route path="/course/lesson32" component={Lessons.Lesson32} />
+            <Route path="/course/lesson33" component={Lessons.Lesson33} />
+            <Route path="/course/lesson34" component={Lessons.Lesson34} />
+            <Route path="/course/lesson35" component={Lessons.Lesson35} />
+            <Route path="/course/lesson36" component={Lessons.Lesson36} />
+            <Route path="/course/lesson37" component={Lessons.Lesson37} />
+          </Switch>
         </div>
       </div>
     </Layout>
   );
-};
-
-Course.propTypes = {
-  Lesson: PropTypes.func.isRequired,
 };
 
 export default Course;

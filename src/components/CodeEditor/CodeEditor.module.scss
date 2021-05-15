@@ -1,23 +1,23 @@
 .root {
   background: #282f38;
-  min-width: 700px;
-  width: 700px;
+  min-width: 43.75rem;
+  width: 43.75rem;
   width: fit-content;
-  margin: 24px 0;
-  padding: 8px 16px 16px 16px;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem 1rem 1rem;
   white-space: pre-wrap;
   border-radius: 5px;
 
   & pre {
     background: #f2f2f2;
-    border-radius: 4px;
-    padding: 0 16px 24px 16px;
+    border-radius: 0.25rem;
+    padding: 0 1rem 1.5rem 1rem;
     color: #0d1117;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   & .code {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     background: #dbdbdb;
   }
 
@@ -26,14 +26,14 @@
     flex-direction: column;
 
     & p {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
   }
 
   & .options {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
+    padding: 0.5rem 0;
   }
 
   & .actions {
@@ -41,11 +41,11 @@
   }
 
   & .codeActions {
-    margin: 0 8px;
+    margin: 0 0.5rem;
     cursor: pointer;
 
     & i {
-      font-size: 16px;
+      font-size: 1rem;
     }
 
     & i:hover {

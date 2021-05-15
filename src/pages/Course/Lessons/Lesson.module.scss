@@ -2,18 +2,23 @@
   width: 100%;
 
   & h1,
-  h2,
-  img {
-    margin: 24px 0;
-  }
-
-  & img {
-    display: block;
+  h2 {
+    padding: 0.5rem;
   }
 
   & p {
-    font-size: 16px;
-    margin-bottom: 16px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    max-width: 80%;
+    
+    @media only screen and (max-width: 1920px) {
+      max-width: 90%;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -30,101 +35,39 @@
   }
 }
 
-.indent1x {
-  margin-left: 40px !important;
-}
+$sizes: 100;
 
-.indent2x {
-  margin-left: 80px !important;
+@mixin margin-classes {
+  @for $i from 1 through $sizes {
+     $margin: $i * 0.25rem;
+    /* margin #{$margin} */
+    .m#{$i}  {margin: $margin !important;}
+    .ml#{$i} {margin-left: $margin !important;}
+    .mr#{$i} {margin-right: $margin !important;}
+    .mt#{$i} {margin-top: $margin !important;}
+    .mb#{$i} {margin-bottom: $margin !important;}
+    .mx#{$i} {margin-left: $margin !important; margin-right: $margin !important;}
+    .my#{$i} {margin-top: $margin !important; margin-bottom: $margin !important;}
+  }
 }
+@include margin-classes;
 
-.indent3x {
-  margin-left: 120px !important;
-}
 
-.indent4x {
-  margin-left: 160px !important;
+@mixin padding-classes {
+  @for $i from 1 through $sizes {
+    $padding: $i * 0.25rem;
+    /* padding #{$padding} */
+    .p#{$i} {padding: $padding !important;}
+    .pl#{$i} {padding-left: $padding !important;}
+    .pr#{$i} {padding-right: $padding !important;}
+    .pt#{$i} {padding-top: $padding !important;}
+    .pb#{$i} {padding-bottom: $padding !important;}
+    .px#{$i} {padding-left: $padding !important; padding-right: $padding !important;}
+    .py#{$i} {padding-top: $padding !important; padding-bottom: $padding !important;}
+  }
 }
+@include padding-classes;
 
-.indent5x {
-  margin-left: 200px !important;
-}
-
-.indent6x {
-  margin-left: 240px !important;
-}
-
-.mt8 {
-  margin-top: 8px !important;
-}
-
-.mt16 {
-  margin-top: 16px !important;
-}
-
-.mt24 {
-  margin-top: 24px !important;
-}
-
-.mt32 {
-  margin-top: 32px !important;
-}
-
-.mt40 {
-  margin-top: 40px !important;
-}
-
-.mt48 {
-  margin-top: 48px !important;
-}
-
-.mr8 {
-  margin-right: 8px !important;
-}
-
-.mr16 {
-  margin-right: 16px !important;
-}
-
-.mr24 {
-  margin-right: 24px !important;
-}
-
-.mr32 {
-  margin-right: 32px !important;
-}
-
-.mr40 {
-  margin-right: 40px !important;
-}
-
-.mr48 {
-  margin-right: 48px !important;
-}
-
-.mb8 {
-  margin-bottom: 8px !important;
-}
-
-.mb16 {
-  margin-bottom: 16px !important;
-}
-
-.mb24 {
-  margin-bottom: 24px !important;
-}
-
-.mb32 {
-  margin-bottom: 32px !important;
-}
-
-.mb40 {
-  margin-bottom: 40px !important;
-}
-
-.mb48 {
-  margin-bottom: 48px !important;
-}
 
 .picWithTxt {
   display: flex;
