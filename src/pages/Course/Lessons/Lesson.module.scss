@@ -11,12 +11,16 @@
     padding: 0.5rem;
     word-wrap: break-word;
     max-width: 80%;
-    
+
     @media only screen and (max-width: 1920px) {
-      max-width: 90%;
+      max-width: 75%;
     }
 
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1920px) {
+      max-width: 85%;
+    }
+
+    @media only screen and (max-width: 1050px) {
       max-width: 100%;
     }
   }
@@ -33,6 +37,12 @@
   & img {
     margin: 0;
   }
+}
+
+.centerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 $sizes: 100;

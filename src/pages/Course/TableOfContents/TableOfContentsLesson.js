@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useBreakpoints } from 'react-device-breakpoints';
+import { useLocation } from 'react-router';
 import history from '../../../services/history';
+import classes from '../Course.module.scss';
 
 const TableOfContentsLesson = ({ children, className, to, setShow }) => {
   const device = useBreakpoints();
+  const location = useLocation();
 
   return (
     <div
@@ -15,8 +18,14 @@ const TableOfContentsLesson = ({ children, className, to, setShow }) => {
           setShow((val) => !val);
         }
         history.push(to);
+        document.querySelector('#scrollToTop').scrollIntoView();
       }}
     >
+      {location.pathname === to ? (
+        <i className={`fas fa-circle ${classes.lessonIndicator}`} />
+      ) : (
+        <i className={`far fa-circle ${classes.lessonIndicator}`} />
+      )}
       {children}
     </div>
   );

@@ -14,18 +14,23 @@
   left: 1rem;
   top: 1rem;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     display: none !important;
    }
 }
 
+.scrollToTop {
+  margin-bottom: 4.75rem;
+}
+
 .tableOfContents {
   height: calc(100vh - 7rem);
+  background-color: #0d1117;
   width: 20%;
   min-width: 250px;
   border-right: rgb(22, 27, 34) solid 2px;
-  padding: 24px 16px 16px 16px;
-  overflow-y: auto;
+  padding: 1.5rem 1rem 1rem 1rem;
+  overflow: auto;
   -ms-overflow-style: none; 
   scrollbar-width: none;
 
@@ -35,12 +40,21 @@
 
   @media only screen and (max-width: 768px) {
     display: none;
-    background-color: black;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1000;
   }
+}
+
+.lessonIndicator {
+  margin-right: 0.5rem;
+  font-size: 0.75rem !important;
+
+  @media only screen and (max-width: 1337px) {
+    font-size: 0.9rem !important;
+  }
+  
 }
 
 .tableOfContentsBackdrop {
@@ -63,13 +77,14 @@
 
 .currentLesson {
   width: 80%;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  padding: 4.75rem 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
+  overflow-y: auto;
 
   @media only screen and (max-width: 768px) {
-   width: 100%;
+    width: 100%;
   }
 }
 
@@ -84,6 +99,7 @@
 }
 
 .literature {
+  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   color: rgb(5, 223, 223);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Viewer from 'react-viewer';
-import classes from './index.module.scss';
+import classes from './Image.module.scss';
 
 const Image = ({ src, alt, className }) => {
   const [show, setShow] = useState(false);
@@ -18,6 +18,7 @@ const Image = ({ src, alt, className }) => {
         scalable={false}
         attribute={false}
         changeable={false}
+        zoomable={false}
         noNavbar
       />
     </div>

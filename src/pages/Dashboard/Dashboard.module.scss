@@ -1,5 +1,4 @@
 .root {
-  min-height: 500px;
   height: calc(100vh - 7rem);
   width: 100%;
   display: flex;
@@ -9,37 +8,38 @@
   background-blend-mode: darken;
 
   h1 {
-    margin: 24px 0;
+    margin: 1.5rem 0;
   }
 
   p {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 }
 
 .contentWrapper {
+  overflow-y: auto;
   max-width: 960px;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 16px;
+  padding: 1.5rem 4rem;
 }
 
 .introductionMsg {
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
-  margin-bottom: 24px;
-  margin-top: 32px;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .btnStartCourse {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   outline: none;
   border: none;
   background: #21262d;

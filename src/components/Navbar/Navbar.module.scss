@@ -1,8 +1,10 @@
+@import '../../constants/variables.scss';
+
 .root {
   height: 4rem;
   width: 100%;
-  background-color: #161b22;
-  padding: 0 32px;
+  background-color: $primary-color-medium;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
 }
@@ -23,11 +25,11 @@
 
   & a {
     text-decoration: none;
-    margin-left: 32px;
+    margin-left: 2rem;
     font-weight: 600;
 
     &:hover {
-      color: gray;
+      color: $primary-color-light;
     }
   }
 }
