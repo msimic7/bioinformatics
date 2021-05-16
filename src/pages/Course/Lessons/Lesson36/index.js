@@ -44,8 +44,13 @@ const Lesson36 = () => (
       Posmatrajmo sledeći primer u kome nemamo savršenu pokrivenost genoma ATGCCGTATGGACAACGACT:
     </p>
     <p className={classes.ml18}>PRIMER</p>
-    <Image src="/assets/lesson36/pic1.svg" className={classes.ml28} />
-
+    <Image src="/assets/lesson36/pic10.svg" className={classes.ml28} />
+    <p className={classes.ml28}>
+      Ovo narušava našu osnovnu pretpostavku za De Brujinov graf, a to je da imamo očitavanja za
+      svaki k-gram genoma, tj. da imamo savršenu pokrivenost. Ovaj problem rešavamo tako što
+      dobijena očitavanja delimo na manje k-grame:
+    </p>
+    <Image src="/assets/lesson36/pic11.svg" className={classes.ml28} />
     <p className={classes.ml8}>DRUGA NEREALNA PRETPOSTAVKA : očitavanja nisu podložna greškama</p>
     <p className={classes.ml18}>
       Posmatrajmo prethodni primer i pretpostavimo da smo dobili jedno očitavanje koje ima grešku:

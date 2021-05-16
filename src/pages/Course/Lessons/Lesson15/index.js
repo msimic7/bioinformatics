@@ -47,7 +47,6 @@ const Lesson15 = () => (
       U našem problemu rekonstrukcije genoma, delovi novina koji su ostali očuvani posle eksplozije
       bi predstavljali očitavanja, dok bi kopija tih novina predstavljala referentni genom.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       Jedna bitna činjenica jeste da ako uzmemo dva ljudska genoma (od dve osobe koje nisu u
       srodstvu), njihovi genomi će se poklapati 99.8 - 99.9%. Što je oko jedne ili dve razlike na
@@ -55,7 +54,6 @@ const Lesson15 = () => (
       šablon ili vodič za sastavljanje tvog genoma, na isti način kao što kopiju novina korisitimo
       kao vodič za spajanje delova koji su očuvani posle eksplozije.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       Neka su nam data očitavanja Vašeg genoma, kao i ljudski referentni genom (genom koji je
       sastavljen u projektu ljudskog genoma 2001. godine):
@@ -63,16 +61,14 @@ const Lesson15 = () => (
     <Image src="/assets/lesson15/pic5.svg" className={classes.ml18} />
     <p className={classes.ml8}>
       Uzmemo jedno očitavanje i na osnovu referentog genoma pronalazimo njegovu poziciju u tom
-      genomu, tako tražimo onu sekvencu u referentom genomu sa kojom se naše očitavanje najviše
+      genomu tako što tražimo onu sekvencu u referentom genomu sa kojom se naše očitavanje najviše
       poklapa.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       Ključna stvar jeste da imamo takve referente genome. Oni postoje za različite vrste, ne samo
       za ljude, nego i za voćnu muvu, miševe, pčele, piliće, pacove, kukuruz, itd. Imamo na hiljade
       takvih genoma koji su dostupni za preuzimanje iz javnih baza podataka.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       Stoga, u prvom delu ovog kursa ćemo se baviti problemom sastavljanja genoma na osnovu
       dobijenih očitavanja i referentog genoma koji će nam služiti kao vodič pri tom sastavljanju,
@@ -80,7 +76,6 @@ const Lesson15 = () => (
       očuvanih papira posle eksplozije. Ovaj problem ćemo zvati{' '}
       <b>Problem poravnanja očitavanja (eng. read alignment problem)</b>.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       U drugom delu ćemo se baviti slučajem kada nemamo referenti genom. Na primer, ako želimo da
       proučavamo genom neke egzotične biljke koji nikada do tada nije bio sastavljen. Ovaj problem

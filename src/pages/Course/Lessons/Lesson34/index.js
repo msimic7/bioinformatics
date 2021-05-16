@@ -69,6 +69,11 @@ const Lesson34 = () => (
       Posmatrajmo jednu moguću putanju kojom bi mrav išao:
     </p>
     <Image src="/assets/lesson34/pic6.svg" className={classes.ml28} />
+    <p className={classes.ml28}>
+      Kako je graf balansiran (za svaku ulaznu granu u čvor postoji izlazna grana iz čvora), jedini
+      čvor u kojem bi mrav mogao da se zaglavi jeste onaj čvor iz kojeg je krenuo, jer je to jedini
+      čvor u kojem je mrav već koristio izlaznu granu.
+    </p>
     <p className={classes.ml18}>
       Ovaj problem rešavamo tako što dopuštamo mravu da počne iz drugog čvora putanje koju je već
       formirao, i to iz onog čvora te putanje koji ima neposećene izlazne grane. U ovom slučaju, to
@@ -288,7 +293,6 @@ const Lesson34 = () => (
         'F': ['D','E'],
         'G': ['F']
     })
-
     g.napravi_balansiran_graf()
     g.ojlerov_ciklus()
     `}
@@ -385,7 +389,6 @@ const Lesson34 = () => (
     <CodeEditor
       code={`
     # Rekonstrukcija sekvence od pronađenog Ojlerovog ciklusa
-
     # Prvi čvor u ciklusu
     sekv = ciklus[0]
     

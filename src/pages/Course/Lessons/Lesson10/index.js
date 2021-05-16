@@ -65,7 +65,7 @@ const Lesson10 = () => (
       dezoksiribozom :
     </p>
     <Image src="/assets/lesson10/pic11.svg" className={classes.ml18} />
-    <p className={`${classes.mb24} ${classes.ml18}`}>
+    <p className={classes.ml18}>
       Kao što smo već i videli, fosforne grupe se vežu za treći i za peti C-atom dezoksiriboze. Na
       osnovu tih veza prvi lanac će izgledati kao niz 5, 3, 5, 3, 5, 3, ... , dok će drugi lanac
       izgledati kao niz 3, 5, 3, 5, 3, 5, ...

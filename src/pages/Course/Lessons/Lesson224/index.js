@@ -195,7 +195,7 @@ print(globalnoPoravnanje(x,y))
     <p className={classes.ml28}>
       Na osnovu ove putanje dobijamo da su najsličnije podniske od X i Y:
     </p>
-    <Image src="/assets/lesson224/pic14.svg" className={classes.indent5x} />
+    <Image src="/assets/lesson224/pic14.svg" className={classes.ml38} />
   </div>
 );
 

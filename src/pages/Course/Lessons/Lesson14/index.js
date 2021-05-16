@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import classes from '../Lesson.module.scss';
 import CodeEditor from '../../../../components/CodeEditor';
@@ -14,7 +13,7 @@ const Lesson14 = () => (
     <p className={classes.ml8}>Primer kako čuvamo jedno očitavanje u FASTQ formatu:</p>
     <Image src="/assets/lesson14/pic1.svg" className={classes.ml18} />
     <p className={classes.ml18}>Imamo četiri linije informacija.</p>
-    <Image src="/assets/lesson14/pic2.svg" className={classes.ml28} />
+    <Image src="/assets/lesson14/pic2.svg" className={classes.ml18} />
     <p className={classes.ml18}>
       Prva linija sadrži ime očitavanja i može sadržati i informacije o:
     </p>
@@ -31,28 +30,28 @@ const Lesson14 = () => (
       Druga linija sadrži samo očitavanje, dok treću liniju možemo ignorisati jer nema nikakvo
       posebno značenje za analiziranje očitavanja.
     </p>
-    <Image src="/assets/lesson14/pic4.svg" className={classes.ml28} />
-    <p className={classes.ml28}>
+    <Image src="/assets/lesson14/pic4.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
       Četvrta linija predstavlja ASCII-enokidiran kvalitet baze Q za svaku bazu iz očitavanja, tj.
       koristimo karakter kako bismo enkodirali brojčanu vrednost Q.
     </p>
-    <p className={classes.ml28}>ASCII tabela data je slikom ispod.</p>
-    <Image src="/assets/lesson14/pic5.svg" className={classes.ml38} />
-    <p className={classes.ml38}>
+    <p className={classes.ml18}>ASCII tabela data je slikom ispod.</p>
+    <Image src="/assets/lesson14/pic5.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
       Kako vrednost kvaliteta baze ne mora biti ceo broj, pitamo se kako ga onda predstavljamo
       pomoću karaktera kojima odgovaraju celi brojevi 0-255?
     </p>
-    <p className={classes.ml48}>
+    <p className={classes.ml28}>
       To radimo pomoću metode Fred 33 (eng. Phred33), tako što ćemo zaokružiti vrednost Q na
       najbliži ceo broj, dodati mu 33 i onda pomoću ASCII tabele odrediti karakter koji odgovara tom
       celom broju.
     </p>
-    <p className={classes.ml48}>
+    <p className={classes.ml28}>
       Suprotni smer, odnosno ako imamo dat ASCII karakter koji predstavlja kvalitet baze, tada ćemo
       brojčani kvalitet baze (Q) dobiti tako što ćemo taj karakter prebaciti u ceo broj pomoću ASCII
       tabele i od njega oduzeti 33.
     </p>
-    <p className={classes.ml38}>Funkcije koje ćemo koristiti za to su sledeće:</p>
+    <p className={classes.ml18}>Funkcije koje ćemo koristiti za to su sledeće:</p>
     <CodeEditor
       code={`
       def QuFred33(Q):
@@ -61,7 +60,7 @@ const Lesson14 = () => (
         # funkcija chr konvertuje ceo broj u odgovarajući karakter pomoću ASCII tabele
         `}
       result=""
-      customClass={classes.ml38}
+      customClass={classes.ml28}
     />
     <CodeEditor
       code={`
@@ -71,9 +70,9 @@ const Lesson14 = () => (
       # funkcija ord konvertuje karakter u odgovarajući ceo broj pomoću ASCII tabele
         `}
       result=""
-      customClass={classes.ml38}
+      customClass={classes.ml28}
     />
-    <p className={classes.ml18}>
+    <p className={classes.ml8}>
       Cela datoteka u FASTQ formatu koja sadrži informacije o svim očitavanjima koje smo
       sekvencionirali će biti predstavljena na sledeći način (ovde ćemo prikazati samo dva
       očitavanja, iako će njih biti oko milion ili čak milijardu):
