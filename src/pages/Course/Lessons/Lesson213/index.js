@@ -12,7 +12,7 @@ const Lesson213 = () => (
     <p className={classes.ml8} />
     <p className={classes.ml8}>
       Ono što smo već zaključili jeste da ćemo za dati problem koristiti offline algoritme jer se
-      referentni genom (tekst T) ne menja od eksperimenta do eksperimneta, dok se sekvenciona
+      referentni genom (tekst T) ne menja od eksperimenta do eksperimenta, dok se sekvenciona
       očitavanja (šabloni) menjaju. Samim tim, radićemo preprocesiranje teksta T (koji može biti
       dugačak 3 milijarde karaktera, pa čak i više). Kako bismo taj proces bolje razumeli
       posmatraćemo sledeće analogne procese:

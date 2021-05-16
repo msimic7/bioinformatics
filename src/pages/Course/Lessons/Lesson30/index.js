@@ -28,7 +28,10 @@ const Lesson30 = () => (
       rekonstrukciji genoma. Pre nego što definišemo korektan problem, potrebno je definisati k-gram
       kompoziciju niske:
     </p>
-    <Image src="/assets/lesson30/pic0.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
+      <span className={classes.red}>Definicija.</span> K-gram kompozicija niske s predstavlja sve
+      k-grame te niske.
+    </p>
     <p className={classes.ml8}>PRIMER. Naći 3-gram kompoziciju niske TAATGCCATGGGATGTT.</p>
     <Image src="/assets/lesson30/pic2.svg" className={classes.ml18} />
     <p className={classes.ml8}>PROBLEM REKONSTRUKCIJE NISKE</p>

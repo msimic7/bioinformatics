@@ -52,7 +52,7 @@ const TableOfContents = () => {
         <div className={lessonClasses.mb2}>
           <div className={classes.section}>Problem poravnanja očitavanja</div>
           <TableOfContentsLesson className={classes.lesson} setShow={setShow} to="/course/lesson20">
-            Uopšteno o DNK strukturi i replikaciji
+            Zašto je problem poravnanja očitavanja težak?
           </TableOfContentsLesson>
           <TableOfContentsLesson className={classes.lesson} setShow={setShow} to="/course/lesson21">
             Problem tačnog podudaranja

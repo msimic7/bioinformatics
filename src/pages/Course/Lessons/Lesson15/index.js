@@ -23,7 +23,6 @@ const Lesson15 = () => (
       je moj genom različit od tvog? Ili šta na osnovu mog genoma mogu da zaključim o svojim
       predispozicijama za određene bolesti, kao i druga slična pitanja.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       Na data pitanja ne možemo odgovoriti tako što ćemo analizirati svako očitavanje ponaosob.
       Očitavanja su vrlo kratka (dužine oko 100 nukletoida) i jedno očitavanje nije u mogućnosti da
@@ -64,8 +63,8 @@ const Lesson15 = () => (
     <Image src="/assets/lesson15/pic5.svg" className={classes.ml18} />
     <p className={classes.ml8}>
       Uzmemo jedno očitavanje i na osnovu referentog genoma pronalazimo njegovu poziciju u tom
-      genomu, tako što ćemo tražiti onu sekvencu u referentom genomu sa kojom se naše očitavanje
-      najviše poklapa.
+      genomu, tako tražimo onu sekvencu u referentom genomu sa kojom se naše očitavanje najviše
+      poklapa.
     </p>
     <p className={classes.ml8} />
     <p className={classes.ml8}>

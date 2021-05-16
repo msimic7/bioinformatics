@@ -15,7 +15,7 @@ const Lesson14 = () => (
     <Image src="/assets/lesson14/pic1.svg" className={classes.ml18} />
     <p className={classes.ml18}>Imamo četiri linije informacija.</p>
     <Image src="/assets/lesson14/pic2.svg" className={classes.ml28} />
-    <p className={classes.ml28}>
+    <p className={classes.ml18}>
       Prva linija sadrži ime očitavanja i može sadržati i informacije o:
     </p>
     <p className={classes.ml28}>- samom eksperimentu pomoću kojeg smo dobili dato očitavanje</p>
@@ -23,11 +23,11 @@ const Lesson14 = () => (
     <p className={classes.ml28}>
       - tome na kom je delu ploče grupa fragmenata, iz kojeg smo dobili dato očitavanje, smeštena
     </p>
-    <p className={classes.ml28}>
+    <p className={classes.ml18}>
       Nijedna od ovih informacija nam neće biti značajna za analiziranje očitavanja.
     </p>
-    <Image src="/assets/lesson14/pic3.svg" className={classes.ml28} />
-    <p className={classes.ml28}>
+    <Image src="/assets/lesson14/pic3.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
       Druga linija sadrži samo očitavanje, dok treću liniju možemo ignorisati jer nema nikakvo
       posebno značenje za analiziranje očitavanja.
     </p>
@@ -53,7 +53,6 @@ const Lesson14 = () => (
       tabele i od njega oduzeti 33.
     </p>
     <p className={classes.ml38}>Funkcije koje ćemo koristiti za to su sledeće:</p>
-
     <CodeEditor
       code={`
       def QuFred33(Q):
@@ -62,7 +61,7 @@ const Lesson14 = () => (
         # funkcija chr konvertuje ceo broj u odgovarajući karakter pomoću ASCII tabele
         `}
       result=""
-      customClass={classes.ml48}
+      customClass={classes.ml38}
     />
     <CodeEditor
       code={`
@@ -72,9 +71,8 @@ const Lesson14 = () => (
       # funkcija ord konvertuje karakter u odgovarajući ceo broj pomoću ASCII tabele
         `}
       result=""
-      customClass={classes.ml48}
+      customClass={classes.ml38}
     />
-
     <p className={classes.ml18}>
       Cela datoteka u FASTQ formatu koja sadrži informacije o svim očitavanjima koje smo
       sekvencionirali će biti predstavljena na sledeći način (ovde ćemo prikazati samo dva

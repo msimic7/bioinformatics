@@ -22,7 +22,6 @@ const Lesson224 = () => (
       (kaznu), odnosno 1. Tačnije, nismo pravili razliku ako dolazi do substitucije između dve baze
       i ako dolazi do umetanja/brisanja određene baze.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       U praksi tako nešto nije realno jer se mogu desiti sledeće situacije:
     </p>
@@ -34,7 +33,6 @@ const Lesson224 = () => (
       2. Umetanja/brisanja su mnogo ređa nego substitucije, tako da ćemo njima dodeljivati veće
       vrednosti, odnosno veću kaznu nego substitucijama.
     </p>
-    <p className={classes.ml8} />
     <p className={classes.ml8}>
       <b>1.</b>
     </p>
@@ -194,7 +192,7 @@ print(globalnoPoravnanje(x,y))
       podudaranja.
     </p>
     <Image src="/assets/lesson224/pic13.svg" className={classes.ml38} />
-    <p className={classes.ml38}>
+    <p className={classes.ml28}>
       Na osnovu ove putanje dobijamo da su najsličnije podniske od X i Y:
     </p>
     <Image src="/assets/lesson224/pic14.svg" className={classes.indent5x} />

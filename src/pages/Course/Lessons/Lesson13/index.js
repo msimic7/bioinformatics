@@ -40,8 +40,7 @@ const Lesson13 = () => (
     <p className={classes.ml18}>
       Na datoj ravnoj ploči nasumično će biti postavljeni svi jednolančani fragmenti (oko milion ili
       milijardu njih). Ovi fragmenti su zapravo DNK molekuli koje želimo da sekvencioniramo. Za
-      svaki fragment sa date ploče ćemo imati jedno sekvenciono očitavanje (komplementarni lanac
-      fragmenta).
+      svaki fragment sa date ploče ćemo imati jedno očitavanje (komplementarni lanac fragmenta).
     </p>
     <p className={classes.ml18}>
       Radi jednostavnosti, posmatrajmo lego verziju date ploče sa tri fragmenta koja su postavljena
@@ -64,7 +63,7 @@ const Lesson13 = () => (
     <Image src="/assets/lesson13/pic10.svg" className={classes.ml28} />
     <p className={classes.ml18}>
       Pretpostavimo da želimo da sekvencioniramo sledeća tri fragmenta, odnosno želimo da nađemo
-      njihova sekvenciona očitavanja. Obeležimo ta očitavanja kao O1, O2 i O3:
+      njihova očitavanja. Obeležimo ta očitavanja kao O1, O2 i O3:
     </p>
     <Image src="/assets/lesson13/pic11.svg" className={classes.ml28} />
     <p className={classes.ml18}>
@@ -80,7 +79,7 @@ const Lesson13 = () => (
     <div>
       <Image src="/assets/lesson13/pic13.svg" className={classes.ml38} />
     </div>
-    <p className={classes.ml28}>korak2</p>
+    <p className={classes.ml28}>korak3</p>
     <div>
       <Image src="/assets/lesson13/pic14.svg" className={classes.ml38} />
     </div>
@@ -132,12 +131,12 @@ const Lesson13 = () => (
       prvo vršimo njihovo komplementiranje, odnosno prolazimo čitav proces njhove sinteze.
     </p>
     <p className={classes.ml8}>Da sumiramo, kod sekvencioniranja sintezom imamo:</p>
-    <p className={classes.ml8}>- milijardu fragmenata koje treba da sekvencioniramo</p>
-    <p className={classes.ml8}>
+    <p className={classes.ml18}>- milijardu fragmenata koje treba da sekvencioniramo</p>
+    <p className={classes.ml18}>
       - masivnu paralelnost : foroaparat istovremeno slika sve boje koje se manifestuju u jednom
       ciklusu, odnosno slika sve fragmente istovremeno
     </p>
-    <p className={classes.ml8}>
+    <p className={classes.ml18}>
       - terminatore koji služe da održavaju sinhronizovanost ovog procesa, odnosno zadržavaju proces
       daljeg komplementiranja fragmenata sve dok ne izvršimo slikanje boja koje se manifestuje pri
       reakciji terminatora i baza u trenutnom ciklusu

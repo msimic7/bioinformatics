@@ -35,14 +35,20 @@ const Lesson222 = () => (
     <p className={classes.ml8}>
       Pre nego što implementiramo algoritam za edit rastojanje, pogledajmo sledeće nejednakosti:
     </p>
-    <Image src="/assets/lesson222/pic2.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
+      1. Neka su x i y dve niske iste dužine. Tada će važiti sledeća nejednakost:
+    </p>
+    <p className={classes.ml18}>{`editRastojanje(x,y) <= hamingovoRastojanje(x,y)`}</p>
     <p className={classes.ml28}>PRIMER</p>
     <Image src="/assets/lesson222/pic3.svg" className={classes.ml38} />
     <p className={classes.ml28}>
       Ova nejednakost jasno važi iz razloga što edit rastojanje, pored substitucije, korisiti i
       brisanje i umetanje uz pomoć kojeg u manjem broju koraka dolazimo od jedne do druge niske.
     </p>
-    <Image src="/assets/lesson222/pic4.svg" className={classes.ml18} />
+    <p className={classes.ml18}>
+      2. Neka su x i y dve niske različite dužine. Tada će važiti sledeća nejednakost:
+    </p>
+    <p className={classes.ml18}>{`editRastojanje(x,y) >= ||x| - |y||`}</p>
     <p className={classes.ml28}>
       Posmatrajmo ovaj jednostavni primer u kome nam nije bitno koji se tačno karakteri nalaze u
       datim niskama, samo njihov broj:

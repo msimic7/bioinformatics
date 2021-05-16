@@ -47,12 +47,14 @@ const Course = () => {
     const currentLessonNum = lessons.indexOf(location.pathname.split('/').splice(-1)[0]);
     const previousLessonNum = currentLessonNum === 0 ? lessons.length - 1 : currentLessonNum - 1;
     history.push(`/course/${lessons[previousLessonNum]}`);
+    document.querySelector('#scrollToTop').scrollIntoView();
   };
 
   const handleNextLesson = () => {
     const currentLessonNum = lessons.indexOf(location.pathname.split('/').splice(-1)[0]);
     const previousLessonNum = currentLessonNum === lessons.length - 1 ? 0 : currentLessonNum + 1;
     history.push(`/course/${lessons[previousLessonNum]}`);
+    document.querySelector('#scrollToTop').scrollIntoView();
   };
 
   return (

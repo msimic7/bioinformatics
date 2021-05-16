@@ -65,12 +65,12 @@ const Lesson36 = () => (
     </p>
     <Image src="/assets/lesson36/pic5.svg" className={classes.ml28} />
     <p className={classes.ml18}>
-      Pri sekvencioniranju genoma, obično ćemo imati mnogo netačnih očitavanja, tj. mnogo ovakvih
+      Pri sekvencioniranju genoma obično ćemo imati mnogo netačnih očitavanja tj. mnogo ovakvih
       balončića:
     </p>
     <Image src="/assets/lesson36/pic6.svg" className={classes.ml28} />
     <p className={classes.ml18}>
-      Ove greške, tj. ovi balončići nam predstavljaju poteškoće pri rekonstrukciji genoma. Međutim,
+      Ove greške tj. ovi balončići nam predstavljaju poteškoće pri rekonstrukciji genoma. Međutim,
       istraživači su razvili algoritme koji ih na efikasan način uklanjaju i pojednostavlju graf.
       Međutim, graf ne mora izgledati jednostavno ni nakon koraka pojednostavljenja. To možemo
       videti na primeru genoma bakterije N.meningitidis:
