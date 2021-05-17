@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes, { string } from 'prop-types';
 import classes from '../Lessons/Lesson.module.scss';
 
 const Literature = ({ img, title, url, customClass }) => (
@@ -19,5 +19,16 @@ const Literature = ({ img, title, url, customClass }) => (
     </div>
   </div>
 );
+
+Literature.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  customClass: string,
+};
+
+Literature.defaultProps = {
+  customClass: '',
+};
 
 export default Literature;
