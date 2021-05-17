@@ -38,7 +38,7 @@ const Lesson222 = () => (
     <p className={classes.ml18}>
       1. Neka su x i y dve niske iste dužine. Tada će važiti sledeća nejednakost:
     </p>
-    <p className={classes.ml28}>{`editRastojanje(x,y) <= hamingovoRastojanje(x,y)`}</p>
+    <p className={classes.ml28}>{`editRastojanje(x,y) <= hamingovoRastojanje(x,y).`}</p>
     <p className={classes.ml28}>PRIMER</p>
     <Image src="/assets/lesson222/pic3.svg" className={classes.ml38} />
     <p className={classes.ml28}>
@@ -48,7 +48,7 @@ const Lesson222 = () => (
     <p className={classes.ml18}>
       2. Neka su x i y dve niske različite dužine. Tada će važiti sledeća nejednakost:
     </p>
-    <p className={classes.ml28}>{`editRastojanje(x,y) >= ||x| - |y||`}</p>
+    <p className={classes.ml28}>{`editRastojanje(x,y) >= ||x| - |y||.`}</p>
     <p className={classes.ml28}>
       Posmatrajmo ovaj jednostavni primer u kome nam nije bitno koji se tačno karakteri nalaze u
       datim niskama, samo njihov broj:
