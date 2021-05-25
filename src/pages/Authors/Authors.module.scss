@@ -21,6 +21,14 @@
   flex-direction: column;
   padding: 4rem 3rem 1.5rem 3rem;
 
+  overflow: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   @media only screen and (max-width: 768px) {
     padding: 4rem 2rem 1.5rem 2rem;
    }
