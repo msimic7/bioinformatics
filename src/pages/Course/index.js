@@ -1,12 +1,12 @@
 import React from 'react';
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Switch, useHistory, useLocation } from 'react-router-dom';
 import Layout from '../Layout';
 import classes from './Course.module.scss';
-import history from '../../services/history';
 import TableOfContents from './TableOfContents';
 import Lessons from './Lessons';
 
 const Course = () => {
+  const history = useHistory();
   const location = useLocation();
 
   const lessons = [

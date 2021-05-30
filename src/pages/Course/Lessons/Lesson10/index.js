@@ -109,7 +109,7 @@ const Lesson10 = () => (
       regiona. Ovde ćemo prikazati samo jedan smer, drugi je analogan.
     </p>
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za helikazu :</p> <img alt="" src="/assets/lesson10/pic17.svg" />
+      <p>oznaka za helikazu :</p> <Image src="/assets/lesson10/pic17.svg" />
     </span>
     <Image src="/assets/lesson10/pic18.svg" className={classes.ml18} />
     <p className={classes.ml8}>
@@ -117,10 +117,10 @@ const Lesson10 = () => (
       zvani topoizomeraze sprečavaju dodatno uvijanje neraskinutih DNK lanaca.
     </p>
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za SBB protein :</p> <img alt="" src="/assets/lesson10/pic19.svg" />
+      <p>oznaka za SBB protein :</p> <Image src="/assets/lesson10/pic19.svg" />
     </span>
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za topoizomerazu :</p> <img alt="" src="/assets/lesson10/pic20.svg" />
+      <p>oznaka za topoizomerazu :</p> <Image src="/assets/lesson10/pic20.svg" />
     </span>
     <Image src="/assets/lesson10/pic21.svg" className={classes.ml18} />
     <p className={classes.ml8}>
@@ -129,7 +129,7 @@ const Lesson10 = () => (
       umesto azotne baze Timin poseduje azotnu bazu Uracil koja je bazni par Adenina.
     </p>
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za primazu :</p> <img alt="" src="/assets/lesson10/pic22.svg" />
+      <p>oznaka za primazu :</p> <Image src="/assets/lesson10/pic22.svg" />
     </span>
     <Image src="/assets/lesson10/pic23.svg" className={classes.ml18} />
     <p className={classes.ml8}>
@@ -144,7 +144,7 @@ const Lesson10 = () => (
       segmentima.
     </p>
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za DNK polimerazu :</p> <img alt="" src="/assets/lesson10/pic24.svg" />
+      <p>oznaka za DNK polimerazu :</p> <Image src="/assets/lesson10/pic24.svg" />
     </span>
     <p className={`${classes.ml18}`}>1. Vezuju se za prajmer</p>
     <Image src="/assets/lesson10/pic25.svg" className={classes.ml28} />
@@ -167,7 +167,7 @@ const Lesson10 = () => (
     </p>
     <Image src="/assets/lesson10/pic28.svg" className={classes.ml18} />
     <span className={`${classes.inlineTxtWithPic} ${classes.ml8}`}>
-      <p>oznaka za ligazu :</p> <img alt="" src="/assets/lesson10/pic29.svg" />
+      <p>oznaka za ligazu :</p> <Image src="/assets/lesson10/pic29.svg" />
     </span>
     <Image src="/assets/lesson10/pic30.svg" className={classes.ml18} />
     <p className={classes.ml8}>

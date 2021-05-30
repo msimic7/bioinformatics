@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import { Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Breakpoints } from 'react-device-breakpoints';
 import Routes from './routes';
-import history from './services/history';
 
 const breakpoints = {
   isDesktop: '(min-width: 1024px)',
@@ -12,11 +11,11 @@ const breakpoints = {
 };
 
 const App = () => (
-  <Router history={history}>
+  <BrowserRouter basename="/bioinformatika">
     <Breakpoints {...breakpoints}>
       <Routes />
     </Breakpoints>
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;

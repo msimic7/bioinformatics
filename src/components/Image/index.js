@@ -8,7 +8,12 @@ const Image = ({ src, alt, className }) => {
 
   return (
     <div className={`${classes.root} ${className}`}>
-      <img alt={alt} src={src} aria-hidden="true" onClick={() => setShow(true)} />
+      <img
+        alt={alt}
+        src={`${process.env.PUBLIC_URL}${src}`}
+        aria-hidden="true"
+        onClick={() => setShow(true)}
+      />
       <Viewer
         visible={show}
         onClose={() => setShow(false)}

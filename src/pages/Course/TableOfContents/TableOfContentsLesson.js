@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useBreakpoints } from 'react-device-breakpoints';
-import { useLocation } from 'react-router';
-import history from '../../../services/history';
+import { useHistory, useLocation } from 'react-router';
 import classes from '../Course.module.scss';
 
 const TableOfContentsLesson = ({ children, className, to, setShow }) => {
+  const history = useHistory();
   const device = useBreakpoints();
   const location = useLocation();
 

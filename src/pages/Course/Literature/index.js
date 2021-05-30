@@ -6,7 +6,7 @@ const Literature = ({ img, title, url, customClass }) => (
   <div className={`${classes.literatureItem} ${customClass}`}>
     <img
       alt=""
-      src={`/assets/material-sources/${img}.svg`}
+      src={`${process.env.PUBLIC_URL}/assets/material-sources/${img}.svg`}
       className={`${classes.mr4} ${classes.mb4}`}
     />
     <div className={classes.materialText}>

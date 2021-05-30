@@ -1,9 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import Layout from '../Layout';
 import classes from './Dashboard.module.scss';
-import history from '../../services/history';
 
 const Dashboard = () => {
+  const history = useHistory();
   const handleGetStarted = (e) => {
     e.preventDefault();
     history.push('/course/lesson10');

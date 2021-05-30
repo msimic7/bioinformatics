@@ -14,7 +14,11 @@ const Authors = () => (
         </p>
         <p className={classes.authorTitle}>Autori:</p>
         <div className={classes.author}>
-          <img alt="" src="/assets/authors/milica.png" className={classes.authorImg} />
+          <img
+            alt=""
+            src={`${process.env.PUBLIC_URL}/assets/authors/milica.png`}
+            className={classes.authorImg}
+          />
           <div className={classes.authorInfo}>
             <p>
               Lekcije pripremila Milica Simić, studentkinja Matematičkog fakulteta, smer Matematika
@@ -24,7 +28,11 @@ const Authors = () => (
           </div>
         </div>
         <div className={classes.author}>
-          <img alt="" src="/assets/authors/milan.png" className={classes.authorImg} />
+          <img
+            alt=""
+            src={`${process.env.PUBLIC_URL}/assets/authors/milan.png`}
+            className={classes.authorImg}
+          />
           <div className={classes.authorInfo}>
             <p>
               Dizajn i strukturu sajta realizovao Milan Simić, student Matematičkog fakulteta, smer
